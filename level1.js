@@ -21,7 +21,7 @@ ground.draw(ctx);
  erraseCanvas();
 runnumber++;
   
-window.setTimeout(function() {gameloop();}, 100);
+window.setTimeout(function() {gameloop();}, 1000);
  }
  
 
