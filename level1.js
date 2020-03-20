@@ -5,7 +5,7 @@ export default function launch(){
   let ctx = canv.getContext('2d');
   ctx.fillStyle='#F00';
  let ground = new Ground();
-ground.draw(ctx);
+Ground.draw(ctx);
 }
 
 window.launch=launch;
