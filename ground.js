@@ -9,6 +9,8 @@ export default class Ground{
   draw(ctx){
   console.log("hello");
     ctx.fillStyle='#F00';
+     ctx.fillRect(0, 0,
+     50, 50);
     ctx.fillRect(this.position.x, this.position.y,
       this.width, this.height);
   }
