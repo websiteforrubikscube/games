@@ -10,16 +10,16 @@ export default function launch(){
 ground.draw(ctx);
  player.draw(ctx);
  
+ var runnumber=0;
  
  function erraseCanvas() {
         context.clearRect(0,0,canv.width,canv.height);
     }
  function gameloop(){
+  console.log("hello");
  erraseCanvas();
 runNumber++;
-console.log(runNumber);
-context.fillStyle='#F00';
-context.fillRect(runNumber,0,50,60);
+  
   
 window.setTimeout(function() {gameLoop();}, 300);
  }
