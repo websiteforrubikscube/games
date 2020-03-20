@@ -20,7 +20,6 @@ ground.draw(ctx);
   console.log("hello");
  erraseCanvas();
 runnumber++;
-  this.position.x = this.position.x + 1;
   
 window.setTimeout(function() {gameLoop();}, 100);
  }
