@@ -8,8 +8,6 @@ gameloop();
  
  let ground = new Ground();
  let player = new Player(runnumber);
-ground.draw(ctx);
- player.draw(ctx);
  
  var runnumber=0;
  
@@ -20,6 +18,8 @@ ground.draw(ctx);
   console.log("hello");
  erraseCanvas();
 runnumber++;
+  ground.draw(ctx);
+ player.draw(ctx);
   
 window.setTimeout(function() {gameloop();}, 1000);
  }
