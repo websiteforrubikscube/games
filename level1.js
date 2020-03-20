@@ -6,7 +6,7 @@ export default function launch(){
   let ctx = canv.getContext('2d');
  
  let ground = new Ground();
- let player = new Player(runnumber);
+ let player = new Player();
  
  gameloop();
  
@@ -21,6 +21,7 @@ export default function launch(){
 runnumber++;
   ground.draw(ctx);
  player.draw(ctx);
+  player.proccessloop(runnumber);
   
 window.setTimeout(function() {gameloop();}, 1000);
  }
