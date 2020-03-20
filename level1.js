@@ -1,4 +1,4 @@
- import Ground from "ground.js";
+ import Ground from "./ground.js";
 
 export default function launch(){
   let canv = document.getElementById("Screen");
