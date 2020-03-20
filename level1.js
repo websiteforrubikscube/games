@@ -14,7 +14,7 @@ ground.draw(ctx);
  var runnumber=0;
  
  function erraseCanvas() {
-        context.clearRect(0,0,canv.width,canv.height);
+        ctx.clearRect(0,0,canv.width,canv.height);
     }
  function gameloop(){
   console.log("hello");
