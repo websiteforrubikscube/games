@@ -11,7 +11,9 @@ export default class Player{
       this.width, this.height);
   }
   
-  proccessloop(runnumber){
-  this.position.x=runnumber;
-  }
+  document.addEventListener("keypress", function(right) {
+    if (right.keyCode == 13) {
+        alert('hi.')
+    }
+})
 }
