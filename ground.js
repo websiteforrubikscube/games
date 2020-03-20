@@ -1,4 +1,6 @@
- export default class Ground{
+module.exports = "ground";
+
+class Ground{
   constructor(){
     this.width = 50;
     this.length = 1000;
