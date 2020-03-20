@@ -7,7 +7,7 @@ export default function launch(){
 gameloop();
  
  let ground = new Ground();
- let player = new Player();
+ let player = new Player(runnumber);
 ground.draw(ctx);
  player.draw(ctx);
  
