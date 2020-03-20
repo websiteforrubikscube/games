@@ -7,9 +7,7 @@ export default function launch(){
  let ground = new Ground();
 ground.draw(ctx);
  
-  ctx.fillStyle='#F00';
-    ctx.fillRect(0, 0,
-      50, 50);
+
 }
 
 window.launch=launch;
