@@ -21,7 +21,7 @@ export default function launch(){
 runnumber++;
   ground.draw(ctx);
  player.draw(ctx);
-  player.processloop(runnumber);
+  player.proccessloop(runnumber);
   
 window.setTimeout(function() {gameloop();}, 1000);
  }
