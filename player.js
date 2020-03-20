@@ -1,6 +1,6 @@
 
 export default class Player{
-  constructor(){
+  constructor(runnumber){
     this.width = 100;
     this.height = 150;
     this.position ={x:runnumber * 10, y:250};
