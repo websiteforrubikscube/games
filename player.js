@@ -11,8 +11,8 @@ export default class Player{
       this.width, this.height);
   }
   
-  document.addEventListener("keypress", function(right) {
-    if (right.keyCode == 13) {
+  document.addEventListener("keypress", function(event) {
+    if (event.keyCode == 13) {
         alert('hi.')
     }
 })
