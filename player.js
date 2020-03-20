@@ -3,7 +3,7 @@ export default class Player{
   constructor(){
     this.width = 100;
     this.height = 150;
-    this.position ={x:0, y:300-10};
+    this.position ={x:0, y:250};
   }
   draw(ctx){
     ctx.fillStyle='#FFA500';
