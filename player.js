@@ -11,9 +11,6 @@ export default class Player{
       this.width, this.height);
   }
   
-  document.addEventListener("keypress", function(event) {
-    if (event.keyCode == 13) {
-        alert('hi.')
-    }
-})
-}
+  document.onkeypress = function (e) {
+    e = e || window.event;
+};
