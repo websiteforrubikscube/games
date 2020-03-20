@@ -10,7 +10,7 @@ gameloop();
  let player = new Player();
 ground.draw(ctx);
  player.draw(ctx);
-} 
+ 
  var runnumber=0;
  
  function erraseCanvas() {
@@ -26,5 +26,6 @@ window.setTimeout(function() {gameLoop();}, 100);
  }
  
 
+} 
 
 window.launch=launch;
