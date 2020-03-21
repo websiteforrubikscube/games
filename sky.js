@@ -1,4 +1,4 @@
-class Sky{
+export default class Sky{
 constructor(){
 this.width=1000;
 this.height=400;
