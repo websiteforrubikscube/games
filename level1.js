@@ -1,6 +1,6 @@
  import Ground from "./ground.js";
 import Player from "./player.js";
-import Enemy1 from "./enemy1.js";
+import Enemygreen from "./enemygreen.js";
 
 export default function launch(){
   let canv = document.getElementById("Screen");
@@ -8,7 +8,7 @@ export default function launch(){
  
  let ground = new Ground();
  let player = new Player();
- let enemy1 = new Enemy1();
+ let enemygreen = new Enemygreen();
  
  gameloop();
  
@@ -22,7 +22,7 @@ export default function launch(){
 runnumber++;
   ground.draw(ctx);
  player.draw(ctx);
-  enemy.draw(ctx);
+  enemygreen.draw(ctx);
   player.proccessloop(runnumber);
   
 window.setTimeout(function() {gameloop();}, 33);
