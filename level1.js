@@ -22,7 +22,7 @@ runnumber++;
  player.draw(ctx);
   player.proccessloop(runnumber);
   
-window.setTimeout(function() {gameloop();}, 1000);
+window.setTimeout(function() {gameloop();}, 33);
  }
  
 
