@@ -14,7 +14,7 @@ proccessloop(){
 if(window.PlayerX-50>this.position.x){
 this.position.x= this.position.x + 5;
 }
-  if(window.PlayerX-50<this.position.x){
+  if((window.PlayerX-50<this.position.x)&&(window.PlayerY<300)){
 this.position.x= this.position.x - 5;
 }
   if(this.position.x<0){
