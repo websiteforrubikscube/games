@@ -12,10 +12,10 @@ ctx.fillStyle=('#90EE90');
 }
 proccessloop(){
   console.log(window.PlayerX);
-if(window.PlayerX+50>this.position.x){
+if(window.PlayerX-50>this.position.x){
 this.position.x= this.position.x + 5;
 }
-  if(window.PlayerX+50<this.position.x){
+  if(window.PlayerX-50<this.position.x){
 this.position.x= this.position.x - 5;
 }
 }
