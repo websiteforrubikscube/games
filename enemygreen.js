@@ -6,7 +6,7 @@ this.width=200;
 }
 draw(ctx){
 ctx.fillStyle=('#90EE90');
-  ctx.fillRect(this.position.x, this.position.y, this.width, this.length);
+  ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
 }
 
 
