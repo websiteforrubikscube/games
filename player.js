@@ -5,8 +5,8 @@ export default class Player{
     this.height = 150;
     this.position ={x:0, y:250};
     this.keys = {};
-    window.onkeyup = function(e) { keys[e.keyCode] = false; }
-    window.onkeydown = function(e) { keys[e.keyCode] = true; }   
+    window.onkeyup = function(e) { this.keys[e.keyCode] = false; }
+    window.onkeydown = function(e) { this.keys[e.keyCode] = true; }   
   }
   draw(ctx){
     ctx.fillStyle='#FFA500';
