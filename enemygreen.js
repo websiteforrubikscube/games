@@ -2,7 +2,7 @@ export default class Enemygreen{
 constructor(){
 this.width=200;
   this.height=100;
-  this.position={x:300, y:250};
+  this.position={x:300, y:300};
 }
 draw(ctx){
 ctx.fillStyle=('#90EE90');
