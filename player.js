@@ -1,18 +1,19 @@
+var keys={};
 
 export default class Player{
   constructor(runnumber){
     this.width = 100;
     this.height = 150;
     this.position ={x:0, y:250};
-    this.keys = {};
-    this.keys[37]=false;
-    this.keys[38]=false;
-    this.keys[39]=false;
-    this.keys[40]=false;
+    keys = {};
+    keys[37]=false;
+    keys[38]=false;
+    keys[39]=false;
+    keys[40]=false;
     window.onkeyup = function(e) { 
-      this.keys[e.keyCode] = false;
+      keys[e.keyCode] = false;
     }
-    window.onkeydown = function(e) { this.keys[e.keyCode] = true; }   
+    window.onkeydown = function(e) { keys[e.keyCode] = true; }   
   }
   draw(ctx){
     ctx.fillStyle='#FFA500';
@@ -21,7 +22,7 @@ export default class Player{
   }
   
   proccessloop(runnumber){
-  console.log(this.keys);
+  console.log(keys);
   }
 }
 
