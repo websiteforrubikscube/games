@@ -30,7 +30,7 @@ proccessloop(runnumber){
         if ((keys[37]==true)&&(this.position.x>0)){
       this.position.x = this.position.x - 10;
     }
-   var enemyai = this.position.x;
+   window.PlayerX = this.position.x;
   }
 
 }
