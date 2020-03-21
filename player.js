@@ -12,6 +12,7 @@ export default class Player{
     keys[40]=false;
     window.onkeyup = function(e) { 
       keys[e.keyCode] = false;
+       
     }
     window.onkeydown = function(e) { keys[e.keyCode] = true; }   
   }
@@ -29,7 +30,8 @@ proccessloop(runnumber){
         if ((keys[37]==true)&&(this.position.x>0)){
       this.position.x = this.position.x - 10;
     }
+   var enemyai = this.position.x;
   }
-  var enemyai = this.position.x;
+
 }
 
