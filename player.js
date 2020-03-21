@@ -32,6 +32,7 @@ proccessloop(runnumber){
       this.position.x = this.position.x - 10;
     }
    window.PlayerX = this.position.x;
+  window.PlayerY = this.position.y;
   }
 
 }
