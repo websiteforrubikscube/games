@@ -15,7 +15,7 @@ export default class Player{
   }
   
   proccessloop(runnumber){
-  console.log(keys);
+  console.log(this.keys);
   }
 }
 
