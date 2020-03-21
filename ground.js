@@ -3,7 +3,7 @@
 export default class Ground{
   constructor(){
     this.width = 1000;
-    this.height = 50;
+    this.height = 100;
     this.position ={x:0, y:400};
   }
   draw(ctx){
