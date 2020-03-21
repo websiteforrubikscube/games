@@ -11,6 +11,11 @@ ctx.fillStyle=('#90EE90');
   ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
 }
 proccessloop(){
-
+if(enemyai>this.position.x){
+this.position.x= this.position.x + 10;
+}
+  if(enemyai<this.position.x){
+this.position.x= this.position.x - 10;
+}
 }
 }
