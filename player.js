@@ -28,6 +28,9 @@ export default class Player{
       if (keys[37]==true){
     this.position.x = this.position.x - 10;
   }
+     if (this.position.x=0){
+    keys[37]=false;
+  }
     
   }
 }
