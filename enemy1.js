@@ -1,4 +1,4 @@
-class Enemy1{
+export default class Enemy1{
 constructor(){
 this.width=200;
   this.height=100;
