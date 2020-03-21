@@ -24,6 +24,8 @@ export default class Player{
   proccessloop(runnumber){
   if (keys[39]==true){
     this.position.x = this.position.x + 10;
+      if (keys[37]==true){
+    this.position.x = this.position.x - 10;
   }
     
   }
