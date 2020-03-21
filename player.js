@@ -32,6 +32,9 @@ proccessloop(runnumber){
       this.position.x = this.position.x - 10;
     }
    if (keys[38]==true){
+      this.position.y = this.position.y - 5;
+    }
+  if (keys[40]==true){
       this.position.y = this.position.y + 5;
     }
    window.PlayerX = this.position.x;
