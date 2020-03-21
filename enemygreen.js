@@ -1,3 +1,5 @@
+import Player from "./player.js";
+
 export default class Enemygreen{
 constructor(){
 this.width=200;
