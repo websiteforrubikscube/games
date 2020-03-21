@@ -13,10 +13,10 @@ ctx.fillStyle=('#90EE90');
 proccessloop(){
   console.log(window.PlayerX);
 if(window.PlayerX>this.position.x){
-this.position.x= this.position.x + 10;
+this.position.x= this.position.x + 5;
 }
   if(window.PlayerX<this.position.x){
-this.position.x= this.position.x - 10;
+this.position.x= this.position.x - 5;
 }
 }
 }
