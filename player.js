@@ -21,17 +21,14 @@ export default class Player{
       this.width, this.height);
   }
   
-  proccessloop(runnumber){
-  if (keys[39]==true){
-    this.position.x = this.position.x + 10;
-  }
-      if (keys[37]==true){
-    this.position.x = this.position.x - 10;
-  }
-     if (this.position.x=0){
-    keys[37]=false;
-  }
-    
+proccessloop(runnumber){
+
+    if (keys[39]==true){
+      this.position.x = this.position.x + 10;
+    }
+        if ((keys[37]==true)&&(this.position.x>0)){
+      this.position.x = this.position.x - 10;
+    }
   }
 }
 
