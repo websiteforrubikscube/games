@@ -22,7 +22,10 @@ export default class Player{
   }
   
   proccessloop(runnumber){
-  console.log(keys);
+  if (keys[39]=true;){
+    this.position.x = this.position.x + 10;
+  }
+    
   }
 }
 
