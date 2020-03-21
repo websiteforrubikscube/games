@@ -16,7 +16,6 @@ export default function launch(){
         ctx.clearRect(0,0,1000,500);
     }
  function gameloop(){
-  console.log("hello");
  erraseCanvas();
 runnumber++;
   ground.draw(ctx);
