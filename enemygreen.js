@@ -11,7 +11,6 @@ ctx.fillStyle=('#90EE90');
   ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
 }
 proccessloop(){
-  console.log(window.PlayerX);
 if(window.PlayerX-50>this.position.x){
 this.position.x= this.position.x + 5;
 }
