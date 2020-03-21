@@ -21,5 +21,8 @@ this.position.x= this.position.x - 5;
   if(this.position.x<0){
   this.position.x=0;
   }
+  if(this.position.x>800){
+  this.position.x=800;
+  }
 }
 }
