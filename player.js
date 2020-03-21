@@ -5,11 +5,13 @@ export default class Player{
     this.height = 150;
     this.position ={x:0, y:250};
     this.keys = {};
-    this.keys['37']=false;
-    this.keys['38']=false;
-    this.keys['39']=false;
-    this.keys['40']=false;
-    window.onkeyup = function(e) { this.keys[e.keyCode] = false; }
+    this.keys[37]=false;
+    this.keys[38]=false;
+    this.keys[39]=false;
+    this.keys[40]=false;
+    window.onkeyup = function(e) { 
+      this.keys[e.keyCode] = false;
+    }
     window.onkeydown = function(e) { this.keys[e.keyCode] = true; }   
   }
   draw(ctx){
