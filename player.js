@@ -2,6 +2,7 @@ var keys={};
 
 export default class Player{
   constructor(runnumber){
+    window.PlayerX = 0;
     this.width = 100;
     this.height = 150;
     this.position ={x:0, y:250};
