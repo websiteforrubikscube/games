@@ -22,7 +22,7 @@ this.position.x= this.position.x + 5;
 this.position.x= this.position.x - 5;
 }
   if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+200)){
-    if(window.PlayerY>151){
+    if((window.PlayerY>149)&&(window.PlayerY<139)){
  window.color =("#a6ffad");
             setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
     }
