@@ -5,6 +5,7 @@ constructor(){
 this.width=200;
   this.height=100;
   this.position={x:400, y:300};
+   var color  =('#90EE90');
 }
 draw(ctx){
 ctx.fillStyle=(color);
