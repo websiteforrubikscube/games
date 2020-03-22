@@ -24,7 +24,9 @@ this.position.x= this.position.x - 5;
   if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+200)){
     if(window.PlayerY>151){
  window.color =("#a6ffad");
- window.setTimeout(function() {this.visable=(false);}, 1000);
+  function timeFunction() {
+            setTimeout(function(){this.visable=(false)}, 1000);
+        }
     }else{
   window.color  =('#90EE90');
   }
