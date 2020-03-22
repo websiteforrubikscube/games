@@ -24,12 +24,8 @@ this.position.x= this.position.x - 5;
   if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+200)){
     if(window.PlayerY>151){
  window.color =("#a6ffad");
-            setTimeout(function(enemy){ enemy.visable=(false);console.log("hello"); }, 1000,this);
-    }else{
-  window.color  =('#90EE90');
-  }
-  }else{
-  window.color  =('#90EE90');
+            setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
+    }
   }
   if(this.position.x<0){
   this.position.x=0;
