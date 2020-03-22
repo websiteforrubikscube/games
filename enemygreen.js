@@ -6,7 +6,7 @@ this.width=200;
   this.height=100;
   this.position={x:400, y:300};
    window.color  =('#90EE90');
-  this.visable(true);
+  this.visable=(true);
 }
 draw(ctx){
   if(visable==true){
@@ -24,7 +24,7 @@ this.position.x= this.position.x - 5;
   if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+200)){
     if(window.PlayerY>151){
  window.color =("#a6ffad");
-      this.visable(false);
+      this.visable=(false);
     }else{
   window.color  =('#90EE90');
   }
