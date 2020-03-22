@@ -24,6 +24,8 @@ this.position.x= this.position.x - 5;
     }else{
   window.color  =('#90EE90');
   }
+  }else{
+  window.color  =('#90EE90');
   }
   if(this.position.x<0){
   this.position.x=0;
