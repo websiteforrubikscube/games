@@ -19,7 +19,9 @@ this.position.x= this.position.x + 5;
 this.position.x= this.position.x - 5;
 }
   if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+200)){
+    if(window.PlayerY=300){
  window.color =("#d9ffdd");
+    }
   }else{
   window.color  =('#90EE90');
   }
