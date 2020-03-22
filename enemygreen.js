@@ -18,7 +18,7 @@ this.position.x= this.position.x + 5;
 this.position.x= this.position.x - 5;
 }
   if((window.PlayerX>this.position.x)&&(window.PlayerX<this.position.x+200)&&(window.PlayerY=300)){
-  ctx.fillStyle=("#bfffc6");
+  ctx.fillStyle=("#d9ffdd");
   }
   if(this.position.x<0){
   this.position.x=0;
