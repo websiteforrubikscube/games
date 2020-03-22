@@ -27,7 +27,7 @@ runnumber++;
  player.draw(ctx);
   enemygreen.draw(ctx);
   player.proccessloop(runnumber);
-  enemygreen.proccessloop();
+  enemygreen.proccessloop(ctx);
   
 window.setTimeout(function() {gameloop();}, 33);
  }
