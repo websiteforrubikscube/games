@@ -12,6 +12,8 @@ draw(ctx){
   if(this.visable==true){
 ctx.fillStyle=(window.color);
   ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+  }else{
+  this.visable=(false);
   }
   }
 proccessloop(ctx){
