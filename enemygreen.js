@@ -9,7 +9,7 @@ this.width=200;
   this.visable=(true);
 }
 draw(ctx){
-  if(visable==true){
+  if(this.visable==true){
 ctx.fillStyle=(window.color);
   ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
   }
