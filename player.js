@@ -51,10 +51,10 @@ proccessloop(ctx){
     if((this.position.x)<(window.enemy1c2+100)){
          if(window.visable==true){
     window.color1=("#ffd5a1");
-           keys{37}=(false);
-            keys{38}=(false);
-            keys{39}=(false);
-            keys{40}=(false);
+           keys[37]=(false);
+            keys[38]=(false);
+            keys[39]=(false);
+            keys[40]=(false);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
          }
     }
