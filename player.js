@@ -49,7 +49,7 @@ proccessloop(ctx){
   if((this.position.y+150)>(window.enemy1c-40)){
   if((this.position.x+100)>(window.enemy1c2-100)){
     if((this.position.x)<(window.enemy1c2+100)){
-         if(window.visable==true){
+         if((window.visable==true)&&(window.damage1==(false))){
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
