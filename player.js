@@ -46,7 +46,7 @@ proccessloop(runnumber){
   if((this.position.x+100)>(window.enemy1c2-100)){
     if((this.position.x)<(window.enemy1c2+100)){
          if(window.visable==true){
-         console.log("hi");
+    
          }
     }
   }
