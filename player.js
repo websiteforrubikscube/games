@@ -8,6 +8,7 @@ export default class Player{
     this.width = 100;
     this.height = 150;
     this.position ={x:0, y:250};
+    this.visable = (true);
     window.color1 = ("#ffad47");
     keys = {};
     keys[37]=false;
@@ -48,6 +49,7 @@ proccessloop(ctx){
     if((this.position.x)<(window.enemy1c2+100)){
          if(window.visable==true){
     window.color1=("#ffd5a1");
+              setTimeout(function(player){ player.visable=(false); }, 1000,this);
          }
     }
   }
