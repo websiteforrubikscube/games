@@ -8,7 +8,7 @@ export default class Player{
     this.width = 100;
     this.height = 150;
     this.position ={x:0, y:250};
-    window.color = ("#ffad47");
+    window.color1 = ("#ffad47");
     keys = {};
     keys[37]=false;
     keys[38]=false;
@@ -21,7 +21,7 @@ export default class Player{
     window.onkeydown = function(e) { keys[e.keyCode] = true; }   
   }
   draw(ctx){
-    ctx.fillStyle=(window.color);
+    ctx.fillStyle=(window.color1);
     ctx.fillRect(this.position.x, this.position.y,
       this.width, this.height);
   }
@@ -47,7 +47,7 @@ proccessloop(ctx){
   if((this.position.x+100)>(window.enemy1c2-100)){
     if((this.position.x)<(window.enemy1c2+100)){
          if(window.visable==true){
-    window.color=("#ffd5a1");
+    window.color1=("#ffd5a1");
          }
     }
   }
