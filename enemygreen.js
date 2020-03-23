@@ -35,5 +35,6 @@ this.position.x= this.position.x - 5;
   }
   window.enemy1c = this.position.y+50;
   window.enemy1c2= this.position.x+100;
+  window.visable = this.visable;
 }
 }
