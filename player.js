@@ -22,9 +22,11 @@ export default class Player{
     window.onkeydown = function(e) { keys[e.keyCode] = true; }   
   }
   draw(ctx){
+    if(this.visable == (true)){
     ctx.fillStyle=(window.color1);
     ctx.fillRect(this.position.x, this.position.y,
       this.width, this.height);
+    }
   }
   
 proccessloop(ctx){
