@@ -42,7 +42,7 @@ proccessloop(runnumber){
   if(this.position.y > 250){
   this.position.y = 250;
   }
-  if(window.enemy1c+this.position.y>189){
+  if(window.enemy1c+this.position.y<189){
   console.log("hello");
   }
    window.PlayerX = this.position.x;
