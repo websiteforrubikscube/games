@@ -7,6 +7,7 @@ this.width=200;
   this.position={x:400, y:300};
    window.color  =('#90EE90');
   this.visable=(true);
+  window.nodamage1 = (false);
 }
 draw(ctx){
   if(this.visable==true){
@@ -24,6 +25,7 @@ this.position.x= this.position.x - 5;
   if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+200)){
     if((window.PlayerY>149)&&(window.PlayerY<159)){
  window.color =("#a6ffad");
+      window.nodamage1 = (true);
             setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
     }
   }
