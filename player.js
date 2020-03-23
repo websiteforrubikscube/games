@@ -9,7 +9,6 @@ export default class Player{
     this.height = 150;
     this.position ={x:0, y:250};
     window.color = ("#ffad47");
-    #ffd5a1
     keys = {};
     keys[37]=false;
     keys[38]=false;
