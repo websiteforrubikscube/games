@@ -37,6 +37,9 @@ proccessloop(runnumber){
   if (keys[40]==true){
       this.position.y = this.position.y + 5;
     }
+  if(this.position.y > 200){
+  this.position.y = 200;
+  }
    window.PlayerX = this.position.x;
   window.PlayerY = this.position.y;
   }
