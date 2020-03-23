@@ -8,7 +8,8 @@ export default class Player{
     this.width = 100;
     this.height = 150;
     this.position ={x:0, y:250};
-    window.color = ("#ffd5a1");
+    window.color = ("#ffad47");
+    #ffd5a1
     keys = {};
     keys[37]=false;
     keys[38]=false;
@@ -47,7 +48,7 @@ proccessloop(ctx){
   if((this.position.x+100)>(window.enemy1c2-100)){
     if((this.position.x)<(window.enemy1c2+100)){
          if(window.visable==true){
-    ctx.fillStyle(window.color);
+    window.color=("#ffd5a1");
          }
     }
   }
