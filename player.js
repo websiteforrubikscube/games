@@ -26,7 +26,7 @@ export default class Player{
       this.width, this.height);
   }
   
-proccessloop(runnumber){
+proccessloop(ctx){
 
     if ((keys[39]==true)&&(this.position.x<900)){
       this.position.x = this.position.x + 10;
