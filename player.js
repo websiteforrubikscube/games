@@ -44,7 +44,7 @@ proccessloop(runnumber){
   }
   if((this.position.y+150)>(window.enemy1c-40)){
   if((this.position.x+100)>(window.enemy1c2-100)){
-    if((this.position.x+100)<(window.enemy1c2+100))
+    if((this.position.x)<(window.enemy1c2+100))
       console.log("hi");
   }
    
