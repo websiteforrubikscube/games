@@ -20,5 +20,6 @@ ctx.fillRect(this.position.x,this.position.y, this.width, this.height);
   this.move=(false);
   setTimeout(function(move){ move.move=(true); }, 1,this);
  }
+  window.move=this.move; 
  }
 }
