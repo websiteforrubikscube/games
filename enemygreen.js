@@ -12,7 +12,7 @@ this.width=200;
 draw(ctx){
   if(this.visable==true){
 ctx.fillStyle=(window.color);
-  ctx.fillRect=(this.position.x, this.position.y, this.width, this.height);
+  ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
   }
   }
 proccessloop(ctx){
