@@ -41,10 +41,10 @@ proccessloop(ctx){
       this.position.x = this.position.x - 10;
            }
     }
-   if ((keys[38]==true)&&(window.nodamage1==(false)){
+   if ((keys[38]==true)&&(window.nodamage1==false)){
       this.position.y = this.position.y - 5;
     }
-  if ((keys[40]==true)&&(window.nodamage1==(false)){
+  if ((keys[40]==true)&&(window.nodamage1==false)){
       this.position.y = this.position.y + 5;
     }
   if(this.position.y > 250){
