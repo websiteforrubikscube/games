@@ -1,4 +1,5 @@
  import Enemygreen from "./enemygreen.js";
+import Screen1 from "./screen1.js";
 
 var keys={};
 
@@ -66,7 +67,10 @@ proccessloop(ctx){
     }
   }
   }
-  
+  if(window.screen2==(true)){
+  this.position.x=0;
+   this.position.y=150;
+  }
   
    window.PlayerX = this.position.x;
   window.PlayerY = this.position.y;
