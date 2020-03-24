@@ -8,6 +8,7 @@ this.width=200;
    window.color  =('#90EE90');
   this.visable=(true);
   window.nodamage1 = (false);
+  window.invisabledamage=(false);
 }
 draw(ctx){
   if(this.visable==true){
