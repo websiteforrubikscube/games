@@ -8,7 +8,7 @@ export default class Ground{
   }
   draw(ctx){
     ctx.fillStyle='#008000';
-    ctx.fillRect(this.position.x, this.position.y,
+    ctx.fillRect=(this.position.x, this.position.y,
       this.width, this.height);
   }
 }
