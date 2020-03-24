@@ -34,19 +34,19 @@ export default class Player{
 proccessloop(ctx){
 
     if ((keys[39]==true)&&(this.position.x<900)){
-      if(this.visable==(true)){
+      if(this.living==(true)){
       this.position.x = this.position.x + 10;
          }
     }
         if ((keys[37]==true)&&(this.position.x>0)){
-        if(this.visable==(true)){
+        if(this.living==(true)){
       this.position.x = this.position.x - 10;
            }
     }
-   if ((keys[38]==true)&&(this.visable==true)){
+   if ((keys[38]==true)&&(this.living==true)){
       this.position.y = this.position.y - 5;
     }
-  if ((keys[40]==true)&&(this.visable==true)){
+  if ((keys[40]==true)&&(this.living==true)){
       this.position.y = this.position.y + 5;
     }
   if(this.position.y > 250){
