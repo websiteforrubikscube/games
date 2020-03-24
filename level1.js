@@ -2,6 +2,7 @@
 import Player from "./player.js";
 import Enemygreen from "./enemygreen.js";
 import Sky from "./sky.js";
+import Screen1 from "./screen1.js";
 
 export default function launch(){
   let canv = document.getElementById("Screen");
@@ -11,6 +12,7 @@ export default function launch(){
  let player = new Player();
  let enemygreen = new Enemygreen();
  let sky = new Sky();
+ let screen1 = new Screen1();
  
  gameloop();
  
@@ -26,6 +28,7 @@ runnumber++;
   ground.draw(ctx);
  player.draw(ctx);
   enemygreen.draw(ctx);
+  screen1.draw(ctx);
   player.proccessloop(ctx);
   enemygreen.proccessloop(ctx);
   
