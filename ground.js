@@ -1,5 +1,4 @@
-
-
+ 
 export default class Ground{
   constructor(){
     this.width = 1000;
