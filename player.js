@@ -10,6 +10,7 @@ export default class Player{
     this.height = 150;
     this.position ={x:0, y:250};
     this.visable = (true);
+   this.living=(true);
     window.color1 = ("#ffad47");
     keys = {};
     keys[37]=false;
@@ -56,6 +57,7 @@ proccessloop(ctx){
     if((this.position.x)<(window.enemy1c2+100)){
          if((window.visable==true)&&(window.nodamage1==(false))){
           if(window.invisabledamage==(false)){
+           this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
@@ -69,8 +71,10 @@ proccessloop(ctx){
   }
   if(window.screen2==(true)){
    if(window.move == (false)){
+    if(this.living == (true)){
   this.position.x=0;
    this.position.y=250;
+    }
    }
   }
   
