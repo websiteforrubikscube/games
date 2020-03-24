@@ -25,11 +25,11 @@ export default function launch(){
  erraseCanvas();
 runnumber++;
 if(window.screen1==(true)){
+  screen1.draw(ctx);
   sky.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
   enemygreen.draw(ctx);
-  screen1.draw(ctx);
   player.proccessloop(ctx);
   enemygreen.proccessloop(ctx);
 }
