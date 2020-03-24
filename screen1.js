@@ -1,6 +1,6 @@
 import Player from "./player.js";
 
-class Teleport{
+export default class Screen1{
 constructor(){
 this.width=50;
 this.height=500;
