@@ -24,6 +24,7 @@ export default function launch(){
  function gameloop(){
  erraseCanvas();
 runnumber++;
+if(window.screen1==(true);){
   sky.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
@@ -31,6 +32,7 @@ runnumber++;
   screen1.draw(ctx);
   player.proccessloop(ctx);
   enemygreen.proccessloop(ctx);
+}
   
 window.setTimeout(function() {gameloop();}, 33);
  }
