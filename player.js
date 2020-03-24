@@ -32,12 +32,12 @@ export default class Player{
 proccessloop(ctx){
 
     if ((keys[39]==true)&&(this.position.x<900)){
-      if(window.nodamage1==(false){
+      if(window.nodamage1==(false)){
       this.position.x = this.position.x + 10;
          }
     }
         if ((keys[37]==true)&&(this.position.x>0)){
-        if(window.nodamage1==(false){
+        if(window.nodamage1==(false)){
       this.position.x = this.position.x - 10;
            }
     }
