@@ -8,6 +8,6 @@ this.position={x:950, y:0};
 }
 draw(ctx){
 ctx.fillStyle=("#000");
-ctx.fillRect=(this.position.x,this.position.y, this.width, this.height);
+ctx.fillRect(this.position.x,this.position.y, this.width, this.height);
 }
 }
