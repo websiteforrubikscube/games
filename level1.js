@@ -34,6 +34,12 @@ if(window.screen1==(true)){
   enemygreen.proccessloop(ctx);
  screen1.proccessloop();
 }
+  if(window.screen2==(true)){
+  sky.draw(ctx);
+  ground.draw(ctx);
+ player.draw(ctx);
+  player.proccessloop(ctx);
+  }
   
 window.setTimeout(function() {gameloop();}, 33);
  }
