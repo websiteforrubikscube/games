@@ -35,6 +35,7 @@ if(window.screen1==(true)){
  screen1.proccessloop();
 }
   if(window.screen2==(true)){
+   window.invisabledamage=(true);
   sky.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
