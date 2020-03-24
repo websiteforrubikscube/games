@@ -12,7 +12,7 @@ ctx.fillStyle=("#000");
 ctx.fillRect(this.position.x,this.position.y, this.width, this.height);
 }
  proccessloop(){
- if((window.PlayerX+150)>this.position.x){
+ if((window.PlayerX+100)>this.position.x){
  window.screen1=(false);
  }
  }
