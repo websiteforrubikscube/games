@@ -32,6 +32,7 @@ if(window.screen1==(true)){
   enemygreen.draw(ctx);
   player.proccessloop(ctx);
   enemygreen.proccessloop(ctx);
+ screen1.proccessloop();
 }
   
 window.setTimeout(function() {gameloop();}, 33);
