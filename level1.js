@@ -24,7 +24,7 @@ export default function launch(){
  function gameloop(){
  erraseCanvas();
 runnumber++;
-if(window.screen1==(true);){
+if(window.screen1==(true)){
   sky.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
