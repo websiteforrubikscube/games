@@ -69,7 +69,7 @@ proccessloop(ctx){
   }
   if(window.screen2==(true)){
   this.position.x=0;
-   this.position.y=150;
+   this.position.y=250;
   }
   
    window.PlayerX = this.position.x;
