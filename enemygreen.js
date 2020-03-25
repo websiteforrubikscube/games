@@ -37,6 +37,7 @@ this.position.x= this.position.x - 5;
   this.position.x=800;
   }
     if(window.screen3load==(true)){
+      this.visable=(true);
   this.position.x=400;
     this.position.y=300;
   }
