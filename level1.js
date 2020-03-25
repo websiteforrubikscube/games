@@ -21,6 +21,9 @@ export default function launch(){
  gameloop();
  
  var runnumber=0;
+ var runnumber2=0;
+ var runnumber3=0;
+ 
  
  function erraseCanvas() {
         ctx.clearRect(0,0,1000,500);
@@ -43,7 +46,7 @@ if(window.screen1==(true)){
  }
 }
   if(window.screen2==(true)){
-   var runnumber = 0;
+  runnumber2++;
    window.invisabledamage=(true);
   screen2.draw(ctx);
    sky.draw(ctx);
@@ -53,14 +56,14 @@ if(window.screen1==(true)){
   player.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
     screen2.proccessloop();
-   if(runnumber<2){
+   if(runnumber2<2){
     window.screen2load=(true);
  setTimeout(function(load){ load.screen2load=(false); }, 34,window);
    }
   }
   
   if(window.screen3==(true)){
-      var runnumber = 0;
+      runnumber3++;
    window.invisabledamage=(false);
   sky.draw(ctx);
   ground.draw(ctx);
@@ -70,7 +73,7 @@ if(window.screen1==(true)){
   player.proccessloop(ctx);
    enemygreen.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
-      if(runnumber<2){
+      if(runnumber3<2){
     window.screen3load=(true);
  setTimeout(function(load){ load.screen3load=(false); }, 34,window);
    }
