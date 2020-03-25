@@ -43,7 +43,7 @@ if(window.screen1==(true)){
  player.draw(ctx);
    enemyyellow.draw(ctx);
   player.proccessloop(ctx);
-   enemyyellow.proccessloop();
+   enemyyellow.proccessloop(ctx);
   }
   
 window.setTimeout(function() {gameloop();}, 33);
