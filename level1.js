@@ -50,6 +50,18 @@ if(window.screen1==(true)){
  setTimeout(function(load){ load.screen2load=(false); }, 34,window);
   }
   
+  if(window.screen3==(true)){
+  sky.draw(ctx);
+  ground.draw(ctx);
+ player.draw(ctx);
+   enemygreen.draw(ctx);
+   enemyyellow.draw(ctx);
+  player.proccessloop(ctx);
+   enemygreen.proccessloop(ctx);
+   enemyyellow.proccessloop(ctx);
+    window.screen3load=(true);
+ setTimeout(function(load){ load.screen3load=(false); }, 34,window);
+  }
 window.setTimeout(function() {gameloop();}, 33);
  }
  
