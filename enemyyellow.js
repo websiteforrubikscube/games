@@ -17,6 +17,11 @@ this.position.x=this.position.x+10;
     if((window.PlayerX<this.position.x+25)&&(window.PlayerY>249)){
 this.position.x=this.position.x-10;
 }
+    if((window.PlayerX>this.position.x-100;)&&(window.PlayerX<this.position.x+150)){
+    if((window.PlayerY>this.position.y-150)&&(window.PlayerY<this.position.y+10)){
+    console.log("hello");
+    }
+    }
   if(this.position.x<0){
   this.position.x=0;
   }
