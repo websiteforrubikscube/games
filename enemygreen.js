@@ -1,10 +1,10 @@
 import Player from "./player.js";
 
 export default class Enemygreen{
-constructor(){
+constructor(enemyx,enemyy){
 this.width=200;
   this.height=100;
-  this.position={x:400, y:300};
+  this.position={x:enemyx, y:enemyy};
    window.color  =('#90EE90');
   this.visable=(true);
   window.nodamage1 = (false);
