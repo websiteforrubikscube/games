@@ -69,7 +69,7 @@ this.position.x=this.position.x-10;
       this.visable=(true);
       window.invisabledamage=(false);
      window.color2=("#fce700");
-  this.position.x=275;
+  this.position.x=375;
     this.position.y=300;
   }
     window.enemy2X=this.position.x;
