@@ -59,6 +59,10 @@ this.position.x=this.position.x-10;
   if(this.position.x>850){
   this.position.x=850;
   }
+    if(window.screen2load==(true)){
+    this.position.x=425;
+      this.position.y=300;
+    }
     window.enemy2X=this.position.x;
     window.enemy2Y=this.position.y;
     window.visable1=this.visable;
