@@ -37,10 +37,13 @@ if(window.screen1==(true)){
   player.proccessloop(ctx);
   enemygreen.proccessloop(ctx);
  screen1.proccessloop();
+ if(runnumber<2){
  window.screen1load=(true);
  setTimeout(function(load){ load.screen1load=(false); }, 34,window);
+ }
 }
   if(window.screen2==(true)){
+   var runnumber = 0;
    window.invisabledamage=(true);
   screen2.draw(ctx);
    sky.draw(ctx);
@@ -50,11 +53,14 @@ if(window.screen1==(true)){
   player.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
     screen2.proccessloop();
+   if(runnumber<2){
     window.screen2load=(true);
  setTimeout(function(load){ load.screen2load=(false); }, 34,window);
+   }
   }
   
   if(window.screen3==(true)){
+      var runnumber = 0;
    window.invisabledamage=(false);
   sky.draw(ctx);
   ground.draw(ctx);
@@ -64,8 +70,10 @@ if(window.screen1==(true)){
   player.proccessloop(ctx);
    enemygreen.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
-    window.screen3load=(true);
- setTimeout(function(load){ load.screen3load=(false); }, 34,window);
+      if(runnumber<2){
+    window.screen2load=(true);
+ setTimeout(function(load){ load.screen2load=(false); }, 34,window);
+   }
   }
 window.setTimeout(function() {gameloop();}, 33);
  }
