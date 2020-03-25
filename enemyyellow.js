@@ -1,7 +1,7 @@
 import Player from "./player.js";
 
 export default class Enemyyellow{
-constructor(){
+constructor(enemyx,enemyy){
 this.width=150;
 this.height=100;
 this.position={x:425,y:300};
