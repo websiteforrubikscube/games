@@ -10,7 +10,7 @@ this.position={x:425,y:300};
 }
 draw(ctx){
   if(this.visable==(true)){
-ctx.fillStyle=("#ffed26");
+ctx.fillStyle=("#fce700");
 ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
   }
 }
