@@ -41,7 +41,7 @@ if(window.screen1==(true)){
   sky.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
-   enemyyellow.draw(ctx,425,300);
+   enemyyellow.draw(ctx);
   player.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
   }
