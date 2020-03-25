@@ -46,6 +46,8 @@ if(window.screen1==(true)){
    enemyyellow.draw(ctx);
   player.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
+    window.screen2load=(true);
+ setTimeout(function(load){ load.screen2load=(false); }, 34,window);
   }
   
 window.setTimeout(function() {gameloop();}, 33);
