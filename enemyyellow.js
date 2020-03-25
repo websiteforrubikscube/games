@@ -1,7 +1,7 @@
 import Player from "./player.js";
 
 export default class Enemyyellow{
-constructor(enemyx,enemyy){
+constructor(){
 this.width=150;
 this.height=100;
 this.position={x:425,y:300};
@@ -11,10 +11,10 @@ this.position={x:425,y:300};
   this.hit=0;
   this.immune=(false);
 }
-draw(ctx){
+draw(ctx,enemyx,enemyy){
   if(this.visable==(true)){
 ctx.fillStyle=(window.color2);
-ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
+ctx.fillRect(enemyx, enemyy,this.width,this.height);
   }
 }
   proccessloop(ctx){
