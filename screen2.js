@@ -13,8 +13,8 @@ proccessloop(){
 if(window.PlayerX+100>950){
 window.screen2=(false);
   window.screen3=(true);
-  this.move=(false);
- setTimeout(function(){ this.move=(true); }, 34);
+  window.move=(false);
+ setTimeout(function(w){ w.move=(true); }, 34,window);
 }
   }
 }
