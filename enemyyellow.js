@@ -63,6 +63,15 @@ this.position.x=this.position.x-10;
     this.position.x=425;
       this.position.y=300;
     }
+    if(window.screen3load==(true)){
+      this.immune=(false);
+      this.hit=0;
+      this.visable=(true);
+      window.invisabledamage=(false);
+     window.color2=("#fce700");
+  this.position.x=275;
+    this.position.y=300;
+  }
     window.enemy2X=this.position.x;
     window.enemy2Y=this.position.y;
     window.visable1=this.visable;
