@@ -1,4 +1,4 @@
-export default Screen2{
+export default class Screen2{
 constructor(){
 this.width=50;
 this.height=500;
