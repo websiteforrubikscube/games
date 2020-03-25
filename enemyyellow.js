@@ -18,13 +18,15 @@ this.position.x=this.position.x+10;
 this.position.x=this.position.x-10;
 }*/
     
-    if(window.PlayerX+50-this.position.x+75<0){
-    this.position.x=this.position.x+5;
+    if(window.PlayerX-this.position.x+75<0){
+    //this.position.x=this.position.x+5;
+       console.log("hello");
+    }
+      if(window.PlayerX-this.position.x+75>0){
+    //this.position.x=this.position.x-5;
+         console.log("hello");
+    }
     
-      if(window.PlayerX+50-this.position.x+75>0){
-    this.position.x=this.position.x-5;
-    }
-    }
     if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+150)){
     if((window.PlayerY>this.position.y-151)&&(window.PlayerY<this.position.y+11)){
     console.log("hello");
