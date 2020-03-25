@@ -18,10 +18,10 @@ this.position.x=this.position.x+10;
 this.position.x=this.position.x-10;
 }*/
     
-    if(window.PlayerX-this.position.x-75<0){
+    if(window.PlayerX-this.position.x-25<0){
     //this.position.x=this.position.x+5;
     }
-      if(window.PlayerX-this.position.x-75>0){
+      if(window.PlayerX-this.position.x-25>0){
     //this.position.x=this.position.x-5;
          console.log("hello");
     }
