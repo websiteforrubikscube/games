@@ -14,7 +14,7 @@ export default function launch(){
  let enemygreen = new Enemygreen();
  let sky = new Sky();
  let screen1 = new Screen1();
- let enemyyellow = new Enemyyellow(425,300);
+ let enemyyellow = new Enemyyellow();
  
  gameloop();
  
@@ -41,7 +41,7 @@ if(window.screen1==(true)){
   sky.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
-   enemyyellow.draw(ctx);
+   enemyyellow.draw(ctx,425,300);
   player.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
   }
