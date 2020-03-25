@@ -36,10 +36,6 @@ this.position.x= this.position.x - 5;
   if(this.position.x>800){
   this.position.x=800;
   }
-  if(window.screen1load==(true)){
-  this.position.x=400;
-    this.position.y=300;
-  }
     if(window.screen3load==(true)){
   this.position.x=400;
     this.position.y=300;
