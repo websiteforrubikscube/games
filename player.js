@@ -69,7 +69,7 @@ proccessloop(ctx){
     }
   }
   }
- if((this.position.y+150)>(window.enemy2Y-40)){
+ if((this.position.y+150)>(window.enemy2Y+40)){
   if((this.position.x+100)>(window.enemy2X)){
     if((this.position.x)<(window.enemy2X+150)){
          if((window.visable==true)&&(window.invisabledamage==(false))){
