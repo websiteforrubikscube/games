@@ -9,8 +9,6 @@ this.width=200;
   this.visable=(true);
   window.nodamage1 = (false);
   window.invisabledamage=(false);
-  this.position.y=window.greeny
-  this.position.x=window.greenx;
 }
 draw(ctx){
   if(this.visable==true){
