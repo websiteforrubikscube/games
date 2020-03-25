@@ -40,7 +40,7 @@ this.position.x= this.position.x - 5;
       this.visable=(true);
       window.nodamage1=(false);
        window.color=('#90EE90');
-  this.position.x=425;
+  this.position.x=525;
     this.position.y=300;
   }
   window.enemy1c = this.position.y+50;
