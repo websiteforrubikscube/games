@@ -42,7 +42,6 @@ this.position.x=this.position.x-10;
       }
    window.color2=("#fdff9e");
       window.invisabledamage1=(true);
-       setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
       setTimeout(function(enemy){ enemy.invisabledamage1=(false); }, 1000,window);
       setTimeout(function(enemy){ enemy.color2=("#fce700"); }, 1000,window);
     }
