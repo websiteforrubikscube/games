@@ -35,6 +35,8 @@ if(window.screen1==(true)){
   player.proccessloop(ctx);
   enemygreen.proccessloop(ctx);
  screen1.proccessloop();
+ window.screen1load=(true);
+ setTimeout(function(load){ load.screen1load=(false); }, 34,window);
 }
   if(window.screen2==(true)){
    window.invisabledamage=(true);
