@@ -44,6 +44,8 @@ this.position.x=this.position.x-10;
   if(this.position.x>850){
   this.position.x=850;
   }
+    window.enemy2X=this.position.x;
+    window.enemy2Y=this.position.y;
   }
 
 }
