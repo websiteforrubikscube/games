@@ -11,10 +11,10 @@ export default function launch(){
  
  let ground = new Ground();
  let player = new Player();
- let enemygreen = new Enemygreen(400,300);
+ let enemygreen = new Enemygreen();
  let sky = new Sky();
  let screen1 = new Screen1();
- let enemyyellow = new Enemyyellow(425,300);
+ let enemyyellow = new Enemyyellow();
  
  gameloop();
  
