@@ -7,10 +7,11 @@ this.height=100;
 this.position={x:425,y:300};
   this.visable=(true);
   window.invisabledamage1=(false);
+  window.color2=("#fce700");
 }
 draw(ctx){
   if(this.visable==(true)){
-ctx.fillStyle=("#fce700");
+ctx.fillStyle=(window.color2);
 ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
   }
 }
@@ -32,7 +33,7 @@ this.position.x=this.position.x-10;
     
     if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+150)){
     if((window.PlayerY>this.position.y-151)&&(window.PlayerY+150<this.position.y+11)){
-   ctx.fillStyle=("#ffffff");
+   window.color2=("#ffffff");
       window.invisabledamage1=(true);
        setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
     }
