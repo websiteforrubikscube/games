@@ -1,4 +1,5 @@
- import Enemygreen from "./enemygreen.js";
+import Enemyyellow from "./enemyyellow.js"; 
+import Enemygreen from "./enemygreen.js";
 import Screen1 from "./screen1.js";
 
 var keys={};
@@ -72,7 +73,7 @@ proccessloop(ctx){
  if((this.position.y+150)>(window.enemy2Y+40)){
   if((this.position.x+100)>(window.enemy2X)){
     if((this.position.x)<(window.enemy2X+150)){
-         if((window.visable==true)&&(window.invisabledamage==(false))){
+         if((window.visable1==true)&&(window.invisabledamage1==(false))){
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
