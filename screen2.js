@@ -9,11 +9,13 @@ ctx.fillStyle=("#87ceeb");
 ctx.fillRect(this.position.x,this.position.y,this.width,this.height);
 }
 proccessloop(){
+  if(window.screen2==(true)){
 if(window.PlayerX+100>950){
 window.screen2=(false);
   window.screen3=(true);
   this.move=(false);
  setTimeout(function(){ this.move=(true); }, 34);
 }
+  }
 }
 }
