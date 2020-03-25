@@ -14,7 +14,7 @@ this.position={x:enemyx,y:enemyy};
 draw(ctx){
   if(this.visable==(true)){
 ctx.fillStyle=(window.color2);
-ctx.fillRect(thiss.position.x, this.position.y,this.width,this.height);
+ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
   }
 }
   proccessloop(ctx){
