@@ -42,10 +42,10 @@ if(window.screen1==(true)){
 }
   if(window.screen2==(true)){
    window.invisabledamage=(true);
-  sky.draw(ctx);
+  screen2.draw(ctx);
+   sky.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
-   screen2.draw(ctx);
    enemyyellow.draw(ctx);
   player.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
