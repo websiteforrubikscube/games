@@ -14,7 +14,7 @@ ctx.fillRect(this.position.x, this.position.y,this.width,this.height)
 if((window.PlayerX>this.position.x+25)&&(window.PlayerY>249)){
 this.position.x=this.position.x+10;
 }
-    if((window.PlayerX<this.position.x+50)&&(window.PlayerY>249)){
+    if((window.PlayerX<this.position.x+25)&&(window.PlayerY>249)){
 this.position.x=this.position.x-10;
 }
   if(this.position.x<0){
