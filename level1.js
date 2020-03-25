@@ -15,6 +15,7 @@ export default function launch(){
  let enemygreen = new Enemygreen();
  let sky = new Sky();
  let screen1 = new Screen1();
+ let screen2 = new Screen2();
  let enemyyellow = new Enemyyellow();
  
  gameloop();
@@ -44,9 +45,11 @@ if(window.screen1==(true)){
   sky.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
+   screen2.draw(ctx);
    enemyyellow.draw(ctx);
   player.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
+    screen2.proccessloop();
     window.screen2load=(true);
  setTimeout(function(load){ load.screen2load=(false); }, 34,window);
   }
