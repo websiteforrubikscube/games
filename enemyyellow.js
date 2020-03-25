@@ -11,16 +11,16 @@ ctx.fillStyle=("#ffed26");
 ctx.fillRect(this.position.x, this.position.y,this.width,this.height)
 }
   proccessloop(ctx){
-if((window.PlayerX>this.position.x+25)&&(window.PlayerY>249)){
+/*if((window.PlayerX>this.position.x+25)&&(window.PlayerY>249)){
 this.position.x=this.position.x+10;
 }
     if((window.PlayerX<this.position.x+25)&&(window.PlayerY>249)){
 this.position.x=this.position.x-10;
-}
-    if(window.PlayerY<249){
+}*/
+    
     if(window.PlayerX+50-this.position.x+75<0){
     this.position.x=this.position.x+5;
-    }
+    
       if(window.PlayerX+50-this.position.x+75>0){
     this.position.x=this.position.x-5;
     }
