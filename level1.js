@@ -4,6 +4,7 @@ import Enemygreen from "./enemygreen.js";
 import Enemyyellow from "./enemyyellow.js";
 import Sky from "./sky.js";
 import Screen1 from "./screen1.js";
+import Screen2 from "./screen2.js";
 
 export default function launch(){
   let canv = document.getElementById("Screen");
