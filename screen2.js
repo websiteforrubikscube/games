@@ -1,3 +1,5 @@
+import Screen1 from "./screen1.js";
+
 export default class Screen2{
 constructor(){
 this.width=50;
