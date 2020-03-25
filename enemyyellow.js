@@ -18,10 +18,10 @@ this.position.x=this.position.x+10;
 this.position.x=this.position.x-10;
 }
     if(window.PlayerY<249){
-    if(window.PlayerX-this.position.x+75<0){
+    if(window.PlayerX+50-this.position.x+75<0){
     this.position.x=this.position.x+5;
     }
-      if(window.PlayerX-this.position.x+75>0){
+      if(window.PlayerX+50-this.position.x+75>0){
     this.position.x=this.position.x-5;
     }
     }
