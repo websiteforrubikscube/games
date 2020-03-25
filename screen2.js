@@ -10,7 +10,7 @@ ctx.fillRect(this.position.x,this.position.y,this.width,this.height);
 }
 proccessloop(){
   if(window.screen2==(true)){
-if(window.PlayerX+100>950){
+if(window.PlayerX+100>this.position.x){
 window.screen2=(false);
   window.screen3=(true);
   window.move=(false);
