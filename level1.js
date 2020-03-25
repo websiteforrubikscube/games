@@ -52,6 +52,7 @@ if(window.screen1==(true)){
   }
   
   if(window.screen3==(true)){
+   window.invisabledamage=(false);
   sky.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
