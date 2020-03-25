@@ -32,7 +32,7 @@ this.position.x=this.position.x-10;
     
     if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+150)){
     if((window.PlayerY>this.position.y-151)&&(window.PlayerY+150<this.position.y+11)){
-   ctx.fillStyle=("#fff58a");
+   ctx.fillStyle=("#ffffff");
       window.invisabledamage1=(true);
        setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
     }
