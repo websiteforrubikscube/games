@@ -9,6 +9,7 @@ this.position={x:425,y:300};
   window.invisabledamage1=(false);
   window.color2=("#fce700");
   this.hit=0;
+  this.immune=(false);
 }
 draw(ctx){
   if(this.visable==(true)){
@@ -34,11 +35,15 @@ this.position.x=this.position.x-10;
     
     if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+150)){
     if((window.PlayerY>this.position.y-151)&&(window.PlayerY+150<this.position.y+11)){
+      if(this.immune==(false)){
       this.hit=this.hit+1;
       if(this.hit==2){
        window.color2=("#fdff9e");
         window.invisabledamage1=(true);
+        this.immune = (true);
+        setTimeout(function(enemy){ enemy.immune=(false); }, 1000,this);
         setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
+      }
       }
    window.color2=("#fdff9e");
       window.invisabledamage1=(true);
