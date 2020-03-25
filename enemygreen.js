@@ -36,6 +36,10 @@ this.position.x= this.position.x - 5;
   if(this.position.x>800){
   this.position.x=800;
   }
+  if(window.load1==(true)){
+  this.position.x=400;
+    this.position.y=300;
+  }
   window.enemy1c = this.position.y+50;
   window.enemy1c2= this.position.x+100;
   window.visable = this.visable;
