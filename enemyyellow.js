@@ -8,6 +8,7 @@ this.position={x:425,y:300};
   this.visable=(true);
   window.invisabledamage1=(false);
   window.color2=("#fce700");
+  this.hit=0;
 }
 draw(ctx){
   if(this.visable==(true)){
@@ -33,9 +34,17 @@ this.position.x=this.position.x-10;
     
     if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+150)){
     if((window.PlayerY>this.position.y-151)&&(window.PlayerY+150<this.position.y+11)){
+      this.hit=this.hit+1;
+      if(this.hit==2){
+       window.color2=("#fdff9e");
+        window.invisabledamage1=(true);
+        setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
+      }
    window.color2=("#fdff9e");
       window.invisabledamage1=(true);
        setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
+      setTimeout(function(enemy){ enemy.invisabledamage1=(false); }, 1000,window);
+      setTimeout(function(enemy){ enemy.color2=("#fce700"); }, 1000,window);
     }
     }
   if(this.position.x<0){
