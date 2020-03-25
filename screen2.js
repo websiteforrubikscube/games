@@ -10,7 +10,8 @@ ctx.fillRect(this.position.x,this.position.y,this.width,this.height);
 }
 proccessloop(){
 if(window.PlayerX+100>950){
-
+window.screen2=(false);
+  window.screen3=(true);
 }
 }
 }
