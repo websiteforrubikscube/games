@@ -14,7 +14,7 @@ export default function launch(){
  let enemygreen = new Enemygreen();
  let sky = new Sky();
  let screen1 = new Screen1();
- let enemyyellow = new Enemyyellow();
+ let enemyyellow = new Enemyyellow(425,300);
  
  gameloop();
  
