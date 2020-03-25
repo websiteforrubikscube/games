@@ -10,7 +10,7 @@ this.position={x:950, y:0};
  this.move=(true)
 }
 draw(ctx){
-ctx.fillStyle=("#000");
+ctx.fillStyle=("#87CEEB");
 ctx.fillRect(this.position.x,this.position.y, this.width, this.height);
 }
  proccessloop(){
