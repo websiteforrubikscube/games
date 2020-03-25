@@ -72,7 +72,7 @@ if(window.screen1==(true)){
    enemyyellow.proccessloop(ctx);
       if(runnumber<2){
     window.screen2load=(true);
- setTimeout(function(load){ load.screen2load=(false); }, 34,window);
+ setTimeout(function(load){ load.screen3load=(false); }, 34,window);
    }
   }
 window.setTimeout(function() {gameloop();}, 33);
