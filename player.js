@@ -59,6 +59,9 @@ proccessloop(ctx){
     this.speed=this.speed+1;
       this.position.y = this.position.y + this.speed;
   }
+  if(this.position.y>250){
+   this.position.y=250; 
+  }
   if((this.position.y+150)>(window.enemy1c-40)){
   if((this.position.x+100)>(window.enemy1c2-100)){
     if((this.position.x)<(window.enemy1c2+100)){
