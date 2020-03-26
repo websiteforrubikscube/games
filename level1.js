@@ -42,6 +42,8 @@ if(window.screen1==(true)){
  screen1.proccessloop();
  if(runnumber<2){
  window.screen1load=(true);
+  window.screenload=(true);
+  setTimeout(function(load){ load.screenload=(false); }, 34,window);
  setTimeout(function(load){ load.screen1load=(false); }, 34,window);
  }
 }
@@ -58,6 +60,8 @@ if(window.screen1==(true)){
     screen2.proccessloop();
    if(runnumber2<2){
     window.screen2load=(true);
+    window.screenload=(true);
+     setTimeout(function(load){ load.screenload=(false); }, 34,window);
  setTimeout(function(load){ load.screen2load=(false); }, 34,window);
    }
   }
@@ -75,6 +79,8 @@ if(window.screen1==(true)){
    enemyyellow.proccessloop(ctx);
       if(runnumber3<5){
     window.screen3load=(true);
+       window.screenload=(true);
+        setTimeout(function(load){ load.screenload=(false); }, 34,window);
  setTimeout(function(load){ load.screen3load=(false); }, 34,window);
    }
   }
