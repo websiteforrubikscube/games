@@ -32,11 +32,10 @@ export default class Player{
     }
   }
   
-proccessloop(ctx){
-
    if(this.position.y>249){
    var speed=-25; 
   }
+proccessloop(ctx){
   
     if ((keys[39]==true)&&(this.position.x<900)){
       if(this.living==(true)){
@@ -49,10 +48,8 @@ proccessloop(ctx){
            }
     }
    if ((keys[38]==true)&&(this.living==true)){
-     if(this.position.y>249){
        speed=speed+1;
       this.position.y = this.position.y + speed;
-     }
     }
   if ((keys[40]==true)&&(this.living==true)){
       this.position.y = this.position.y + 5;
