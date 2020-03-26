@@ -73,7 +73,7 @@ if(window.screen1==(true)){
   player.proccessloop(ctx);
    enemygreen.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
-      if(runnumber3<2){
+      if(runnumber3<5){
     window.screen3load=(true);
  setTimeout(function(load){ load.screen3load=(false); }, 34,window);
    }
