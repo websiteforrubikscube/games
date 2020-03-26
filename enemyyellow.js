@@ -60,6 +60,9 @@ this.position.x=this.position.x-10;
     if(this.living=true){
     this.visable=(true);
     }
+     if(this.living=false){
+    this.visable=(false);
+    }
     
   if(this.position.x<0){
   this.position.x=0;
