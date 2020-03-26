@@ -45,14 +45,18 @@ proccessloop(ctx){
            }
     }
    if ((keys[38]==true)&&(this.living==true)){
-      this.position.y = this.position.y - 5;
+     if(this.position.y>249){
+       speed=speed+1;
+      this.position.y = this.position.y - speed;
+     }
     }
   if ((keys[40]==true)&&(this.living==true)){
       this.position.y = this.position.y + 5;
-    }
-  if(this.position.y > 250){
-  this.position.y = 250;
   }
+  if(this.position.y>249){
+   var speed=-15; 
+  }
+  if(this.position.y>)
   if((this.position.y+150)>(window.enemy1c-40)){
   if((this.position.x+100)>(window.enemy1c2-100)){
     if((this.position.x)<(window.enemy1c2+100)){
