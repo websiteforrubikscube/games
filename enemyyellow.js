@@ -5,12 +5,12 @@ constructor(){
 this.width=150;
 this.height=100;
 this.position={x:425,y:300};
-  window.visabley=(true);
+  this.visable=(true);
   window.invisabledamage1=(false);
   window.color2=("#fce700");
   this.hit=0;
   this.immune=(false);
-  window.livingy=(true);
+  this.living=(true);
 }
 draw(ctx){
   if(window.visabley==(true)){
@@ -40,10 +40,10 @@ this.position.x=this.position.x-10;
       if(this.immune==(false)){
       this.hit=this.hit+1;
       if(this.hit>1){
-        window.livingy=(false);
+        this.living=(false);
        window.color2=("#fdff9e");
         window.invisabledamage1=(true);
-        setTimeout(function(enemy){ enemy.visabley=(false); }, 1000,window);
+        setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
       }
         if(this.hit<2){
          this.immune = (true);
@@ -57,7 +57,7 @@ this.position.x=this.position.x-10;
     }
     }
     }
-    if(window.livingy==(true)){
+    if(this.livingy==(true)){
     this.visable=(true);
     }
   if(this.position.x<0){
@@ -71,10 +71,10 @@ this.position.x=this.position.x-10;
       this.position.y=300;
     }
     if(window.screen3load==(true)){
-      window.livingy=(true);
+      this.living=(true);
       this.immune=(false);
       this.hit=0;
-      window.visabley=(true);
+      this.visable=(true);
       window.invisabledamage=(false);
      window.color2=("#fce700");
   this.position.x=375;
