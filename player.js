@@ -50,6 +50,10 @@ proccessloop(ctx){
       this.position.y = this.position.y + speed;
      }
     }
+  if(this.position.y<250){
+       speed=speed+1;
+      this.position.y = this.position.y + speed;
+     }
   if ((keys[40]==true)&&(this.living==true)){
       this.position.y = this.position.y + 5;
   }
