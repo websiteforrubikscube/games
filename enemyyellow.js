@@ -57,7 +57,7 @@ this.position.x=this.position.x-10;
     }
     }
     }
-    if(this.livingy==(true)){
+    if(this.living==(true)){
     this.visable=(true);
     }
   if(this.position.x<0){
