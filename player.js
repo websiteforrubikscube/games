@@ -10,6 +10,7 @@ export default class Player{
     this.width = 100;
     this.height = 150;
     this.position ={x:0, y:250};
+    this.speed=0; 
     this.visable = (true);
    this.living=(true);
     window.color1 = ("#ffad47");
@@ -32,11 +33,11 @@ export default class Player{
     }
   }
   
- var speed=0; 
+ 
 proccessloop(ctx){
   
    if(this.position.y>249){
-    speed=-10;
+    this.speed=-10;
   }
   
     if ((keys[39]==true)&&(this.position.x<900)){
@@ -55,8 +56,8 @@ proccessloop(ctx){
      }
     }
   if(this.position.y<250){
-    speed=speed+1;
-      this.position.y = this.position.y + speed;
+    this.speed=this.speed+1;
+      this.position.y = this.position.y + this.speed;
   }
   if((this.position.y+150)>(window.enemy1c-40)){
   if((this.position.x+100)>(window.enemy1c2-100)){
