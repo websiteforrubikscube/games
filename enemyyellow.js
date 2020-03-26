@@ -39,7 +39,7 @@ this.position.x=this.position.x-10;
       if(window.screenload==(false)){
       if(this.immune==(false)){
       this.hit=this.hit+1;
-      if(this.hit==2){
+      if(this.hit>1){
         this.living=(false);
        window.color2=("#fdff9e");
         window.invisabledamage1=(true);
