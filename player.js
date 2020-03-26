@@ -36,7 +36,7 @@ export default class Player{
 proccessloop(ctx){
   
    if(this.position.y>249){
-   var speed=-25; 
+   var speed=-10; 
   }
   
     if ((keys[39]==true)&&(this.position.x<900)){
