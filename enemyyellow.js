@@ -57,9 +57,6 @@ this.position.x=this.position.x-10;
     }
     }
     }
-    if(this.living=true){
-    window.visabley=(true);
-    }
      if(this.living=false){
     window.visabley=(false);
     }
