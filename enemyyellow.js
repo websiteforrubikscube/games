@@ -82,7 +82,7 @@ this.position.x=this.position.x-10;
   }
     window.enemy2X=this.position.x;
     window.enemy2Y=this.position.y;
-    window.visable1=window.visabley;
+    window.visable1=this.visable;
   }
 
 }
