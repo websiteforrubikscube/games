@@ -35,7 +35,6 @@ this.position.x=this.position.x-10;
     
     if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+150)){
     if((window.PlayerY>this.position.y-151)&&(window.PlayerY+150<this.position.y+11)){
-       if(window.screen3load==(false)){
       if(this.immune==(false)){
       this.hit=this.hit+1;
       if(this.hit==2){
@@ -52,7 +51,6 @@ this.position.x=this.position.x-10;
       setTimeout(function(enemy){ enemy.color2=("#fce700"); }, 1000,window);
         }
         }
-    }
     }
     }
   if(this.position.x<0){
