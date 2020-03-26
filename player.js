@@ -47,7 +47,7 @@ proccessloop(ctx){
    if ((keys[38]==true)&&(this.living==true)){
      if(this.position.y>249){
        speed=speed+1;
-      this.position.y = this.position.y - speed;
+      this.position.y = this.position.y + speed;
      }
     }
   if ((keys[40]==true)&&(this.living==true)){
