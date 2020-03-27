@@ -6,6 +6,8 @@ let level2 = new Level2();
 
 export default function launch(){
 level1.proccess();
+  if(window.screen4=(true)){
 level2.proccess();
+  }
 }
 window.launch=launch;
