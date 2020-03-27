@@ -6,6 +6,7 @@ let level2 = new Level2();
 
 window.screen1=(true);
 export default function launch(){
+  gameloop();
   function gameloop(){
   if(window.screen1==(true)){
 level1.proccess();
