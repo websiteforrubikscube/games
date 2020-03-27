@@ -43,7 +43,7 @@ ground.draw(ctx);
  setTimeout(function(load){ load.screen1load=(false); }, 34,window);
  }
 }
-  window.setTimeout(function() {gameloop();}, 33);
+  window.setTimeout(function() {gameloop2();}, 33);
 }
 }
 }
