@@ -5,6 +5,12 @@ this.height=400;
 this.position={x:950,y:0};
 }
 draw(ctx){
-ctx.fillStyle=("#");
+ctx.fillStyle=("#90EE90");
+  ctx.fillRect(this.position.x,this.poisition.y,this.width,this.height);
 }
+  proccessloop(){
+   if(window.PlayerX>850){
+console.log("hello");
+   } 
+  }
 }
