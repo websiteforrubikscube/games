@@ -17,12 +17,14 @@ ctx.fillStyle=(window.color);
   }
   }
 proccessloop(ctx){
+  //movement
 if((window.PlayerX-50>this.position.x)&&(window.PlayerY>249)){
 this.position.x= this.position.x + 5;
 }
   if((window.PlayerX-50<this.position.x)&&(window.PlayerY>249)){
 this.position.x= this.position.x - 5;
 }
+  //death
   if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+200)){
     if((window.PlayerY>149)&&(window.PlayerY<159)){
  window.color =("#a6ffad");
@@ -36,12 +38,17 @@ this.position.x= this.position.x - 5;
   if(this.position.x>800){
   this.position.x=800;
   }
+  //screen movement
     if(window.screen3load==(true)){
       this.visable=(true);
       window.nodamage1=(false);
        window.color=('#90EE90');
   this.position.x=575;
     this.position.y=300;
+  }
+  if(window.screen4load==(true)){
+  this.visable=(false);
+    window.nodamage1=(true);
   }
   window.enemy1c = this.position.y+50;
   window.enemy1c2= this.position.x+100;
