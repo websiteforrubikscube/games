@@ -35,20 +35,30 @@ export default class Player{
   
  
 proccessloop(ctx){
-  
+  //movement
    if(this.position.y>249){
     this.speed=-20;
   }
   
     if ((keys[39]==true)&&(this.position.x<900)){
       if(this.living==(true)){
+        if(this.position.y>249){
       this.position.x = this.position.x + 10;
+        }
+        if(this.position.y<250){
+        this.position.x=this.position.x+20;
+        }
          }
     }
         if ((keys[37]==true)&&(this.position.x>0)){
-        if(this.living==(true)){
+       if(this.living==(true)){
+        if(this.position.y>249){
       this.position.x = this.position.x - 10;
-           }
+        }
+        if(this.position.y<250){
+        this.position.x=this.position.x - 20;
+        }
+         }
     }
    if ((keys[38]==true)&&(this.living==true)){
      if(this.position.y>249){
@@ -62,6 +72,8 @@ proccessloop(ctx){
   if(this.position.y>250){
    this.position.y=250; 
   }
+  
+  //death
   if((this.position.y+150)>(window.enemy1c-40)){
   if((this.position.x+100)>(window.enemy1c2-100)){
     if((this.position.x)<(window.enemy1c2+100)){
@@ -94,6 +106,7 @@ proccessloop(ctx){
     }
   }
   }
+  //screen movement
   if(window.screen2==(true)){
    if(window.move == (false)){
     if(this.living == (true)){
