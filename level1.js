@@ -31,7 +31,7 @@ export default class Level1{
  function erraseCanvas() {
         ctx.clearRect(0,0,1000,500);
     }
-   }
+   
  function gameloop(){
  erraseCanvas();
 runnumber++;
@@ -93,4 +93,4 @@ if(window.screen1==(true)){
 window.setTimeout(function() {gameloop();}, 33);
  }
 }
-
+}
