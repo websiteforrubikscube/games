@@ -5,7 +5,7 @@ import Enemyyellow from "./enemyyellow.js";
 import Sky from "./sky.js";
 import Screen3 from "./screen3.js";
 
-export default class Level2(){
+export default class Level2{
  proccess(){
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
