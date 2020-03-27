@@ -7,10 +7,10 @@ import Sky from "./sky.js";
 import Screen1 from "./screen1.js";
 import Screen2 from "./screen2.js";
 import Screen3 from "./screen3.js";
-export default class Level1{
   var runnumber=0;
  var runnumber2=0;
  var runnumber3=0;
+export default class Level1{
  proccess(){
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
