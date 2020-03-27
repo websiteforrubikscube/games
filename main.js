@@ -8,3 +8,4 @@ export default function launch(){
 level1.proccess();
 level2.proccess();
 }
+window.launch=launch;
