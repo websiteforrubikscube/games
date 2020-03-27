@@ -1,4 +1,5 @@
- import Ground from "./ground.js";
+
+import Ground from "./ground.js";
 import Player from "./player.js";
 import Enemygreen from "./enemygreen.js";
 import Enemyyellow from "./enemyyellow.js";
@@ -6,8 +7,8 @@ import Sky from "./sky.js";
 import Screen1 from "./screen1.js";
 import Screen2 from "./screen2.js";
 import Screen3 from "./screen3.js";
-
-export default function launch(){
+export default class Level1{
+ proccess(){
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
  
@@ -90,8 +91,5 @@ if(window.screen1==(true)){
   }
 window.setTimeout(function() {gameloop();}, 33);
  }
- 
-
-} 
-
-window.launch=launch;
+}
+}
