@@ -7,14 +7,7 @@ import Sky from "./sky.js";
 import Screen1 from "./screen1.js";
 import Screen2 from "./screen2.js";
 import Screen3 from "./screen3.js";
-  var runnumber=0;
- var runnumber2=0;
- var runnumber3=0;
-export default class Level1{
- proccess(){
-  let canv = document.getElementById("Screen");
-  let ctx = canv.getContext('2d');
- 
+
  let ground = new Ground();
  let player = new Player();
  let enemygreen = new Enemygreen();
@@ -23,6 +16,16 @@ export default class Level1{
  let screen2 = new Screen2();
  let screen3 = new Screen3();
  let enemyyellow = new Enemyyellow();
+
+  var runnumber=0;
+ var runnumber2=0;
+ var runnumber3=0;
+export default class Level1{
+ proccess(){
+  let canv = document.getElementById("Screen");
+  let ctx = canv.getContext('2d');
+ 
+
  
  
 
