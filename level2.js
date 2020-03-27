@@ -5,7 +5,8 @@ import Enemyyellow from "./enemyyellow.js";
 import Sky from "./sky.js";
 import Screen3 from "./screen3.js";
 
-export default function launch2(){
+export default class Level2(){
+ proccess(){
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
  
@@ -41,6 +42,7 @@ ground.draw(ctx);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
  setTimeout(function(load){ load.screen1load=(false); }, 34,window);
  }
+}
 }
 }
 }
