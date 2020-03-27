@@ -6,11 +6,14 @@ let level2 = new Level2();
 
 window.screen1=(true);
 export default function launch(){
+  function gameloop(){
   if(window.screen1==(true)){
 level1.proccess();
   }
   if(window.screen4==(true)){
 level2.proccess();
+  }
+    window.setTimeout(function() {gameloop();}, 33);
   }
 }
 window.launch=launch;
