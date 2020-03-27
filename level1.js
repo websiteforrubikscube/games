@@ -20,6 +20,8 @@ import Screen3 from "./screen3.js";
   var runnumber=0;
  var runnumber2=0;
  var runnumber3=0;
+
+window.screen4load=(false);
 export default class Level1{
  proccess(){
   let canv = document.getElementById("Screen");
