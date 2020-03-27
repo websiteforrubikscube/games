@@ -46,7 +46,7 @@ proccessloop(ctx){
       this.position.x = this.position.x + 10;
         }
         if(this.position.y<250){
-        this.position.x=this.position.x+20;
+        this.position.x=this.position.x+15;
         }
          }
     }
@@ -56,7 +56,7 @@ proccessloop(ctx){
       this.position.x = this.position.x - 10;
         }
         if(this.position.y<250){
-        this.position.x=this.position.x - 20;
+        this.position.x=this.position.x - 15;
         }
          }
     }
