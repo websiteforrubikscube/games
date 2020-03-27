@@ -36,7 +36,6 @@ sky.draw(ctx);
 ground.draw(ctx);
   player.draw(ctx);
   player.proccessloop(ctx);
-  ground.proccessloop(ctx);
  if(runnumber<2){
  window.screen4load=(true);
   window.screenload=(true);
