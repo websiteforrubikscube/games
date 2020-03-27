@@ -5,6 +5,7 @@ import Enemyyellow from "./enemyyellow.js";
 import Sky from "./sky.js";
 import Screen1 from "./screen1.js";
 import Screen2 from "./screen2.js";
+import Screen3 from "./screen3.js";
 
 export default function launch(){
   let canv = document.getElementById("Screen");
@@ -16,6 +17,7 @@ export default function launch(){
  let sky = new Sky();
  let screen1 = new Screen1();
  let screen2 = new Screen2();
+ let screen3 = new Screen3();
  let enemyyellow = new Enemyyellow();
  
  gameloop();
@@ -70,6 +72,7 @@ if(window.screen1==(true)){
       runnumber3++;
    window.invisabledamage=(false);
   sky.draw(ctx);
+   screen3.draw(ctx);
   ground.draw(ctx);
  player.draw(ctx);
    enemygreen.draw(ctx);
@@ -77,6 +80,7 @@ if(window.screen1==(true)){
   player.proccessloop(ctx);
    enemygreen.proccessloop(ctx);
    enemyyellow.proccessloop(ctx);
+   screen3.proccessloop();
       if(runnumber3<5){
     window.screen3load=(true);
        window.screenload=(true);
