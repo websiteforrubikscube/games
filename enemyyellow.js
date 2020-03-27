@@ -57,7 +57,7 @@ this.position.x=this.position.x-10;
     }
     }
     }
-    if(this.hit==0;){
+    if(this.hit==0){
     this.living=(true);
     }
     if(this.living==(true)){
