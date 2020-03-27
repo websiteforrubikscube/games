@@ -27,7 +27,7 @@ export default class Level1{
  var runnumber2=0;
  var runnumber3=0;
  
- 
+ }
  function erraseCanvas() {
         ctx.clearRect(0,0,1000,500);
     }
@@ -92,4 +92,4 @@ if(window.screen1==(true)){
 window.setTimeout(function() {gameloop();}, 33);
  }
 }
-}
+
