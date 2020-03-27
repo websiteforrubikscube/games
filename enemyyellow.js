@@ -57,6 +57,9 @@ this.position.x=this.position.x-10;
     }
     }
     }
+    if(this.hit==0;){
+    this.living=(true);
+    }
     if(this.living==(true)){
     this.visable=(true);
     }
@@ -80,6 +83,10 @@ this.position.x=this.position.x-10;
   this.position.x=375;
     this.position.y=300;
   }
+    if(screen4load==(true)){
+    window.invisabledamage=(true);
+      this.visable=(false);
+    }
     window.enemy2X=this.position.x;
     window.enemy2Y=this.position.y;
     window.visable1=this.visable;
