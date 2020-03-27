@@ -39,7 +39,7 @@ ground.draw(ctx);
  window.screen4load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
- setTimeout(function(load){ load.screen1load=(false); }, 34,window);
+ setTimeout(function(load){ load.screen4load=(false); }, 34,window);
  }
 }
 }
