@@ -10,7 +10,8 @@ ctx.fillStyle=("#90EE90");
 }
   proccessloop(){
    if(window.PlayerX>850){
-console.log("hello");
+window.screen3=(false);
+     window.screen4=(true);
    } 
   }
 }
