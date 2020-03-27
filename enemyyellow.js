@@ -78,13 +78,13 @@ this.position.x=this.position.x-10;
       this.immune=(false);
       this.hit=0;
       this.visable=(true);
-      window.invisabledamage=(false);
+      window.invisabledamage1=(false);
      window.color2=("#fce700");
   this.position.x=375;
     this.position.y=300;
   }
     if(screen4load==(true)){
-    window.invisabledamage=(true);
+    window.invisabledamage1=(true);
       this.visable=(false);
       this.hit=2;
     }
