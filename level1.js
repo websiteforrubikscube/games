@@ -38,6 +38,8 @@ export default class Level1{
  erraseCanvas();
 runnumber++;
 if(window.screen1==(true)){
+ ctx.font="100px";
+ ctx.fillText("Level 1",100,100);
   screen1.draw(ctx);
   sky.draw(ctx);
   ground.draw(ctx);
