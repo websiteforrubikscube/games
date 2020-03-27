@@ -86,6 +86,7 @@ this.position.x=this.position.x-10;
     if(screen4load==(true)){
     window.invisabledamage=(true);
       this.visable=(false);
+      this.hit=2;
     }
     window.enemy2X=this.position.x;
     window.enemy2Y=this.position.y;
