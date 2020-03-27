@@ -22,7 +22,7 @@ export default class Level2{
  var runnumber=0;
  var runnumber2=0;
  var runnumber3=0;
- 
+ } 
  
  function erraseCanvas() {
         ctx.clearRect(0,0,1000,500);
@@ -45,4 +45,4 @@ ground.draw(ctx);
 }
 }
 }
-}
+
