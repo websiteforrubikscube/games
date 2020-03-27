@@ -5,6 +5,7 @@ import Enemyyellow from "./enemyyellow.js";
 import Sky from "./sky.js";
 import Screen3 from "./screen3.js";
 
+window.screen4=(false);
 export default class Level2{
  proccess(){
   let canv = document.getElementById("Screen");
