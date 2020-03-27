@@ -21,7 +21,6 @@ export default class Level1{
  let screen3 = new Screen3();
  let enemyyellow = new Enemyyellow();
  
- gameloop();
  
  var runnumber=0;
  var runnumber2=0;
@@ -32,7 +31,6 @@ export default class Level1{
         ctx.clearRect(0,0,1000,500);
     }
    
- function gameloop(){
  erraseCanvas();
 runnumber++;
 if(window.screen1==(true)){
@@ -90,7 +88,5 @@ if(window.screen1==(true)){
  setTimeout(function(load){ load.screen3load=(false); }, 34,window);
    }
   }
-window.setTimeout(function() {gameloop();}, 33);
- }
 }
 }
