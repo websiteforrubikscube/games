@@ -12,7 +12,7 @@ this.position={x:425,y:300};
 }
 draw(ctx){
   if(this.visable==(true)){
-ctx.fillStyle=(window.color2);
+ctx.fillStyle=(window.color3);
 ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
   }
 }
