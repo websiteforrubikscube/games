@@ -106,6 +106,21 @@ proccessloop(ctx){
     }
   }
   }
+  if((this.position.y+150)>(window.enemy2Y2+40)){
+  if((this.position.x+100)>(window.enemy2X2)){
+    if((this.position.x)<(window.enemy2X+150)){
+         if((window.visable2==true)&&(window.invisabledamage2==(false))){
+           this.living=(false);
+    window.color1=("#ffd5a1");
+           keys[37]=(false);
+            keys[38]=(false);
+            keys[39]=(false);
+            keys[40]=(false);
+              setTimeout(function(player){ player.visable=(false); }, 1000,this);
+         }
+    }
+  }
+  }
   //screen movement
   if(window.screen2==(true)){
    if(window.move == (false)){
