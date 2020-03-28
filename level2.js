@@ -2,6 +2,7 @@
 import Player from "./player.js";
 import Enemygreen from "./enemygreen.js";
 import Enemyyellow from "./enemyyellow.js";
+import Enemyyellow2 from "./enemyyellow2.js";
 import Sky from "./sky.js";
 import Screen3 from "./screen3.js";
 
@@ -11,6 +12,7 @@ import Screen3 from "./screen3.js";
  let sky = new Sky();
  let screen3 = new Screen3();
  let enemyyellow = new Enemyyellow();
+let enemyyellow2 = new Enemyyellow2();
  
 var runnumber=0;
  var runnumber2=0;
@@ -34,9 +36,12 @@ if(window.screen4==(true)){
 sky.draw(ctx);
 ground.draw(ctx);
   player.draw(ctx);
+ enemyyellow2.draw(ctx);
+ enemyyellow.draw(ctx);
   player.proccessloop(ctx);
  enemygreen.proccessloop(ctx);
  enemyyellow.proccessloop(ctx);
+ enemyyellow2.proccessloop(ctx);
  if(runnumber<2){
  window.screen4load=(true);
   window.screenload=(true);
