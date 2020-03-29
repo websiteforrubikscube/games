@@ -87,7 +87,7 @@ this.position.x=this.position.x-10;
     }
     window.enemy2X2=this.position.x;
     window.enemy2Y2=this.position.y;
-    window.visabl2=this.visable;
+    window.visable2=this.visable;
   }
 
 }
