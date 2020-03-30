@@ -5,6 +5,7 @@ import Enemyyellow from "./enemyyellow.js";
 import Enemyyellow2 from "./enemyyellow2.js";
 import Sky from "./sky.js";
 import Screen3 from "./screen3.js";
+import Screen4 from "./screen4.js";
 
  let ground = new Ground();
  let player = new Player();
