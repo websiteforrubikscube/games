@@ -86,6 +86,7 @@ this.position.x=this.position.x-10;
       this.position.x=300;
     }
     if(screen5load==(true)){
+      console.log("DIE PLEASE");
     this.living=(false);
     window.invisabledamage2=(true);
       this.visable=(false);
