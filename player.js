@@ -37,7 +37,7 @@ export default class Player{
 proccessloop(ctx){
   //movement
    if((this.position.y>249)||(window.touch==(true))){
-   speed=0;
+   this.speed=0;
   }
   
     if ((keys[39]==true)&&(this.position.x<900)){
