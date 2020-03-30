@@ -62,10 +62,10 @@ ground.draw(ctx);
  enemyyellow.proccessloop(ctx);
  enemyyellow2.proccessloop(ctx);
  if(runnumber<2){
- window.screen4load=(true);
+ window.screen5load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
- setTimeout(function(load){ load.screen4load=(false); }, 34,window);
+ setTimeout(function(load){ load.screen5load=(false); }, 34,window);
  }
 }
 }
