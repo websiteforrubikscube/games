@@ -72,6 +72,9 @@ proccessloop(ctx){
   if(this.position.y>250){
    this.position.y=250; 
   }
+  if(window.touchY==(true)){
+  this.position.y=this.position.y-1;
+  }
   
   //death
   if((this.position.y+150)>(window.enemy1c-40)){
