@@ -53,5 +53,20 @@ ground.draw(ctx);
  setTimeout(function(load){ load.screen4load=(false); }, 34,window);
  }
 }
+  if(window.screen5==(true)){
+sky.draw(ctx);
+ground.draw(ctx);
+  player.draw(ctx);
+  player.proccessloop(ctx);
+ enemygreen.proccessloop(ctx);
+ enemyyellow.proccessloop(ctx);
+ enemyyellow2.proccessloop(ctx);
+ if(runnumber<2){
+ window.screen4load=(true);
+  window.screenload=(true);
+  setTimeout(function(load){ load.screenload=(false); }, 34,window);
+ setTimeout(function(load){ load.screen4load=(false); }, 34,window);
+ }
+}
 }
 }
