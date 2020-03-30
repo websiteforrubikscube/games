@@ -11,9 +11,10 @@ export default function launch(){
   if(window.start==(true)){
 level1.proccess();
   }
-  if(window.screen4==(true)){
+    if(window.screen4==(true)){
     window.start2=true;
-    if(window.start2==true)
+    }
+    if(window.start2==true){
     window.start=(false);
 level2.proccess();
   }
