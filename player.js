@@ -61,7 +61,7 @@ proccessloop(ctx){
          }
     }
    if ((keys[38]==true)&&(this.living==true)){
-     if((this.position.y>249)||(window.touch)){
+     if((this.position.y>249)||(window.touch==true)){
       this.position.y=this.position.y-1;
       this.speed=-20;
        
@@ -74,7 +74,7 @@ proccessloop(ctx){
   if(this.position.y>250){
    this.position.y=250; 
   }
-  if(window.touchY==(true)){
+  if((window.touchY==true)&&(keys[38]==false)){
   this.position.y=window.obstacle1Y-299;
   }
   
