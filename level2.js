@@ -12,6 +12,7 @@ import Screen4 from "./screen4.js";
  let enemygreen = new Enemygreen();
  let sky = new Sky();
  let screen3 = new Screen3();
+let screen4 = new Screen4();
  let enemyyellow = new Enemyyellow();
 let enemyyellow2 = new Enemyyellow2();
  
@@ -34,6 +35,7 @@ export default class Level2{
  erraseCanvas();
 runnumber++;
 if(window.screen4==(true)){
+ screen4.draw(ctx);
 sky.draw(ctx);
 ground.draw(ctx);
   player.draw(ctx);
@@ -43,6 +45,7 @@ ground.draw(ctx);
  enemygreen.proccessloop(ctx);
  enemyyellow.proccessloop(ctx);
  enemyyellow2.proccessloop(ctx);
+ screen4.proccessloop();
  if(runnumber<2){
  window.screen4load=(true);
   window.screenload=(true);
