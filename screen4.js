@@ -3,7 +3,6 @@ constructor(){
 this.width=50;
 this.height=500;
 this.position={x:950, y:0};
- window.screen4=(true);
  window.screen5=(false);
  this.move=(true)
 }
