@@ -1,5 +1,5 @@
 export default class Obstacle1{
-contructor(){
+constructor(){
 this.height=100;
 this.width=100;
 this.position={x:450,y:300};
