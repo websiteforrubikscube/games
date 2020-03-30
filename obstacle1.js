@@ -18,10 +18,12 @@ if((window.PlayerX<550)){
 window.touch=(true);
   window.touchY=(true);
 }else{
-window.touchY=(false)
+window.touchY=(false);
+  window.touch=(false);
 }
 }else{
-window.touchY=(false)
+window.touchY=(false);
+  window.touch=(false);
 }
 }
 
