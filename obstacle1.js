@@ -14,6 +14,7 @@ ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
 proccessloop(){
 if((window.PlayerY+151>this.position.y)&&(window.PlayerX+150>this.position.x)){
 if(window.PlayerX<550){
+  console.log("hello");
 window.touch=(true);
   window.touchY=(true);
 }else{
