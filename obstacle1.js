@@ -5,7 +5,7 @@ this.width=100;
 this.position={x:450,y:300};
 }
 draw(ctx){
-ctx.fillStyle=("");
+ctx.fillStyle=("#008000");
 ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
 }
 proccessloop(){
