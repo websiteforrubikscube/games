@@ -54,6 +54,7 @@ ground.draw(ctx);
  }
 }
   if(window.screen5==(true)){
+   runnumber2++;
 sky.draw(ctx);
 ground.draw(ctx);
   player.draw(ctx);
@@ -61,7 +62,7 @@ ground.draw(ctx);
  enemygreen.proccessloop(ctx);
  enemyyellow.proccessloop(ctx);
  enemyyellow2.proccessloop(ctx);
- if(runnumber<2){
+ if(runnumber2<2){
  window.screen5load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
