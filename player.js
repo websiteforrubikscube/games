@@ -75,7 +75,7 @@ proccessloop(ctx){
    this.position.y=250; 
   }
   if(window.touchY==(true)){
-  this.position.y=window.obstacle1Y-150;
+  this.position.y=window.obstacle1Y-300;
   }
   
   //death
