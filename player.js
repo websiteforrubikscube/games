@@ -63,7 +63,7 @@ proccessloop(ctx){
    if ((keys[38]==true)&&(this.living==true)){
      if((this.position.y>249)||(window.touch)){
       this.position.y=this.position.y-1;
-       speed=-20;
+      this.speed=-20;
        
      }
     }
