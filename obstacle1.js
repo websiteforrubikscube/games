@@ -25,6 +25,7 @@ window.touchY=(false);
 window.touchY=(false);
   window.touch=(false);
 }
+  window.obstacle1Y=this.position.x;
 }
 
 }
