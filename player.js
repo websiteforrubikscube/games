@@ -78,7 +78,7 @@ proccessloop(ctx){
   this.position.y=window.obstacle1Y-300;
   }
   //colision
-  if(window.touchX1=(true)){
+  if(window.touchX1==(true)){
   this.position.x=window.obstacle1X-100;
   }
   //death
