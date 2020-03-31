@@ -29,6 +29,11 @@ if(window.PlayerY+150>this.position.y+3){
 window.touchX1=(true);
 }else{window.touchX1=(false);}
   }else{window.touchX1=(false);}
+   if((window.PlayerX<this.position.x+100)&&(window.PlayerX+50>this.position.x+50)){
+if(window.PlayerY+150>this.position.y+3){
+window.touchX2=(true);
+}else{window.touchX2=(false);}
+  }else{window.touchX2=(false);}
   window.obstacle1Y=this.position.y;
   window.obstacle1X=this.position.x;
 }
