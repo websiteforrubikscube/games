@@ -14,7 +14,6 @@ ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
 proccessloop(){
 if((window.PlayerY+151>this.position.y)&&(window.PlayerX+100>this.position.x)){
 if((window.PlayerX<this.position.x+100)&&(window.PlayerY+151<this.position.y+3)){
-  console.log("hello");
 window.touch=(true);
   window.touchY=(true);
 }else{
@@ -28,8 +27,8 @@ window.touchY=(false);
   if((window.PlayerX+100>this.position.x)&&(window.PlayerX+50<this.position.x+50)){
 if(window.PlayerY+150>this.position.y+3){
 window.touchX1=(true);
-}
-  }
+}else{window.touchX1=(false);}
+  }else{window.touchX1=(false);}
   window.obstacle1Y=this.position.y;
   window.obstacle1X=this.position.x;
 }
