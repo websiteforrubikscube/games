@@ -75,7 +75,7 @@ proccessloop(ctx){
    this.position.y=250; 
   }
   if((window.touchY==true)&&(keys[38]==false)){
-  this.position.y=window.obstacle1Y-299;
+  this.position.y=window.obstacle1X-299;
   }
   //death
   if((this.position.y+150)>(window.enemy1c-40)){
