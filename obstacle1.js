@@ -30,7 +30,8 @@ if(window.PlayerY+151>this.position.y+3){
 window.touchX1=(true);
 }
   }
-  window.obstacle1Y=this.position.x;
+  window.obstacle1Y=this.position.y;
+  window.obstacle1X=this.position.x;
 }
 
 }
