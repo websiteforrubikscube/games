@@ -51,7 +51,7 @@ proccessloop(ctx){
          }
     }
         if ((keys[37]==true)&&(this.position.x>0)){
-       if(this.living==(true)){
+       if((this.living==(true))&&(window.touchX2==(false))){
         if(this.position.y>249){
       this.position.x = this.position.x - 10;
         }
