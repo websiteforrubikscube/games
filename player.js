@@ -41,7 +41,7 @@ proccessloop(ctx){
   }
   
     if ((keys[39]==true)&&(this.position.x<900)){
-      if(this.living==(true)){
+      if((this.living==(true))&&(window.touch1X==(true))){
         if(this.position.y>249){
       this.position.x = this.position.x + 10;
         }
@@ -75,11 +75,8 @@ proccessloop(ctx){
    this.position.y=250; 
   }
   if((window.touchY==true)&&(keys[38]==false)){
-  this.position.y=window.obstacle1Y-300;
+  this.position.y=window.obstacle1Y-299;
   }
-  //colision
-  if(window.touchX1==(true)){
-  this.position.x=window.obstacle1X-100;
   }
   //death
   if((this.position.y+150)>(window.enemy1c-40)){
