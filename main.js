@@ -6,6 +6,8 @@ let level2 = new Level2();
 
 window.start=(true);
 window.touchY=(false);
+window.touchX1=(false);
+window.touchX2=(false);
 export default function launch(){
   gameloop();
   function gameloop(){
