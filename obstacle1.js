@@ -13,7 +13,7 @@ ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
 }
 proccessloop(){
 if((window.PlayerY+151>this.position.y)&&(window.PlayerX+100>this.position.x)){
-if((window.PlayerX<550)){
+if((window.PlayerX<550)&&(window.PlayerY+151<this.position.y+3)){
   console.log("hello");
 window.touch=(true);
   window.touchY=(true);
