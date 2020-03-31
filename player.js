@@ -75,11 +75,11 @@ proccessloop(ctx){
    this.position.y=250; 
   }
   if((window.touchY==true)&&(keys[38]==false)){
-  this.position.y=window.obstacle1Y-299;
+  this.position.y=window.obstacle1Y-300;
   }
   //colision
   if(window.touchX1=(true)){
-  this.position.x=window.obstacle1Y-100;
+  this.position.x=window.obstacle1X-100;
   }
   //death
   if((this.position.y+150)>(window.enemy1c-40)){
