@@ -26,7 +26,7 @@ window.touchY=(false);
   window.touch=(false);
 }
   if((window.PlayerX+100>this.position.x)&&(window.PlayerX+50<this.position.x+50)){
-if(window.PlayerY+149>this.position.y+3){
+if(window.PlayerY>this.position.y+3){
 window.touchX1=(true);
 }
   }
