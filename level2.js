@@ -61,6 +61,7 @@ sky.draw(ctx);
 ground.draw(ctx);
    obstacle1.draw(ctx);
   player.draw(ctx);
+   enemyyellow.draw(ctx);
   player.proccessloop(ctx);
  enemygreen.proccessloop(ctx);
  enemyyellow.proccessloop(ctx);
