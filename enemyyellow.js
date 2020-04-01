@@ -34,6 +34,7 @@ this.position.x=this.position.x-10;
     if(window.PlayerX-this.position.x-25<0){
         if(window.enemy2Xtouch2==(false)){
     this.position.x=this.position.x+5;
+        }
     }
       if(window.PlayerX-this.position.x-25>0){
           if(window.enemy2Xtouch2==(false)){
