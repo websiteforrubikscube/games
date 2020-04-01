@@ -8,6 +8,8 @@ window.start=(true);
 window.touchY=(false);
 window.touchX1=(false);
 window.touchX2=(false);
+window.enemy2Xtouch1=(false);
+window.enemy2Xtouch2=(false);
 export default function launch(){
   gameloop();
   function gameloop(){
