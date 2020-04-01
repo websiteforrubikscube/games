@@ -5,6 +5,7 @@ let level1 = new Level1();
 let level2 = new Level2();
 
 window.start=(true);
+window.touch=(false);
 window.touchY=(false);
 window.touchX1=(false);
 window.touchX2=(false);
