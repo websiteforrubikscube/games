@@ -19,10 +19,12 @@ ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
   }
 }
   proccessloop(ctx){
+    //movement
 if((window.PlayerX>this.position.x+25)&&(window.PlayerY>249)){
 this.position.x=this.position.x+10;
 }
     if((window.PlayerX<this.position.x+25)&&(window.PlayerY>249)){
+   
 this.position.x=this.position.x-10;
 }
     if(window.PlayerY<249){
@@ -33,7 +35,7 @@ this.position.x=this.position.x-10;
     this.position.x=this.position.x-5;
     }
     }
-    
+    //death
     if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+150)){
     if((window.PlayerY>this.position.y-151)&&(window.PlayerY+150<this.position.y+11)){
       if(window.screenload==(false)){
@@ -69,6 +71,7 @@ this.position.x=this.position.x-10;
   if(this.position.x>850){
   this.position.x=850;
   }
+    //screen movement
     if(window.screen2load==(true)){
     this.position.x=425;
       this.position.y=300;
