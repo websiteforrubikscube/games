@@ -34,6 +34,16 @@ if(window.PlayerY+150>this.position.y+3){
 window.touchX2=(true);
 }else{window.touchX2=(false);}
   }else{window.touchX2=(false);}
+  if((window.enemy2X+150>this.position.x)&&(enemy2X+75<this.position.x+50)){
+  if(window.enemy2Y+50>this.position.y){
+  window.enemy2Xtouch1=(true);
+  }else{ window.enemy2Xtouch1=(false);}
+  }else{ window.enemy2Xtouch1=(false);}
+  if((window.enemy2X<this.position.x+100)&&(window.enemy2X+75>this.position.x+50)){
+  if(window.enemy2Y+50>this.position.y){
+window.enemy2Xtouch2=(true);
+  }else{ window.enemy2Xtouch2=(false);}
+  }else{ window.enemy2Xtouch2=(false);}
   window.obstacle1Y=this.position.y;
   window.obstacle1X=this.position.x;
 }
