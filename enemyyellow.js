@@ -93,12 +93,13 @@ this.position.x=this.position.x-10;
       this.position.x=550;
     }
     if(screen5load==(true)){
-      console.log("DIE PLEASE");
-      this.living=(false);
-    window.invisabledamage1=(true);
-      this.visable=(false);
-      this.hit=2;
+      this.living=(true);
+    window.invisabledamage1=(false);
+      this.visable=(true);
+      this.hit=0;
       this.immune=(false);
+         window.color2=("#fce700");
+      this.position.x=775;
     }
     window.enemy2X=this.position.x;
     window.enemy2Y=this.position.y;
