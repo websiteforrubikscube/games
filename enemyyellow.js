@@ -20,16 +20,20 @@ ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
 }
   proccessloop(ctx){
     //movement
-if((window.PlayerX>this.position.x+25)&&(window.PlayerY>249)){
+if((window.PlayerX>this.position.x+25)){
+    if((window.touch==true)||(window.PlayerY>249)){
     if(window.enemy2Xtouch1==(false)){
 this.position.x=this.position.x+10;
     }
 }
-    if((window.PlayerX<this.position.x+25)&&(window.PlayerY>249)){
+}
+    if(window.PlayerX<this.position.x+25){
+      if((window.touch==true)||(window.PlayerY>249)){
    if(window.enemy2Xtouch2==(false)){
 this.position.x=this.position.x-10;
    }
 }
+    }
     if((window.PlayerY<249)&&(window.touch==(false))){
     if(window.PlayerX-this.position.x-25<0){
         if(window.enemy2Xtouch2==(false)){
