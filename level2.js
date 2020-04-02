@@ -89,7 +89,7 @@ ground.draw(ctx);
  enemyyellow.proccessloop(ctx);
  enemyyellow2.proccessloop(ctx);
    obstacle1.proccessloop();
- if(runnumber2<2){
+ if(runnumber3<2){
  window.screen6load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
