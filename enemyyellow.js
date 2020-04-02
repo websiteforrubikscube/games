@@ -97,7 +97,7 @@ this.position.x=this.position.x-10;
   this.position.x=375;
     this.position.y=300;
   }
-    if(screen4load==(true)){
+    if(window.screen4load==(true)){
       this.living=(true);
     window.invisabledamage1=(false);
       this.visable=(true);
@@ -106,7 +106,7 @@ this.position.x=this.position.x-10;
         window.color2=("#fce700");
       this.position.x=550;
     }
-    if(screen5load==(true)){
+    if(window.screen5load==(true)){
       this.living=(true);
     window.invisabledamage1=(false);
       this.visable=(true);
@@ -116,7 +116,7 @@ this.position.x=this.position.x-10;
       this.position.x=775;
     }
 
-     if(screen6load==(true)){
+     if(window.screen6load==(true)){
       this.living=(true);
     window.invisabledamage1=(false);
       this.visable=(true);
