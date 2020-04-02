@@ -49,6 +49,8 @@ window.enemy2Xtouch2=(true);
      window.touchX1=(false);
   window.touchX2=(false);
  window.touchY=(false);
+    window.enemy2Xtouch2=(false);
+      window.enemy2Xtouch1=(false);
   }
   window.obstacle1Y=this.position.y;
   window.obstacle1X=this.position.x;
