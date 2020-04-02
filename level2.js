@@ -78,5 +78,23 @@ ground.draw(ctx);
  setTimeout(function(load){ load.screen5load=(false); }, 34,window);
  }
 }
+  if(window.screen6==(true)){
+   runnumber3++;
+sky.draw(ctx);
+ground.draw(ctx);
+  player.draw(ctx);
+   enemyyellow.draw(ctx);
+  player.proccessloop(ctx);
+ enemygreen.proccessloop(ctx);
+ enemyyellow.proccessloop(ctx);
+ enemyyellow2.proccessloop(ctx);
+   obstacle1.proccessloop();
+ if(runnumber2<2){
+ window.screen6load=(true);
+  window.screenload=(true);
+  setTimeout(function(load){ load.screenload=(false); }, 34,window);
+ setTimeout(function(load){ load.screen5load=(false); }, 34,window);
+ }
+}
 }
 }
