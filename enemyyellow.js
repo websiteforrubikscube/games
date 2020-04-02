@@ -111,7 +111,16 @@ this.position.x=this.position.x-10;
          window.color2=("#fce700");
       this.position.x=775;
     }
-    window.enemy2X=this.position.x;
+
+     if(screen6load==(true)){
+      this.living=(true);
+    window.invisabledamage1=(false);
+      this.visable=(true);
+      this.hit=0;
+      this.immune=(false);
+         window.color2=("#fce700");
+      this.position.x=775;
+    }window.enemy2X=this.position.x;
     window.enemy2Y=this.position.y;
     window.visable1=this.visable;
   }
