@@ -44,6 +44,12 @@ window.touchX2=(true);
 window.enemy2Xtouch2=(true);
   }else{ window.enemy2Xtouch2=(false);}
   }else{ window.enemy2Xtouch2=(false);}
+  if(window.screen6==true){
+  window.touch=false;
+     window.touchX1=(false);
+  window.touchX2=(false);
+ window.touchY=(false);
+  }
   window.obstacle1Y=this.position.y;
   window.obstacle1X=this.position.x;
 }
