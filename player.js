@@ -161,6 +161,14 @@ proccessloop(ctx){
     }
    }
   }
+   if(window.screen6==(true)){
+   if(window.move == (false)){
+    if(this.living == (true)){
+  this.position.x=0;
+   this.position.y=250;
+    }
+   }
+  }
   
    window.PlayerX = this.position.x;
   window.PlayerY = this.position.y;
