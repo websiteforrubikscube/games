@@ -24,6 +24,7 @@ ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
 }
   proccessloop(ctx){
     //movement
+    if(window.touch2==(false)){
     if(this.active1==(false)){
 if((window.PlayerX>this.position.x+25)){
     if((window.touch==true)||(window.PlayerY>249)){
@@ -34,7 +35,9 @@ this.position.x=this.position.x+10;
 }else{this.active1=(false);}
 }else{this.active1=(false);}
     }else{this.active1=(false);}
-    
+    }else{this.active1=(false);}
+      
+     if(window.touch==(false)){
  if(this.active1==(false)){
     if((window.PlayerX>this.position.x+25)){
     if((window.touch2==true)||(window.PlayerY>249)){
@@ -45,7 +48,9 @@ this.position.x=this.position.x+10;
 }else{this.active1=(false);}
 }else{this.active1=(false);}
  }else{this.active1=(false);}
+     }else{this.active1=(false);}
     
+    if(window.touch2==(false)){
      if(this.active2==(false)){
     if(window.PlayerX<this.position.x+25){
       if((window.touch==true)||(window.PlayerY>249)){
@@ -56,7 +61,9 @@ this.position.x=this.position.x-10;
 }else{this.active2=(false);}
     }else{this.active2=(false);}
   }else{this.active2=(false);}
+       }else{this.active2=(false);}
     
+     if(window.touch==(false)){
      if(this.active2==(false)){
      if(window.PlayerX<this.position.x+25){
       if((window.touch2==true)||(window.PlayerY>249)){
@@ -67,7 +74,9 @@ this.position.x=this.position.x-10;
 }else{this.active2=(false);}
     }else{this.active2=(false);}
   }else{this.active2=(false);}
+ }else{this.active2=(false);}
 
+      if(window.touch2==(false)){
       if(this.active3==(false)){
     if((window.PlayerY<249)&&(window.touch==(false))){
     if(window.PlayerX-this.position.x-25<0){
@@ -78,7 +87,9 @@ this.position.x=this.position.x-10;
 }else{this.active3=(false);}
     }else{this.active3=(false);}
   }else{this.active3=(false);}
+         }else{this.active3=(false);}
 
+ if(window.touch==(false)){
       if(this.active3==(false)){
        if((window.PlayerY<249)&&(window.touch2==(false))){
     if(window.PlayerX-this.position.x-25<0){
@@ -89,7 +100,9 @@ this.position.x=this.position.x-10;
 }else{this.active3=(false);}
     }else{this.active3=(false);}
   }else{this.active3=(false);}
+ }else{this.active3=(false);}
 
+        if(window.touch2==(false)){
      if(this.active4==(false)){
          if((window.PlayerY<249)&&(window.touch==(false))){
       if(window.PlayerX-this.position.x-25>0){
@@ -100,7 +113,9 @@ this.position.x=this.position.x-10;
 }else{this.active4=(false);}
     }else{this.active4=(false);}
   }else{this.active4=(false);}
+           }else{this.active4=(false);}
 
+     if(window.touch==(false)){
     if(this.active4==(false)){
            if((window.PlayerY<249)&&(window.touch2==(false))){
       if(window.PlayerX-this.position.x-25>0){
@@ -111,6 +126,7 @@ this.position.x=this.position.x-10;
 }else{this.active4=(false);}
     }else{this.active4=(false);}
   }else{this.active4=(false);}
+ }else{this.active4=(false);}
 
     //death
     if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+150)){
