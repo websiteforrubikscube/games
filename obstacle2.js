@@ -44,6 +44,18 @@ window.touchX22=(true);
 window.enemy2Xtouch22=(true);
   }else{ window.enemy2Xtouch22=(false);}
   }else{ window.enemy2Xtouch22=(false);}
+  
+  if((window.enemy2X2+150>this.position.x)&&(enemy2X2+75<this.position.x+50)){
+  if(window.enemy2Y2+50>this.position.y){
+  window.enemy3Xtouch12=(true);
+  }else{ window.enemy3Xtouch12=(false);}
+  }else{ window.enemy3Xtouch12=(false);}
+  if((window.enemy2X2<this.position.x+100)&&(window.enemy2X2+75>this.position.x+50)){
+  if(window.enemy2Y2+50>this.position.y){
+window.enemy3Xtouch22=(true);
+  }else{ window.enemy3Xtouch22=(false);}
+  }else{ window.enemy3Xtouch22=(false);}
+  
   window.obstacle2Y=this.position.y;
   window.obstacle2X=this.position.x;
 }
