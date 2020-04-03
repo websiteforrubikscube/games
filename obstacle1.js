@@ -44,6 +44,18 @@ window.touchX2=(true);
 window.enemy2Xtouch2=(true);
   }else{ window.enemy2Xtouch2=(false);}
   }else{ window.enemy2Xtouch2=(false);}
+  
+   if((window.enemy2X2+150>this.position.x)&&(enemy2X2+75<this.position.x+50)){
+  if(window.enemy2Y2+50>this.position.y){
+  window.enemy3Xtouch1=(true);
+  }else{ window.enemy3Xtouch1=(false);}
+  }else{ window.enemy3Xtouch1=(false);}
+  if((window.enemy2X2<this.position.x+100)&&(window.enemy2X2+75>this.position.x+50)){
+  if(window.enemy2Y2+50>this.position.y){
+window.enemy3Xtouch2=(true);
+  }else{ window.enemy3Xtouch2=(false);}
+  }else{ window.enemy3Xtouch2=(false);}
+  
   if(window.screen6==true){
  this.position.x=200;
   }
