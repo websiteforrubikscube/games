@@ -75,7 +75,7 @@ proccessloop(ctx){
    this.position.y=250; 
   }
   if((window.touchY==true)&&(keys[38]==false)){
-  this.position.y=window.obstacle1Y-249;
+  this.position.y=window.obstacle1Y-149;
   }
   if(this.speed>15){
   this.speed=15;
