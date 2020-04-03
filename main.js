@@ -11,6 +11,12 @@ window.touchX1=(false);
 window.touchX2=(false);
 window.enemy2Xtouch1=(false);
 window.enemy2Xtouch2=(false);
+window.touch2=(false);
+window.touchY2=(false);
+window.touchX12=(false);
+window.touchX22=(false);
+window.enemy2Xtouch12=(false);
+window.enemy2Xtouch22=(false);
 export default function launch(){
   gameloop();
   function gameloop(){
