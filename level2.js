@@ -81,6 +81,7 @@ ground.draw(ctx);
   if(window.screen6==(true)){
    runnumber3++;
 sky.draw(ctx);
+   obstacle1.draw(ctx);
 ground.draw(ctx);
   player.draw(ctx);
    enemyyellow.draw(ctx);
