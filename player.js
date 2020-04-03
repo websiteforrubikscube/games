@@ -36,13 +36,16 @@ export default class Player{
  
 proccessloop(ctx){
   //movement
+    if(window.touch2==(true)){
+   this.speed=0;
+  }
    if((this.position.y>249)||(window.touch==(true))){
    this.speed=0;
   }
   
     if ((keys[39]==true)&&(this.position.x<900)){
       if((this.living==true)&&(window.touchX1==false)){
-        if(this.position.y>249){
+        if((this.position.y>249)&&(window.touchX12==false)){
       this.position.x = this.position.x + 10;
         }
         if(this.position.y<250){
@@ -52,7 +55,7 @@ proccessloop(ctx){
     }
         if ((keys[37]==true)&&(this.position.x>0)){
        if((this.living==(true))&&(window.touchX2==(false))){
-        if(this.position.y>249){
+        if((this.position.y>249)&&(window.touchX22==(false))){
       this.position.x = this.position.x - 10;
         }
         if(this.position.y<250){
@@ -67,6 +70,13 @@ proccessloop(ctx){
        
      }
     }
+   if ((keys[38]==true)&&(this.living==true)){
+     if(window.touch2==(true)){
+      this.position.y=this.position.y-1;
+      this.speed=-20;
+       
+     }
+    }
   if(this.position.y<250){
     this.speed=this.speed+1;
       this.position.y = this.position.y + this.speed;
@@ -75,6 +85,9 @@ proccessloop(ctx){
    this.position.y=250; 
   }
   if((window.touchY==true)&&(keys[38]==false)){
+  this.position.y=window.obstacle1Y-149;
+  }
+  if((window.touchY2==true)&&(keys[38]==false)){
   this.position.y=window.obstacle1Y-149;
   }
   if(this.speed>15){
