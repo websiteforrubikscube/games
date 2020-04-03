@@ -170,7 +170,7 @@ this.position.x=this.position.x-10;
       this.visable=(false);
       this.living=(false);
   }
-    if(screen4load==(true)){
+    if(window.screen4load==(true)){
     this.living=(true);
     window.invisabledamage2=(false);
       this.visable=(true);
@@ -179,13 +179,21 @@ this.position.x=this.position.x-10;
         window.color3=("#fce700");
       this.position.x=300;
     }
-    if(screen5load==(true)){
-      console.log("DIE PLEASE");
+    if(window.screen5load==(true)){
     this.living=(false);
     window.invisabledamage2=(true);
       this.visable=(false);
       this.hit=2;
       this.immune=(false);
+    }
+      if(window.screen6load==(true)){
+    this.living=(true);
+    window.invisabledamage2=(false);
+      this.visable=(true);
+      this.hit=0;
+      this.immune=(false);
+        window.color3=("#fce700");
+      this.position.x=300;
     }
     window.enemy2X2=this.position.x;
     window.enemy2Y2=this.position.y;
