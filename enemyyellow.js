@@ -22,26 +22,54 @@ ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
     //movement
 if((window.PlayerX>this.position.x+25)){
     if((window.touch==true)||(window.PlayerY>249)){
-    if(window.enemy2Xtouch1==(false)){
+    if((window.enemy2Xtouch1==(false))&&(window.enemy2Xtouch12==(false))){
+this.position.x=this.position.x+10;
+    }
+}
+}
+    if((window.PlayerX>this.position.x+25)){
+    if((window.touch2==true)||(window.PlayerY>249)){
+    if((window.enemy2Xtouch1==(false))&&(window.enemy2Xtouch12==(false))){
 this.position.x=this.position.x+10;
     }
 }
 }
     if(window.PlayerX<this.position.x+25){
       if((window.touch==true)||(window.PlayerY>249)){
-   if(window.enemy2Xtouch2==(false)){
+   if((window.enemy2Xtouch2==(false))&&(window.enemy2Xtouch22==(false))){
+this.position.x=this.position.x-10;
+   }
+}
+    }
+     if(window.PlayerX<this.position.x+25){
+      if((window.touch2==true)||(window.PlayerY>249)){
+   if((window.enemy2Xtouch2==(false))&&(window.enemy2Xtouch22==(false))){
 this.position.x=this.position.x-10;
    }
 }
     }
     if((window.PlayerY<249)&&(window.touch==(false))){
     if(window.PlayerX-this.position.x-25<0){
-        if(window.enemy2Xtouch2==(false)){
+        if((window.enemy2Xtouch1==(false))&&(window.enemy2Xtouch12==(false))){
     this.position.x=this.position.x+5;
         }
     }
+       if((window.PlayerY<249)&&(window.touch2==(false))){
+    if(window.PlayerX-this.position.x-25<0){
+        if((window.enemy2Xtouch1==(false))&&(window.enemy2Xtouch12==(false))){
+    this.position.x=this.position.x+5;
+        }
+    }
+         if((window.PlayerY<249)&&(window.touch==(false))){
       if(window.PlayerX-this.position.x-25>0){
-          if(window.enemy2Xtouch2==(false)){
+          if((window.enemy2Xtouch2==(false))&&(window.enemy2Xtouch22==(false))){
+    this.position.x=this.position.x-5;
+          }
+    }
+    }
+           if((window.PlayerY<249)&&(window.touch2==(false))){
+      if(window.PlayerX-this.position.x-25>0){
+          if((window.enemy2Xtouch2==(false))&&(window.enemy2Xtouch22==(false))){
     this.position.x=this.position.x-5;
           }
     }
