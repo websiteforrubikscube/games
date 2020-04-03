@@ -9,6 +9,10 @@ this.position={x:425,y:300};
   this.hit=0;
   this.immune=(false);
   this.living=(true);
+  this.active1=(false);
+  this.active2=(false);
+  this.active3=(false);
+  this.active4=(false);
 }
 draw(ctx){
   if(this.visable==(true)){
