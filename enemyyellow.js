@@ -54,12 +54,14 @@ this.position.x=this.position.x-10;
     this.position.x=this.position.x+5;
         }
     }
+    }
        if((window.PlayerY<249)&&(window.touch2==(false))){
     if(window.PlayerX-this.position.x-25<0){
         if((window.enemy2Xtouch1==(false))&&(window.enemy2Xtouch12==(false))){
     this.position.x=this.position.x+5;
         }
     }
+       }
          if((window.PlayerY<249)&&(window.touch==(false))){
       if(window.PlayerX-this.position.x-25>0){
           if((window.enemy2Xtouch2==(false))&&(window.enemy2Xtouch22==(false))){
