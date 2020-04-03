@@ -193,7 +193,7 @@ this.position.x=this.position.x-10;
       this.hit=0;
       this.immune=(false);
         window.color3=("#fce700");
-      this.position.x=300;
+      this.position.x=775;
     }
     window.enemy2X2=this.position.x;
     window.enemy2Y2=this.position.y;
