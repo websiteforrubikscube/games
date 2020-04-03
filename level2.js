@@ -1,5 +1,6 @@
  import Ground from "./ground.js";
 import Obstacle1 from "./obstacle1.js";
+import Obstacle2 from "./obstacle2.js";
 import Player from "./player.js";
 import Enemygreen from "./enemygreen.js";
 import Enemyyellow from "./enemyyellow.js";
@@ -11,6 +12,7 @@ import Screen5 from "./screen5.js";
 
  let ground = new Ground();
 let obstacle1 = new Obstacle1();
+let obstacle2 = new Obstacle2();
  let player = new Player();
  let enemygreen = new Enemygreen();
  let sky = new Sky();
