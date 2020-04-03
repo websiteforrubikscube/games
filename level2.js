@@ -84,6 +84,7 @@ ground.draw(ctx);
    runnumber3++;
 sky.draw(ctx);
    obstacle1.draw(ctx);
+   obstacle2.draw(ctx);
 ground.draw(ctx);
   player.draw(ctx);
    enemyyellow.draw(ctx);
@@ -92,6 +93,7 @@ ground.draw(ctx);
  enemyyellow.proccessloop(ctx);
  enemyyellow2.proccessloop(ctx);
    obstacle1.proccessloop();
+   obstacle2.proccessloop();
  if(runnumber3<2){
  window.screen6load=(true);
   window.screenload=(true);
