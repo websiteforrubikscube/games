@@ -1,4 +1,4 @@
-export default class Obstacle1\2{
+export default class Obstacle2{
 constructor(){
 this.height=100;
 this.width=100;
