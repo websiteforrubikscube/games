@@ -31,6 +31,7 @@ this.position.x= this.position.x - 5;
       window.killjump=(true);
  window.color =("#a6ffad");
       window.nodamage1 = (true);
+        setTimeout(function(enemy){ enemy.killjump=(false); }, 1000,window);
             setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
     }else{window.killjump=(false);}
   }else{window.killjump=(false);}
