@@ -134,6 +134,7 @@ this.position.x=this.position.x-10;
       if(window.screenload==(false)){
       if(this.immune==(false)){
       this.hit=this.hit+1;
+        window.killjump=(true);
       if(this.hit>1){
         this.living=(false);
        window.color2=("#fdff9e");
@@ -148,10 +149,10 @@ this.position.x=this.position.x-10;
       setTimeout(function(enemy){ enemy.invisabledamage1=(false); }, 1000,window);
       setTimeout(function(enemy){ enemy.color2=("#fce700"); }, 1000,window);
         }
-        }
-    }
-    }
-    }
+        }else{window.killjump=(false);}
+    }else{window.killjump=(false);}
+    }else{window.killjump=(false);}
+    }else{window.killjump=(false);}
     if(this.hit==0){
     this.living=(true);
     }
