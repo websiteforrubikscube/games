@@ -105,7 +105,7 @@ proccessloop(ctx){
     }
   }
   
-  if((window.killjump==true)&&(window.killjump2==true)){
+  if((window.killjump==true)||(window.killjump2==true)){
   if(this.speed>0){
   this.speed=this.speed*-0.75;
   }
