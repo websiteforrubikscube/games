@@ -150,7 +150,7 @@ this.position.x=this.position.x-10;
       setTimeout(function(enemy){ enemy.invisabledamage1=(false); }, 1000,window);
       setTimeout(function(enemy){ enemy.color2=("#fce700"); }, 1000,window);
         }
-        }else{window.killjump=(false);}
+        }else{window.killjump2=(false);}
     }else{window.killjump2=(false);}
     }else{window.killjump2=(false);}
     }else{window.killjump2=(false);}
