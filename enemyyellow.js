@@ -130,7 +130,7 @@ this.position.x=this.position.x-10;
 
     //death
     if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+150)){
-    if((window.PlayerY>this.position.y-151)&&(window.PlayerY+150<this.position.y+11)){
+    if((window.PlayerY>this.position.y-151)&&(window.PlayerY+150<this.position.y+16)){
       if(window.screenload==(false)){
       if(this.immune==(false)){
       this.hit=this.hit+1;
