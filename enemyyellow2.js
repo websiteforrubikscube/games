@@ -152,6 +152,11 @@ this.position.x=this.position.x-10;
     }else{window.killjump3=(false);}
     }else{window.killjump3=(false);}
        }else{window.killjump3=(false);}
+    
+      if(this.visable==(false)){
+  window.killjump3=false;
+  }
+    
     if(this.hit==0){
     this.living=(true);
     }
