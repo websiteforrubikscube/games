@@ -53,6 +53,7 @@ proccessloop(ctx){
       }
     }
   }
+}
         if ((keys[37]==true)&&(this.position.x>0)){
        if((this.living==(true))&&(window.touchX2==(false))){
         if((this.position.y>249)&&(window.touchX22==(false))){
