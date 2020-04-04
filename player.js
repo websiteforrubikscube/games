@@ -92,6 +92,18 @@ proccessloop(ctx){
   if(this.speed>15){
   this.speed=15;
   }
+  
+  if(window.killjump==(true)){
+  if(this.speed>0){
+  this.speed=this.speed*-0.75;
+  }
+    if(this.speed==0){
+    this.speed=-10;
+    }
+    if(this.speed<0){
+    this.speed=this.speed*1.5
+    }
+  }
   //death
   if((this.position.y+150)>(window.enemy1c-40)){
   if((this.position.x+100)>(window.enemy1c2-100)){
