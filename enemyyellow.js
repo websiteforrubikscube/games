@@ -154,6 +154,11 @@ this.position.x=this.position.x-10;
     }else{window.killjump2=(false);}
     }else{window.killjump2=(false);}
     }else{window.killjump2=(false);}
+    
+     if(this.visable==(false)){
+  window.killjump2=false;
+  }
+    
     if(this.hit==0){
     this.living=(true);
     }
