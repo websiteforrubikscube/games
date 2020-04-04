@@ -97,6 +97,10 @@ proccessloop(ctx){
   if(this.speed>0){
   this.speed=this.speed*-0.75;
   }
+     if((window.touchY==(true))||(window.touchY2==(true))){
+     this.speed=-10;
+       this.position.y=this.position.y-6;
+     }
     if(this.speed<0){
     this.speed=this.speed*1.5
     }
@@ -106,6 +110,10 @@ proccessloop(ctx){
   if(this.speed>0){
   this.speed=this.speed*-0.75;
   }
+      if((window.touchY==(true))||(window.touchY2==(true))){
+     this.speed=-10;
+       this.position.y=this.position.y-6;
+     }
     if(this.speed<0){
     this.speed=this.speed*1.5
     }
