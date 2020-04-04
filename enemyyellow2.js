@@ -133,6 +133,7 @@ this.position.x=this.position.x-10;
       if(this.immune==(false)){
       this.hit=this.hit+1;
         window.killjump3=(true);
+         setTimeout(function(enemy){ enemy.killjump3=(false); }, 1000,window);
       if(this.hit>1){
         this.living=(false);
        window.color3=("#fdff9e");
