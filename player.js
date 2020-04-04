@@ -138,7 +138,7 @@ proccessloop(ctx){
   }
   }
   }
- if((this.position.y+150)>(window.enemy2Y+40)){
+ if((this.position.y+150)>(window.enemy2Y+35)){
   if((this.position.x+100)>(window.enemy2X)){
     if((this.position.x)<(window.enemy2X+150)){
          if((window.visable1==true)&&(window.invisabledamage1==(false))){
@@ -155,7 +155,7 @@ proccessloop(ctx){
   }
   }
  }
-  if((this.position.y+150)>(window.enemy2Y2+40)){
+  if((this.position.y+150)>(window.enemy2Y2+35)){
   if((this.position.x+100)>(window.enemy2X2)){
     if((this.position.x)<(window.enemy2X2+150)){
          if((window.visable2==true)&&(window.invisabledamage2==(false))){
