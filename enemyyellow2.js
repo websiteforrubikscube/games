@@ -150,6 +150,7 @@ this.position.x=this.position.x-10;
       }else{window.killjump=(false);}
     }else{window.killjump=(false);}
     }else{window.killjump=(false);}
+       }else{window.killjump=(false);}
     if(this.hit==0){
     this.living=(true);
     }
