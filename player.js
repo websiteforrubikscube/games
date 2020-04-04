@@ -98,6 +98,7 @@ proccessloop(ctx){
   this.speed=this.speed*-0.75;
   }
     if(this.speed==0){
+      this.position.y=this.position.y-1;
     this.speed=-10;
     }
     if(this.speed<0){
@@ -109,7 +110,8 @@ proccessloop(ctx){
   if(this.speed>0){
   this.speed=this.speed*-0.75;
   }
-    if(this.speed==0){
+     if(this.speed==0){
+      this.position.y=this.position.y-1;
     this.speed=-10;
     }
     if(this.speed<0){
