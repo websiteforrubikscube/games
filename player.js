@@ -22,6 +22,10 @@ export default class Player{
     window.onkeyup = function(e) { 
       keys[e.keyCode] = false;
        
+      this.active1=(false);
+       this.active2=(false);
+       this.active3=(false);
+       this.active4=(false);
     }
     window.onkeydown = function(e) { keys[e.keyCode] = true; }   
   }
@@ -43,22 +47,24 @@ proccessloop(ctx){
    this.speed=0;
   }
   
+  if(this.active1==(false)){
     if ((keys[39]==true)&&(this.position.x<900)){
       if((this.living==true)&&(window.touchX1==false)){
         if((this.position.y>249)&&(window.touchX12==false)){
       this.position.x = this.position.x + 10;
         }
-        if(this.position.y<250){
+        if((this.position.y<250)&&(window.touchX12==false)){
         this.position.x=this.position.x+15;
         }
-         }
+      }
     }
+  }
         if ((keys[37]==true)&&(this.position.x>0)){
        if((this.living==(true))&&(window.touchX2==(false))){
         if((this.position.y>249)&&(window.touchX22==(false))){
       this.position.x = this.position.x - 10;
         }
-        if(this.position.y<250){
+        if((this.position.y<250)&&(window.touchX22==(false))){
         this.position.x=this.position.x - 15;
         }
          }
