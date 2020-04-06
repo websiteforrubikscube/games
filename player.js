@@ -14,6 +14,8 @@ export default class Player{
     this.visable = (true);
    this.living=(true);
     this.respawn=(false);
+     this.respawn2=(false);
+     this.respawn3=(false);
     window.color1 = ("#ffad47");
     keys = {};
     keys[37]=false;
@@ -147,7 +149,7 @@ proccessloop(ctx){
     if((this.position.x)<(window.enemy2X+150)){
          if((window.visable1==true)&&(window.invisabledamage1==(false))){
             if(window.screenload==(false)){
-              this.respawn=(true);
+              this.respawn2=(true);
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
@@ -155,18 +157,18 @@ proccessloop(ctx){
             keys[39]=(false);
             keys[40]=(false);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
-         }else{this.respawn=(false);}
-    }else{this.respawn=(false);}
-  }else{this.respawn=(false);}
-  }else{this.respawn=(false);}
- }else{this.respawn=(false);}
+         }else{this.respawn2=(false);}
+    }else{this.respawn2=(false);}
+  }else{this.respawn2=(false);}
+  }else{this.respawn2=(false);}
+ }else{this.respawn2=(false);}
   
   if((this.position.y+150)>(window.enemy2Y2+33)){
   if((this.position.x+100)>(window.enemy2X2)){
     if((this.position.x)<(window.enemy2X2+150)){
          if((window.visable2==true)&&(window.invisabledamage2==(false))){
             if(window.screenload==(false)){
-              this.respawn=(true);
+              this.respawn3=(true);
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
@@ -174,19 +176,20 @@ proccessloop(ctx){
             keys[39]=(false);
             keys[40]=(false);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
-         }else{this.respawn=(false);}
-    }else{this.respawn=(false);}
-  }else{this.respawn=(false);}
-  }else{this.respawn=(false);}
-  }else{this.respawn=(false);}
+         }else{this.respawn3=(false);}
+    }else{this.respawn3=(false);}
+  }else{this.respawn3=(false);}
+  }else{this.respawn3=(false);}
+  }else{this.respawn3=(false);}
   
    //respawn
   
-  if(this.respawn==(true)){
+  if((this.respawn==(true))||(this.respawn2==(true))){
     if(window.start==(true)){
       this.living=true;
        this.visable=true;
     window.screen1=(true);
+      window.screen1load=(true);
        window.screen2=(false);
        window.screen3=(false);
     }
@@ -194,6 +197,26 @@ proccessloop(ctx){
        this.living=true;
        this.visable=true;
     window.screen4=(true);
+        window.screen4load=(true);
+        window.screen5=(false);
+        window.screen6=(false);
+    }
+  }
+  
+    if(this.respawn3==(true)){
+    if(window.start==(true)){
+      this.living=true;
+       this.visable=true;
+    window.screen1=(true);
+        window.screen1load=(true);
+       window.screen2=(false);
+       window.screen3=(false);
+    }
+     if(window.start2==(true)){
+       this.living=true;
+       this.visable=true;
+    window.screen4=(true);
+       window.screen4load=(true);
         window.screen5=(false);
         window.screen6=(false);
     }
