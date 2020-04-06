@@ -13,6 +13,7 @@ export default class Player{
     this.speed=0; 
     this.visable = (true);
    this.living=(true);
+    window.respawn=(false);
     this.respawn=(false);
      this.respawn2=(false);
      this.respawn3=(false);
@@ -183,6 +184,14 @@ proccessloop(ctx){
   }else{this.respawn3=(false);}
   
    //respawn
+  
+    if(this.respawn3==(true)){
+  window.respawn=(true);
+  }else{window.respawn=(false);}
+  
+  if((this.respawn==(true))||(this.respawn2==(true))){
+  window.respawn=(true);
+  }else{window.respawn=(false);}
   
   if((this.respawn==(true))||(this.respawn2==(true))){
     if(window.start==(true)){
