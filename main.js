@@ -5,6 +5,7 @@ let level1 = new Level1();
 let level2 = new Level2();
 
 window.start=(true);
+window.start2=(false);
 window.killjump=(false);
 window.killjump2=(false);
 window.killjump3=(false);
