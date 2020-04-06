@@ -184,11 +184,15 @@ proccessloop(ctx){
   
   if(this.respawn==(true)){
     if(window.start==(true)){
+      this.living=true;
+       this.visable=true;
     window.screen1=(true);
        window.screen2=(false);
        window.screen3=(false);
     }
      if(window.start2==(true)){
+       this.living=true;
+       this.visable=true;
     window.screen4=(true);
         window.screen5=(false);
         window.screen6=(false);
