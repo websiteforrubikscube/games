@@ -13,6 +13,7 @@ export default class Player{
     this.speed=0; 
     this.visable = (true);
    this.living=(true);
+    this.respawn=(false);
     window.color1 = ("#ffad47");
     keys = {};
     keys[37]=false;
@@ -118,6 +119,7 @@ proccessloop(ctx){
     this.speed=this.speed*1.5
     }
   }
+ 
   //death
   if((this.position.y+150)>(window.enemy1c-33)){
   if((this.position.x+100)>(window.enemy1c2-100)){
@@ -125,6 +127,7 @@ proccessloop(ctx){
          if((window.visable==true)&&(window.nodamage1==(false))){
           if(window.invisabledamage==(false)){
             if(window.screenload==(false)){
+              this.respawn=(true);
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
@@ -132,17 +135,19 @@ proccessloop(ctx){
             keys[39]=(false);
             keys[40]=(false);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
-          }
-         }
-    }
-  }
-  }
-  }
+          }else{this.respawn=(false);}
+         }else{this.respawn=(false);}
+    }else{this.respawn=(false);}
+  }else{this.respawn=(false);}
+  }else{this.respawn=(false);}
+  }else{this.respawn=(false);}
+  
  if((this.position.y+150)>(window.enemy2Y+33)){
   if((this.position.x+100)>(window.enemy2X)){
     if((this.position.x)<(window.enemy2X+150)){
          if((window.visable1==true)&&(window.invisabledamage1==(false))){
             if(window.screenload==(false)){
+              this.respawn=(true);
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
@@ -150,16 +155,18 @@ proccessloop(ctx){
             keys[39]=(false);
             keys[40]=(false);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
-         }
-    }
-  }
-  }
- }
+         }else{this.respawn=(false);}
+    }else{this.respawn=(false);}
+  }else{this.respawn=(false);}
+  }else{this.respawn=(false);}
+ }else{this.respawn=(false);}
+  
   if((this.position.y+150)>(window.enemy2Y2+33)){
   if((this.position.x+100)>(window.enemy2X2)){
     if((this.position.x)<(window.enemy2X2+150)){
          if((window.visable2==true)&&(window.invisabledamage2==(false))){
             if(window.screenload==(false)){
+              this.respawn=(true);
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
@@ -167,11 +174,17 @@ proccessloop(ctx){
             keys[39]=(false);
             keys[40]=(false);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
-         }
-    }
+         }else{this.respawn=(false);}
+    }else{this.respawn=(false);}
+  }else{this.respawn=(false);}
+  }else{this.respawn=(false);}
+  }else{this.respawn=(false);}
+  
+   //respawn
+  
+  if(this.respawn=true){
   }
-  }
-  }
+  
   //screen movement
   if(window.screen2==(true)){
    if(window.move == (false)){
