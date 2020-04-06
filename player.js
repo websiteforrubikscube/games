@@ -189,7 +189,6 @@ proccessloop(ctx){
       this.living=true;
        this.visable=true;
     window.screen1=(true);
-      window.screen1load=(true);
        window.screen2=(false);
        window.screen3=(false);
     }
@@ -197,7 +196,6 @@ proccessloop(ctx){
        this.living=true;
        this.visable=true;
     window.screen4=(true);
-        window.screen4load=(true);
         window.screen5=(false);
         window.screen6=(false);
     }
@@ -208,7 +206,6 @@ proccessloop(ctx){
       this.living=true;
        this.visable=true;
     window.screen1=(true);
-        window.screen1load=(true);
        window.screen2=(false);
        window.screen3=(false);
     }
@@ -216,7 +213,6 @@ proccessloop(ctx){
        this.living=true;
        this.visable=true;
     window.screen4=(true);
-       window.screen4load=(true);
         window.screen5=(false);
         window.screen6=(false);
     }
