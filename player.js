@@ -195,6 +195,8 @@ proccessloop(ctx){
   
   if((this.respawn==(true))||(this.respawn2==(true))){
     if(window.start==(true)){
+     this.position.x=0;
+   this.position.y=250;
       window.color1=("#ffad47");
       this.living=true;
        this.visable=true;
@@ -203,6 +205,8 @@ proccessloop(ctx){
        window.screen3=(false);
     }
      if(window.start2==(true)){
+       this.position.x=0;
+   this.position.y=250;
         window.color1=("#ffad47");
        this.living=true;
        this.visable=true;
@@ -214,6 +218,8 @@ proccessloop(ctx){
   
     if(this.respawn3==(true)){
     if(window.start==(true)){
+      this.position.x=0;
+   this.position.y=250;
        window.color1=("#ffad47");
       this.living=true;
        this.visable=true;
@@ -222,6 +228,8 @@ proccessloop(ctx){
        window.screen3=(false);
     }
      if(window.start2==(true)){
+       this.position.x=0;
+   this.position.y=250;
         window.color1=("#ffad47");
        this.living=true;
        this.visable=true;
