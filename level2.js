@@ -20,10 +20,8 @@ let screen4 = new Screen4();
 let screen5 = new Screen5();
  let enemyyellow = new Enemyyellow();
 let enemyyellow2 = new Enemyyellow2();
- 
-var runnumber12=0;
- var runnumber22=0;
- var runnumber32=0;
+
+ var runnumbermain=0;
 var runnumberplayer=0;
 
 export default class Level2{
@@ -34,6 +32,9 @@ export default class Level2{
  
 if(runnumberplayer<2){
 let player = new Player();
+ var runnumber12=0;
+ var runnumber22=0;
+ var runnumber32=0;
 }
  
  
