@@ -2,7 +2,7 @@ import Enemyyellow from "./enemyyellow.js";
 import Enemygreen from "./enemygreen.js";
 import Screen1 from "./screen1.js";
 import proccess from "./level1.js";
-import proccess from "./level2.js";
+import proccess2 from "./level2.js";
 
 var keys={};
 
@@ -219,8 +219,13 @@ proccessloop(ctx){
   }
      }
 }
- 
+}
+  
   //screen movement
+    if(window.screen1load==(true)){
+  this.position.x=0;
+   this.position.y=250;
+   }
   if(window.screen2==(true)){
    if(window.move == (false)){
     if(this.living == (true)){
