@@ -22,9 +22,9 @@ let screen5 = new Screen5();
  let enemyyellow = new Enemyyellow();
 let enemyyellow2 = new Enemyyellow2();
  
-var runnumber=0;
- var runnumber2=0;
- var runnumber3=0;
+var runnumber12=0;
+ var runnumber22=0;
+ var runnumber32=0;
 
 export default class Level2{
  proccess(){
@@ -39,7 +39,7 @@ export default class Level2{
     }
 
  erraseCanvas();
-runnumber++;
+runnumber12++;
 if(window.screen4==(true)){
  screen4.draw(ctx);
 sky.draw(ctx);
@@ -52,7 +52,7 @@ ground.draw(ctx);
  enemyyellow.proccessloop(ctx);
  enemyyellow2.proccessloop(ctx);
  screen4.proccessloop();
- if(runnumber<2){
+ if(runnumber12<2){
  window.screen4load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
@@ -60,7 +60,7 @@ ground.draw(ctx);
  }
 }
   if(window.screen5==(true)){
-   runnumber2++;
+   runnumber22++;
 sky.draw(ctx);
    screen5.draw(ctx);
 ground.draw(ctx);
@@ -73,7 +73,7 @@ ground.draw(ctx);
  enemyyellow2.proccessloop(ctx);
    obstacle1.proccessloop();
    screen5.proccessloop();
- if(runnumber2<2){
+ if(runnumber22<2){
  window.screen5load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
@@ -81,7 +81,7 @@ ground.draw(ctx);
  }
 }
   if(window.screen6==(true)){
-   runnumber3++;
+   runnumber32++;
 sky.draw(ctx);
    obstacle1.draw(ctx);
    obstacle2.draw(ctx);
@@ -95,7 +95,7 @@ ground.draw(ctx);
  enemyyellow2.proccessloop(ctx);
    obstacle1.proccessloop();
    obstacle2.proccessloop();
- if(runnumber3<2){
+ if(runnumber32<2){
  window.screen6load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
