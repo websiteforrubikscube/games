@@ -205,7 +205,7 @@ proccessloop(ctx){
       }
     }
      if(window.start2==(true)){
-        setTimeout(function(player){ player.respawnload2(true); }, 4000,this);
+        setTimeout(function(player){ player.respawnload2=(true); }, 4000,this);
       if(this.respawnload2==(true)){
        this.position.x=0;
    this.position.y=250;
@@ -223,7 +223,7 @@ proccessloop(ctx){
   
     if(this.respawn3==(true)){
     if(window.start==(true)){
-        setTimeout(function(player){ player.respawnload3(true); }, 4000,this);
+        setTimeout(function(player){ player.respawnload3=(true); }, 4000,this);
       if(this.respawnload3==(true)){
       this.position.x=0;
    this.position.y=250;
@@ -238,7 +238,7 @@ proccessloop(ctx){
     }
     }
      if(window.start2==(true)){
-         setTimeout(function(player){ player.respawnload4(true); }, 4000,this);
+         setTimeout(function(player){ player.respawnload4=(true); }, 4000,this);
       if(this.respawnload4==(true)){
        this.position.x=0;
    this.position.y=250;
