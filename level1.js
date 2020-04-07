@@ -17,20 +17,23 @@ import Screen3 from "./screen3.js";
  let screen3 = new Screen3();
  let enemyyellow = new Enemyyellow();
 
-  var runnumber=0;
- var runnumber2=0;
- var runnumber3=0;
-
+var runnumbermain=0;
+  
 window.screen4load=(false);
 window.screen5load=(false);
 window.screen6load=(false);
 export default class Level1{
  proccess(){
+  runnumbermain++;
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
  
 
- 
+ if(runnumbermain<2){
+ var runnumber=0;
+ var runnumber2=0;
+ var runnumber3=0;
+ }
  
 
  function erraseCanvas() {
