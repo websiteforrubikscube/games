@@ -203,7 +203,7 @@ proccessloop(ctx){
     window.screen1=(true);
        window.screen2=(false);
        window.screen3=(false);
-      window.screen1load1=(true);
+      window.screen1load=(true);
        setTimeout(function(player){ player.screen1load=(false); }, 34,window);
         this.respawnload=(false);
       }
