@@ -36,7 +36,7 @@ level1.proccess();
     }
     if(window.start2==true){
     window.start=(false);
-level2.proccess();
+level2.proccess2();
   }
     window.setTimeout(function() {gameloop();}, 33);
   }
