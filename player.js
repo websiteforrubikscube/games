@@ -13,10 +13,13 @@ export default class Player{
     this.speed=0; 
     this.visable = (true);
    this.living=(true);
-    window.respawn=(false);
     this.respawn=(false);
      this.respawn2=(false);
      this.respawn3=(false);
+     this.respawnload=(false);
+     this.respawnload2=(false);
+     this.respawnload3=(false); 
+    this.respawnload4=(false);
     window.color1 = ("#ffad47");
     keys = {};
     keys[37]=false;
@@ -185,16 +188,10 @@ proccessloop(ctx){
   
    //respawn
   
-    if(this.respawn3==(true)){
-  window.respawn=(true);
-  }else{window.respawn=(false);}
-  
-  if((this.respawn==(true))||(this.respawn2==(true))){
-  window.respawn=(true);
-  }else{window.respawn=(false);}
-  
   if((this.respawn==(true))||(this.respawn2==(true))){
     if(window.start==(true)){
+        setTimeout(function(player){ player.respawnload=(true); }, 4000,this);
+      if(this.respawnload==(true)){
      this.position.x=0;
    this.position.y=250;
       window.color1=("#ffad47");
@@ -203,8 +200,13 @@ proccessloop(ctx){
     window.screen1=(true);
        window.screen2=(false);
        window.screen3=(false);
+      window.screenload1=(true);
+       setTimeout(function(player){ player.screenload1=(false); }, 34,window);
+      }
     }
      if(window.start2==(true)){
+        setTimeout(function(player){ player.respawnload2(true); }, 4000,this);
+      if(this.respawnload2==(true)){
        this.position.x=0;
    this.position.y=250;
         window.color1=("#ffad47");
@@ -213,11 +215,15 @@ proccessloop(ctx){
     window.screen4=(true);
         window.screen5=(false);
         window.screen6=(false);
+         window.screenload1=(true);
+       setTimeout(function(player){ player.screenload4=(false); }, 34,window);
     }
   }
   
     if(this.respawn3==(true)){
     if(window.start==(true)){
+        setTimeout(function(player){ player.respawnload3(true); }, 4000,this);
+      if(this.respawnload3==(true)){
       this.position.x=0;
    this.position.y=250;
        window.color1=("#ffad47");
@@ -226,8 +232,12 @@ proccessloop(ctx){
     window.screen1=(true);
        window.screen2=(false);
        window.screen3=(false);
+        window.screenload1=(true);
+       setTimeout(function(player){ player.screenload1=(false); }, 34,window);
     }
      if(window.start2==(true)){
+         setTimeout(function(player){ player.respawnload4(true); }, 4000,this);
+      if(this.respawnload4==(true)){
        this.position.x=0;
    this.position.y=250;
         window.color1=("#ffad47");
@@ -236,6 +246,8 @@ proccessloop(ctx){
     window.screen4=(true);
         window.screen5=(false);
         window.screen6=(false);
+         window.screenload1=(true);
+       setTimeout(function(player){ player.screenload4=(false); }, 34,window);
     }
   }
   
