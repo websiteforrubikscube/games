@@ -1,7 +1,8 @@
 import Enemyyellow from "./enemyyellow.js"; 
 import Enemygreen from "./enemygreen.js";
 import Screen1 from "./screen1.js";
-import Proccess from "./level1.js";
+import proccess from "./level1.js";
+import proccess from "./level2.js";
 
 var keys={};
 
@@ -19,6 +20,7 @@ export default class Player{
      this.respawnload2=(false);
      this.respawnload3=(false); 
     this.respawnload4=(false);
+    this.respawnaction=(false);
     window.color1 = ("#ffad47");
     keys = {};
     keys[37]=false;
@@ -194,10 +196,29 @@ proccessloop(ctx){
    //respawn
   
   if((window.start==(true)||(window.start2==(true))){
-     if((this.respawn==(true))||(this.respawn2==(true))){
+     if(this.respawn==(true)){
+      setTimeout(function(player){ player.respawnaction=(true); }, 3000,this);
+    if(this.respawnaction=(true)){
+       setTimeout(function(player){ player.respawnaction=(false); }, 34,this);
+    if(window.start==(true)){
+    window.screen1=(true);
+    }
+      if(window.start2==(true)){
+      window.screen4=(true);
+      }
   window.start=(false);
+    window.start2=(false);
+    runnumber=0;  
+      runnumber2=0;
+      runnumber3=0;
+    runnumber12=0;
+      runnumber22=0;
+      runnumber32=0;
+      setTimeout(function(player){ player.start=(true); }, 34,window);
+    setTimeout(function(player){ player.start2=(true); }, 34,window);
   }
      }
+}
  
   //screen movement
   if(window.screen2==(true)){
