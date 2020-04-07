@@ -220,7 +220,7 @@ proccessloop(ctx){
      }
 }
 }
-  
+}  
   //screen movement
     if(window.screen1load==(true)){
   this.position.x=0;
