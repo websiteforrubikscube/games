@@ -192,7 +192,11 @@ proccessloop(ctx){
   
    //respawn
   
-  
+  if((window.start==(true)||(window.start2==(true))){
+     if((this.respawn==(true))||(this.respawn2==(true))){
+  window.start=(false);
+  }
+     }
  
   //screen movement
   if(window.screen2==(true)){
