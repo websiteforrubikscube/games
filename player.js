@@ -219,8 +219,6 @@ proccessloop(ctx){
   }
      }
 }
-}
-}  
   //screen movement
     if(window.screen1load==(true)){
   this.position.x=0;
@@ -269,7 +267,6 @@ proccessloop(ctx){
   
    window.PlayerX = this.position.x;
   window.PlayerY = this.position.y;
-  }
-
+}
 }
 
