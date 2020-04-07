@@ -132,6 +132,7 @@ proccessloop(ctx){
           if(window.invisabledamage==(false)){
             if(window.screenload==(false)){
               this.respawn=(true);
+              console.log('135');
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
@@ -154,6 +155,7 @@ proccessloop(ctx){
             if(window.screenload==(false)){
               this.respawn=(true);
            this.living=(false);
+              console.log('158');
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
@@ -174,6 +176,7 @@ proccessloop(ctx){
             if(window.screenload==(false)){
               this.respawn=(true);
            this.living=(false);
+              console.log('179');
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
@@ -196,6 +199,7 @@ proccessloop(ctx){
      this.position.x=0;
    this.position.y=250;
       window.color1=("#ffad47");
+        console.log('living=true');
       this.living=true;
        this.visable=true;
     window.screen1=(true);
@@ -213,6 +217,7 @@ proccessloop(ctx){
    this.position.y=250;
         window.color1=("#ffad47");
        this.living=true;
+        console.log('living=true2');
        this.visable=true;
     window.screen4=(true);
         window.screen5=(false);
