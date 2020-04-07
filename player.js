@@ -195,7 +195,7 @@ proccessloop(ctx){
   
    //respawn
   
-  if((window.start==(true)||(window.start2==(true))){
+  if((window.start==(true))||(window.start2==(true))){
      if(this.respawn==(true)){
       setTimeout(function(player){ player.respawnaction=(true); }, 3000,this);
     if(this.respawnaction=(true)){
