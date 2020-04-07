@@ -172,6 +172,10 @@ this.position.x=this.position.x-10;
   this.position.x=850;
   }
     //screen movement
+     if(window.screen1load==(true)){
+   this.living=false;
+       this.visable=false;
+    }
     if(window.screen2load==(true)){
     this.position.x=425;
       this.position.y=300;
