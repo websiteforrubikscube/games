@@ -27,7 +27,7 @@ var runnumber12=0;
  var runnumber32=0;
 
 export default class Level2{
- proccess(){
+ proccess2(){
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
  
