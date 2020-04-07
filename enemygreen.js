@@ -47,26 +47,6 @@ this.position.x= this.position.x - 5;
   }
   //screen movement
   
-  if((window.screen1==(true))||(window.screen2==(true))){
-  if(window.respawn==(true)){
-  this.visable=(true);
-      window.nodamage1=(false);
-       window.color=('#90EE90');
-  this.position.x=400;
-    this.position.y=300;
-  }
-  }
-  
-   if(window.screen3==(true)){
-  if(window.respawn==(true)){
-  this.visable=(true);
-      window.nodamage1=(false);
-       window.color=('#90EE90');
-  this.position.x=575;
-    this.position.y=300;
-  }
-  }
-  
     if(window.screen3load==(true)){
       this.visable=(true);
       window.nodamage1=(false);
