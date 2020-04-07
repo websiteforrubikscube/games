@@ -139,7 +139,7 @@ proccessloop(ctx){
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
-               setTimeout(function(player){ player.respawn=(false); }, 4034,this);
+               setTimeout(function(player){ player.respawn=(false); }, 3034,this);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
           }
          }
@@ -161,7 +161,7 @@ proccessloop(ctx){
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
-               setTimeout(function(player){ player.respawn=(false); }, 4034,this);
+               setTimeout(function(player){ player.respawn=(false); }, 3034,this);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
          }
     }
@@ -182,7 +182,7 @@ proccessloop(ctx){
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
-                 setTimeout(function(player){ player.respawn=(false); }, 4034,this);
+                 setTimeout(function(player){ player.respawn=(false); }, 3034,this);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
          }
     }
@@ -192,42 +192,7 @@ proccessloop(ctx){
   
    //respawn
   
-  if(this.respawn==(true)){
-    if(window.start==(true)){
-        setTimeout(function(player){ player.respawnload=(true); }, 4000,this);
-      if(this.respawnload==(true)){
-     this.position.x=0;
-   this.position.y=250;
-      window.color1=("#ffad47");
-        console.log('living=true');
-      this.living=true;
-       this.visable=true;
-    window.screen1=(true);
-       window.screen2=(false);
-       window.screen3=(false);
-      window.screen1load=(true);
-       setTimeout(function(player){ player.screen1load=(false); }, 34,window);
-        this.respawnload=(false);
-      }
-    }
-     if(window.start2==(true)){
-        setTimeout(function(player){ player.respawnload2=(true); }, 4000,this);
-      if(this.respawnload2==(true)){
-       this.position.x=0;
-   this.position.y=250;
-        window.color1=("#ffad47");
-       this.living=true;
-        console.log('living=true2');
-       this.visable=true;
-    window.screen4=(true);
-        window.screen5=(false);
-        window.screen6=(false);
-         window.screen4load=(true);
-       setTimeout(function(player){ player.screen4load=(false); }, 34,window);
-         this.respawnload2=(false);
-    }
-  }
-  }
+  
  
   //screen movement
   if(window.screen2==(true)){
