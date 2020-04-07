@@ -14,8 +14,6 @@ export default class Player{
     this.visable = (true);
    this.living=(true);
     this.respawn=(false);
-     this.respawn2=(false);
-     this.respawn3=(false);
      this.respawnload=(false);
      this.respawnload2=(false);
      this.respawnload3=(false); 
@@ -154,14 +152,14 @@ proccessloop(ctx){
     if((this.position.x)<(window.enemy2X+150)){
          if((window.visable1==true)&&(window.invisabledamage1==(false))){
             if(window.screenload==(false)){
-              this.respawn2=(true);
+              this.respawn=(true);
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
-               setTimeout(function(player){ player.respawn2=(false); }, 4034,this);
+               setTimeout(function(player){ player.respawn=(false); }, 4034,this);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
          }
     }
@@ -174,14 +172,14 @@ proccessloop(ctx){
     if((this.position.x)<(window.enemy2X2+150)){
          if((window.visable2==true)&&(window.invisabledamage2==(false))){
             if(window.screenload==(false)){
-              this.respawn3=(true);
+              this.respawn=(true);
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
-                 setTimeout(function(player){ player.respawn3=(false); }, 4034,this);
+                 setTimeout(function(player){ player.respawn=(false); }, 4034,this);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
          }
     }
@@ -191,7 +189,7 @@ proccessloop(ctx){
   
    //respawn
   
-  if((this.respawn==(true))||(this.respawn2==(true))){
+  if(this.respawn==(true)){
     if(window.start==(true)){
         setTimeout(function(player){ player.respawnload=(true); }, 4000,this);
       if(this.respawnload==(true)){
@@ -225,42 +223,7 @@ proccessloop(ctx){
     }
   }
   }
-  
-    if(this.respawn3==(true)){
-    if(window.start==(true)){
-        setTimeout(function(player){ player.respawnload3=(true); }, 4000,this);
-      if(this.respawnload3==(true)){
-      this.position.x=0;
-   this.position.y=250;
-       window.color1=("#ffad47");
-      this.living=true;
-       this.visable=true;
-    window.screen1=(true);
-       window.screen2=(false);
-       window.screen3=(false);
-        window.screen1load=(true);
-       setTimeout(function(player){ player.screen1load=(false); }, 34,window);
-         this.respawnload3=(false);
-    }
-    }
-     if(window.start2==(true)){
-         setTimeout(function(player){ player.respawnload4=(true); }, 4000,this);
-      if(this.respawnload4==(true)){
-       this.position.x=0;
-   this.position.y=250;
-        window.color1=("#ffad47");
-       this.living=true;
-       this.visable=true;
-    window.screen4=(true);
-        window.screen5=(false);
-        window.screen6=(false);
-         window.screen4load=(true);
-       setTimeout(function(player){ player.screen4load=(false); }, 34,window);
-         this.respawnload4=(false);
-    }
-  }
-    }
-  
+ 
   //screen movement
   if(window.screen2==(true)){
    if(window.move == (false)){
