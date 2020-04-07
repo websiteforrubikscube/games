@@ -140,13 +140,14 @@ proccessloop(ctx){
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
+               setTimeout(function(player){ player.respawn=(false); }, 4034,this);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
-          }else{this.respawn=(false);}
-         }else{this.respawn=(false);}
-    }else{this.respawn=(false);}
-  }else{this.respawn=(false);}
-  }else{this.respawn=(false);}
-  }else{this.respawn=(false);}
+          }
+         }
+    }
+  }
+  }
+  }
   
  if((this.position.y+150)>(window.enemy2Y+33)){
   if((this.position.x+100)>(window.enemy2X)){
@@ -160,12 +161,13 @@ proccessloop(ctx){
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
+               setTimeout(function(player){ player.respawn2=(false); }, 4034,this);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
-         }else{this.respawn2=(false);}
-    }else{this.respawn2=(false);}
-  }else{this.respawn2=(false);}
-  }else{this.respawn2=(false);}
- }else{this.respawn2=(false);}
+         }
+    }
+  }
+  }
+ }
   
   if((this.position.y+150)>(window.enemy2Y2+33)){
   if((this.position.x+100)>(window.enemy2X2)){
@@ -179,12 +181,13 @@ proccessloop(ctx){
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
+                 setTimeout(function(player){ player.respawn3=(false); }, 4034,this);
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
-         }else{this.respawn3=(false);}
-    }else{this.respawn3=(false);}
-  }else{this.respawn3=(false);}
-  }else{this.respawn3=(false);}
-  }else{this.respawn3=(false);}
+         }
+    }
+  }
+  }
+  }
   
    //respawn
   
