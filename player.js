@@ -219,6 +219,7 @@ proccessloop(ctx){
        setTimeout(function(player){ player.screenload4=(false); }, 34,window);
     }
   }
+  }
   
     if(this.respawn3==(true)){
     if(window.start==(true)){
@@ -235,6 +236,7 @@ proccessloop(ctx){
         window.screenload1=(true);
        setTimeout(function(player){ player.screenload1=(false); }, 34,window);
     }
+    }
      if(window.start2==(true)){
          setTimeout(function(player){ player.respawnload4(true); }, 4000,this);
       if(this.respawnload4==(true)){
@@ -250,6 +252,7 @@ proccessloop(ctx){
        setTimeout(function(player){ player.screenload4=(false); }, 34,window);
     }
   }
+    }
   
   //screen movement
   if(window.screen2==(true)){
