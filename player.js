@@ -202,6 +202,7 @@ proccessloop(ctx){
        window.screen3=(false);
       window.screenload1=(true);
        setTimeout(function(player){ player.screenload1=(false); }, 34,window);
+        this.respawnload=(false);
       }
     }
      if(window.start2==(true)){
@@ -217,6 +218,7 @@ proccessloop(ctx){
         window.screen6=(false);
          window.screenload1=(true);
        setTimeout(function(player){ player.screenload4=(false); }, 34,window);
+         this.respawnload2=(false);
     }
   }
   }
@@ -235,6 +237,7 @@ proccessloop(ctx){
        window.screen3=(false);
         window.screenload1=(true);
        setTimeout(function(player){ player.screenload1=(false); }, 34,window);
+         this.respawnload3=(false);
     }
     }
      if(window.start2==(true)){
@@ -250,6 +253,7 @@ proccessloop(ctx){
         window.screen6=(false);
          window.screenload1=(true);
        setTimeout(function(player){ player.screenload4=(false); }, 34,window);
+         this.respawnload4=(false);
     }
   }
     }
