@@ -203,8 +203,8 @@ proccessloop(ctx){
     window.screen1=(true);
        window.screen2=(false);
        window.screen3=(false);
-      window.screenload1=(true);
-       setTimeout(function(player){ player.screenload1=(false); }, 34,window);
+      window.screen1load1=(true);
+       setTimeout(function(player){ player.screen1load=(false); }, 34,window);
         this.respawnload=(false);
       }
     }
@@ -219,8 +219,8 @@ proccessloop(ctx){
     window.screen4=(true);
         window.screen5=(false);
         window.screen6=(false);
-         window.screenload1=(true);
-       setTimeout(function(player){ player.screenload4=(false); }, 34,window);
+         window.screen4load=(true);
+       setTimeout(function(player){ player.screen4load=(false); }, 34,window);
          this.respawnload2=(false);
     }
   }
@@ -238,8 +238,8 @@ proccessloop(ctx){
     window.screen1=(true);
        window.screen2=(false);
        window.screen3=(false);
-        window.screenload1=(true);
-       setTimeout(function(player){ player.screenload1=(false); }, 34,window);
+        window.screen1load=(true);
+       setTimeout(function(player){ player.screen1load=(false); }, 34,window);
          this.respawnload3=(false);
     }
     }
@@ -254,8 +254,8 @@ proccessloop(ctx){
     window.screen4=(true);
         window.screen5=(false);
         window.screen6=(false);
-         window.screenload1=(true);
-       setTimeout(function(player){ player.screenload4=(false); }, 34,window);
+         window.screen4load=(true);
+       setTimeout(function(player){ player.screen4load=(false); }, 34,window);
          this.respawnload4=(false);
     }
   }
