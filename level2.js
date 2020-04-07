@@ -13,7 +13,6 @@ import Screen5 from "./screen5.js";
  let ground = new Ground();
 let obstacle1 = new Obstacle1();
 let obstacle2 = new Obstacle2();
- let player = new Player();
  let enemygreen = new Enemygreen();
  let sky = new Sky();
  let screen3 = new Screen3();
@@ -25,13 +24,17 @@ let enemyyellow2 = new Enemyyellow2();
 var runnumber12=0;
  var runnumber22=0;
  var runnumber32=0;
+var runnumberplayer=0;
 
 export default class Level2{
  proccess2(){
+  runnumberplayer++;
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
  
-
+if(runnumberplayer<2){
+let player = new Player();
+}
  
  
  function erraseCanvas() {
