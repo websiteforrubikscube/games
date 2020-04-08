@@ -25,11 +25,13 @@ window.screen4load=(false);
 window.screen5load=(false);
 window.screen6load=(false);
 export default class Level1{
-
-
+ 
+  constructor (){
+  this.ctx=undefined;
+  }
  proccess(){
   let canv = document.getElementById("Screen");
-  let ctx = canv.getContext('2d');
+   this.ctx = canv.getContext('2d');
   
  if(window.resetlevel1==(true)){
  runnumber=0;
@@ -43,15 +45,15 @@ export default class Level1{
 
 if(window.screen1==(true)){
   runnumber++;
- ctx.fillStyle=("#000");
- ctx.fillText("Level 1",100,100);
-  screen1.draw(ctx);
-  sky.draw(ctx);
-  ground.draw(ctx);
- player.draw(ctx);
-  enemygreen.draw(ctx);
-  player.proccessloop(ctx);
-  enemygreen.proccessloop(ctx);
+ this.ctx.fillStyle=("#000");
+ this.ctx.fillText("Level 1",100,100);
+  screen1.draw(this.ctx);
+  sky.draw(this.ctx);
+  ground.draw(this.ctx);
+ player.draw(this.ctx);
+  enemygreen.draw(this.ctx);
+  player.proccessloop(this.ctx);
+  enemygreen.proccessloop(this.ctx);
  screen1.proccessloop();
  if(runnumber<2){
  window.screen1load=(true);
@@ -63,13 +65,13 @@ if(window.screen1==(true)){
   if(window.screen2==(true)){
   runnumber2++;
    window.invisabledamage=(true);
-  screen2.draw(ctx);
-   sky.draw(ctx);
-  ground.draw(ctx);
- player.draw(ctx);
-   enemyyellow.draw(ctx);
-  player.proccessloop(ctx);
-   enemyyellow.proccessloop(ctx);
+  screen2.draw(this.ctx);
+   sky.draw(this.ctx);
+  ground.draw(this.ctx);
+ player.draw(this.ctx);
+   enemyyellow.draw(this.ctx);
+  player.proccessloop(this.ctx);
+   enemyyellow.proccessloop(this.ctx);
     screen2.proccessloop();
    if(runnumber2<2){
     window.screen2load=(true);
@@ -82,15 +84,15 @@ if(window.screen1==(true)){
   if(window.screen3==(true)){
       runnumber3++;
    window.invisabledamage=(false);
-  sky.draw(ctx);
-   screen3.draw(ctx);
-  ground.draw(ctx);
- player.draw(ctx);
-   enemygreen.draw(ctx);
-   enemyyellow.draw(ctx);
-  player.proccessloop(ctx);
-   enemygreen.proccessloop(ctx);
-   enemyyellow.proccessloop(ctx);
+  sky.draw(this.ctx);
+   screen3.draw(this.ctx);
+  ground.draw(this.ctx);
+ player.draw(this.ctx);
+   enemygreen.draw(this.ctx);
+   enemyyellow.draw(this.ctx);
+  player.proccessloop(this.ctx);
+   enemygreen.proccessloop(this.ctx);
+   enemyyellow.proccessloop(this.ctx);
    screen3.proccessloop();
       if(runnumber3<5){
     window.screen3load=(true);
@@ -101,6 +103,6 @@ if(window.screen1==(true)){
   }
 }
 erraseCanvas() {
-  ctx.clearRect(0,0,1000,500);
+  this.ctx.clearRect(0,0,1000,500);
 }
 }
