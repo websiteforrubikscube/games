@@ -40,7 +40,7 @@ if(window.resetlevel2==(true)){
  runnumber32=0;
  }
 
- Level2.erraseCanvas();
+ this.erraseCanvas();
 runnumber12++;
 if(window.screen4==(true)){
  screen4.draw(ctx);
