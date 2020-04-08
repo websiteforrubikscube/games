@@ -203,12 +203,12 @@ proccessloop(ctx){
     if(window.start==(true)){
     window.screen1=(true);
      window.resetlevel1=(true);
-       setTimeout(function(player){ player.resetlevel1=(true); }, 34,window);
+       setTimeout(function(player){ player.resetlevel1=(false); }, 34,window);
     }
       if(window.start2==(true)){
       window.screen4=(true);
        window.resetlevel2=(true);
-        setTimeout(function(player){ player.resetlevel2=(true); }, 34,window);
+        setTimeout(function(player){ player.resetlevel2=(false); }, 34,window);
       }
   }
      }
