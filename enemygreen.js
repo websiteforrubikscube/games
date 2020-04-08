@@ -46,6 +46,14 @@ this.position.x= this.position.x - 5;
   this.position.x=800;
   }
   //screen movement
+
+   if(window.screen1load==(true)){
+      this.visable=(true);
+      window.nodamage1=(false);
+       window.color=('#90EE90');
+  this.position.x=400;
+    this.position.y=300;
+  }
   
     if(window.screen3load==(true)){
       this.visable=(true);
