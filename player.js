@@ -1,8 +1,6 @@
 import Enemyyellow from "./enemyyellow.js"; 
 import Enemygreen from "./enemygreen.js";
 import Screen1 from "./screen1.js";
-import ResetLevel1 from "./level1.js";
-import ResetLevel2 from "./level2.js";
 
 var keys={};
 
@@ -22,6 +20,8 @@ export default class Player{
     this.respawnload4=(false);
     this.respawnaction=(false);
     window.color1 = ("#ffad47");
+    window.resetlevel1=(false);
+    window.resetlevel2=(false);
     keys = {};
     keys[37]=false;
     keys[38]=false;
@@ -202,11 +202,13 @@ proccessloop(ctx){
        setTimeout(function(player){ player.respawnaction=(false); }, 34,this);
     if(window.start==(true)){
     window.screen1=(true);
-      ResetLevel1();
+     window.resetlevel1=(true);
+       setTimeout(function(player){ player.resetlevel1=(true); }, 34,window);
     }
       if(window.start2==(true)){
       window.screen4=(true);
-        ResetLevel2();
+       window.resetlevel2=(true);
+        setTimeout(function(player){ player.resetlevel2=(true); }, 34,window);
       }
   window.start=(false);
     window.start2=(false);
