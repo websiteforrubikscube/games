@@ -28,9 +28,13 @@ var runnumber12=0;
 
 export default class Level2{
  
+  constructor (){
+    this.ctx=undefined;
+    }
+
  proccess2(){
   let canv = document.getElementById("Screen");
-  let ctx = canv.getContext('2d');
+  this.ctx = canv.getContext('2d');
   
 if(window.resetlevel2==(true)){
  runnumber12=0;
@@ -41,16 +45,16 @@ if(window.resetlevel2==(true)){
  this.erraseCanvas();
  runnumber12++;
 if(window.screen4==(true)){
- screen4.draw(ctx);
-sky.draw(ctx);
-ground.draw(ctx);
-  player.draw(ctx);
- enemyyellow2.draw(ctx);
- enemyyellow.draw(ctx);
-  player.proccessloop(ctx);
- enemygreen.proccessloop(ctx);
- enemyyellow.proccessloop(ctx);
- enemyyellow2.proccessloop(ctx);
+ screen4.draw(this.ctx);
+sky.draw(this.ctx);
+ground.draw(this.ctx);
+  player.draw(this.ctx);
+ enemyyellow2.draw(this.ctx);
+ enemyyellow.draw(this.ctx);
+  player.proccessloop(this.ctx);
+ enemygreen.proccessloop(this.ctx);
+ enemyyellow.proccessloop(this.ctx);
+ enemyyellow2.proccessloop(this.ctx);
  screen4.proccessloop();
  if(runnumber12<2){
  window.screen4load=(true);
@@ -61,16 +65,16 @@ ground.draw(ctx);
 }
   if(window.screen5==(true)){
    runnumber22++;
-sky.draw(ctx);
-   screen5.draw(ctx);
-ground.draw(ctx);
-   obstacle1.draw(ctx);
-  player.draw(ctx);
-   enemyyellow.draw(ctx);
-  player.proccessloop(ctx);
- enemygreen.proccessloop(ctx);
- enemyyellow.proccessloop(ctx);
- enemyyellow2.proccessloop(ctx);
+sky.draw(this.ctx);
+   screen5.draw(this.ctx);
+ground.draw(this.ctx);
+   obstacle1.draw(this.ctx);
+  player.draw(this.ctx);
+   enemyyellow.draw(this.ctx);
+  player.proccessloop(this.ctx);
+ enemygreen.proccessloop(this.ctx);
+ enemyyellow.proccessloop(this.ctx);
+ enemyyellow2.proccessloop(this.ctx);
    obstacle1.proccessloop();
    screen5.proccessloop();
  if(runnumber22<2){
@@ -82,17 +86,17 @@ ground.draw(ctx);
 }
   if(window.screen6==(true)){
    runnumber32++;
-sky.draw(ctx);
-   obstacle1.draw(ctx);
-   obstacle2.draw(ctx);
-ground.draw(ctx);
-  player.draw(ctx);
-   enemyyellow.draw(ctx);
-   enemyyellow2.draw(ctx);
-  player.proccessloop(ctx);
- enemygreen.proccessloop(ctx);
- enemyyellow.proccessloop(ctx);
- enemyyellow2.proccessloop(ctx);
+sky.draw(this.ctx);
+   obstacle1.draw(this.ctx);
+   obstacle2.draw(this.ctx);
+ground.draw(this.ctx);
+  player.draw(this.ctx);
+   enemyyellow.draw(this.ctx);
+   enemyyellow2.draw(this.ctx);
+  player.proccessloop(this.ctx);
+ enemygreen.proccessloop(this.ctx);
+ enemyyellow.proccessloop(this.ctx);
+ enemyyellow2.proccessloop(this.ctx);
    obstacle1.proccessloop();
    obstacle2.proccessloop();
  if(runnumber32<2){
@@ -104,6 +108,6 @@ ground.draw(ctx);
 }
 }
 erraseCanvas() {
-  this.clearRect(0,0,1000,500);
+  this.ctx.clearRect(0,0,1000,500);
 }
 }
