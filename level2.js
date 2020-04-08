@@ -27,6 +27,9 @@ var runnumber12=0;
  var runnumber32=0;
 
 export default class Level2{
+  erraseCanvas() {
+    ctx.clearRect(0,0,1000,500);
+}
  proccess2(){
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
@@ -36,13 +39,8 @@ if(window.resetlevel2==(true)){
  runnumber22=0;
  runnumber32=0;
  }
- 
- 
- function erraseCanvas() {
-        ctx.clearRect(0,0,1000,500);
-    }
 
- erraseCanvas();
+ Level2.erraseCanvas();
 runnumber12++;
 if(window.screen4==(true)){
  screen4.draw(ctx);
