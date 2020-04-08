@@ -25,6 +25,12 @@ window.screen4load=(false);
 window.screen5load=(false);
 window.screen6load=(false);
 export default class Level1{
+ erraseCanvas() {
+    //my comment
+         ctx.clearRect(0,0,1000,500);
+     }
+
+     
  proccess(){
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
@@ -34,15 +40,11 @@ export default class Level1{
  runnumber2=0;
  runnumber3=0;
  }
-
- function erraseCanvas() {
-   //my comment
-        ctx.clearRect(0,0,1000,500);
-    }
    
  erraseCanvas();
-runnumber++;
+
 if(window.screen1==(true)){
+  runnumber++;
  ctx.fillStyle=("#000");
  ctx.fillText("Level 1",100,100);
   screen1.draw(ctx);
