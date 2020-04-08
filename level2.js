@@ -14,6 +14,7 @@ import Screen5 from "./screen5.js";
 let obstacle1 = new Obstacle1();
 let obstacle2 = new Obstacle2();
  let enemygreen = new Enemygreen();
+let player = new Player();
  let sky = new Sky();
  let screen3 = new Screen3();
 let screen4 = new Screen4();
@@ -21,21 +22,14 @@ let screen5 = new Screen5();
  let enemyyellow = new Enemyyellow();
 let enemyyellow2 = new Enemyyellow2();
 
- var runnumbermain=0;
-var runnumberplayer=0;
+var runnumber12=0;
+ var runnumber22=0;
+ var runnumber32=0;
 
 export default class Level2{
  proccess2(){
-  runnumberplayer++;
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
- 
-if(runnumberplayer<2){
-let player = new Player();
- var runnumber12=0;
- var runnumber22=0;
- var runnumber32=0;
-}
   
 if(window.resetlevel2==(true)){
  runnumber12=0;
