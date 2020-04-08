@@ -7,7 +7,7 @@ import ResetLevel2 from "./level2.js";
 var keys={};
 
 export default class Player{
-  constructor(runnumber){
+  constructor(){
     window.PlayerX = 0;
     this.width = 100;
     this.height = 150;
