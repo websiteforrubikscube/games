@@ -34,6 +34,12 @@ export default class Level1{
  var runnumber2=0;
  var runnumber3=0;
  }
+  
+  function ResetLevel1(){
+   var runnumber=0;
+ var runnumber2=0;
+ var runnumber3=0;
+  }
  
 
  function erraseCanvas() {
