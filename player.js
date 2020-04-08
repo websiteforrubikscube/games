@@ -1,8 +1,8 @@
 import Enemyyellow from "./enemyyellow.js"; 
 import Enemygreen from "./enemygreen.js";
 import Screen1 from "./screen1.js";
-import proccess from "./level1.js";
-import proccess2 from "./level2.js";
+import ResetLevel1 from "./level1.js";
+import ResetLevel2 from "./level2.js";
 
 var keys={};
 
@@ -202,18 +202,14 @@ proccessloop(ctx){
        setTimeout(function(player){ player.respawnaction=(false); }, 34,this);
     if(window.start==(true)){
     window.screen1=(true);
+      ResetLevel1();
     }
       if(window.start2==(true)){
       window.screen4=(true);
+        ResetLevel2();
       }
   window.start=(false);
     window.start2=(false);
-    runnumber=0;  
-      runnumber2=0;
-      runnumber3=0;
-    runnumber12=0;
-      runnumber22=0;
-      runnumber32=0;
       setTimeout(function(player){ player.start=(true); }, 34,window);
     setTimeout(function(player){ player.start2=(true); }, 34,window);
   }
