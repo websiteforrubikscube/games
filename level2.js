@@ -36,6 +36,12 @@ let player = new Player();
  var runnumber22=0;
  var runnumber32=0;
 }
+  
+  function ResetLevel2(){
+  var runnumber12=0;
+ var runnumber22=0;
+ var runnumber32=0;
+  }
  
  
  function erraseCanvas() {
