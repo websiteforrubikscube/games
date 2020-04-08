@@ -210,10 +210,6 @@ proccessloop(ctx){
        window.resetlevel2=(true);
         setTimeout(function(player){ player.resetlevel2=(true); }, 34,window);
       }
-  window.start=(false);
-    window.start2=(false);
-      setTimeout(function(player){ player.start=(true); }, 34,window);
-    setTimeout(function(player){ player.start2=(true); }, 34,window);
   }
      }
 }
