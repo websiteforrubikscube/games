@@ -36,6 +36,7 @@ export default class Level1{
  }
 
  function erraseCanvas() {
+   //my comment
         ctx.clearRect(0,0,1000,500);
     }
    
