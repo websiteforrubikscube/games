@@ -26,7 +26,7 @@ window.screen5load=(false);
 window.screen6load=(false);
 export default class Level1{
  erraseCanvas() {
-         ctx.clearRect(0,0,1000,500);
+         this.clearRect(0,0,1000,500);
      }
 
 

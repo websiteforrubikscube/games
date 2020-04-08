@@ -28,7 +28,7 @@ var runnumber12=0;
 
 export default class Level2{
   erraseCanvas() {
-    ctx.clearRect(0,0,1000,500);
+    this.clearRect(0,0,1000,500);
 }
  proccess2(){
   let canv = document.getElementById("Screen");
