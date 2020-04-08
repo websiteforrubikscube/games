@@ -27,9 +27,7 @@ var runnumber12=0;
  var runnumber32=0;
 
 export default class Level2{
-  erraseCanvas() {
-    this.clearRect(0,0,1000,500);
-}
+ 
  proccess2(){
   let canv = document.getElementById("Screen");
   let ctx = canv.getContext('2d');
@@ -41,7 +39,7 @@ if(window.resetlevel2==(true)){
  }
 
  this.erraseCanvas();
-runnumber12++;
+ runnumber12++;
 if(window.screen4==(true)){
  screen4.draw(ctx);
 sky.draw(ctx);
@@ -104,5 +102,8 @@ ground.draw(ctx);
  setTimeout(function(load){ load.screen6load=(false); }, 34,window);
  }
 }
+}
+erraseCanvas() {
+  this.clearRect(0,0,1000,500);
 }
 }

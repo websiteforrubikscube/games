@@ -25,9 +25,6 @@ window.screen4load=(false);
 window.screen5load=(false);
 window.screen6load=(false);
 export default class Level1{
- erraseCanvas() {
-         this.clearRect(0,0,1000,500);
-     }
 
 
  proccess(){
@@ -40,7 +37,9 @@ export default class Level1{
  runnumber3=0;
  }
    
+ if(runnumber>2){
  this.erraseCanvas();
+ }
 
 if(window.screen1==(true)){
   runnumber++;
@@ -100,5 +99,8 @@ if(window.screen1==(true)){
  setTimeout(function(load){ load.screen3load=(false); }, 34,window);
    }
   }
+}
+erraseCanvas() {
+  ctx.clearRect(0,0,1000,500);
 }
 }
