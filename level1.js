@@ -35,12 +35,11 @@ export default class Level1{
  var runnumber3=0;
  }
   
-  function ResetLevel1(){
-   var runnumber=0;
- var runnumber2=0;
- var runnumber3=0;
-  }
- 
+ if(window.resetlevel1==(true)){
+ runnumber=0;
+ runnumber2=0;
+ runnumber3=0;
+ }
 
  function erraseCanvas() {
         ctx.clearRect(0,0,1000,500);
