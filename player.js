@@ -210,6 +210,8 @@ proccessloop(ctx){
        window.resetlevel2=(true);
         setTimeout(function(player){ player.resetlevel2=(false); }, 34,window);
       }
+      this.living=(true);
+      this.visable=(true);
   }
      }
 }
