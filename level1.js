@@ -40,7 +40,7 @@ export default class Level1{
  runnumber3=0;
  }
    
- Levle1.erraseCanvas();
+ Levl1.erraseCanvas();
 
 if(window.screen1==(true)){
   runnumber++;
