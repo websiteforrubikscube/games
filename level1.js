@@ -35,7 +35,10 @@ export default class Level1{
    this.ctx = canv.getContext('2d');
   
    if (player.visable==false){
+    setTimeout(function(load){ load.respawn=(true); }, 1000,this);
+    if(this.respawn==(true)){
      this.respawnmain();
+    }
    }
 
    
@@ -104,8 +107,6 @@ if(window.screen1==(true)){
 }
 
 respawnmain(){
-  //setTimeout(function(level){ level.respawn=(true); }, 3000, this);
-  //if(this.respawn==(true)){
   runnumber=0;
   runnumber2=0;
   runnumber3=0;
@@ -116,7 +117,6 @@ respawnmain(){
   window.screen3=(false);
   window.color1=("#ffad47");
 this.respawn=(false);
- // }
 }
 
 erraseCanvas() {
