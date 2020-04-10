@@ -33,11 +33,10 @@ export default class Level1{
   let canv = document.getElementById("Screen");
    this.ctx = canv.getContext('2d');
   
- if(window.resetlevel1==(true)){
- runnumber=0;
- runnumber2=0;
- runnumber3=0;
- }
+   if (player.living==false){
+     this.respawn();
+   }
+
    
  if(runnumber>2){
  this.erraseCanvas();
@@ -102,6 +101,19 @@ if(window.screen1==(true)){
    }
   }
 }
+
+respawn(){
+  runnumber=0;
+  runnumber2=0;
+  runnumber3=0;
+  player.living=true;
+  player.visable=true;
+  window.screen1=(true);
+  window.screen2=(false);
+  window.screen3=(false);
+  window.color1=("#ffad47");
+}
+
 erraseCanvas() {
   this.ctx.clearRect(0,0,1000,500);
 }

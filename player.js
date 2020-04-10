@@ -42,6 +42,9 @@ export default class Player{
   
  
 proccessloop(ctx){
+  if (this.living==false){
+    return;
+  }
   //movement
     if(window.touch2==(true)){
    this.speed=0;
@@ -179,7 +182,6 @@ proccessloop(ctx){
             if(window.screenload==(false)){
               this.respawn=(true);
            this.living=(false);
-              console.log('179');
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
@@ -193,29 +195,6 @@ proccessloop(ctx){
   }
   }
   
-   //respawn
-  
-  if((window.start==(true))||(window.start2==(true))){
-     if(this.respawn==(true)){
-      setTimeout(function(player){ player.respawnaction=(true); }, 3000,this);
-    if(this.respawnaction==(true)){
-       setTimeout(function(player){ player.respawnaction=(false); }, 34,this);
-    if(window.start==(true)){
-    window.screen1=(true);
-     window.resetlevel1=(true);
-       setTimeout(function(player){ player.resetlevel1=(false); }, 34,window);
-    }
-      if(window.start2==(true)){
-      window.screen4=(true);
-       window.resetlevel2=(true);
-        setTimeout(function(player){ player.resetlevel2=(false); }, 34,window);
-      }
-      window.color1=("#ffad47");
-      this.living=(true);
-      this.visable=(true);
-  }
-     }
-}
   //screen movement
     if(window.screen1load==(true)){
   this.position.x=0;
