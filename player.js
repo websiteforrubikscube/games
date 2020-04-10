@@ -35,11 +35,10 @@ export default class Player{
   
  
 proccessloop(ctx){
+  this.resetPlayer();
   if (this.living==false){
     return;
   }
-
-  this.resetPlayer();
 
   if (this.visable==false){
     return;
