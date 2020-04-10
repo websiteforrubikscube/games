@@ -35,7 +35,7 @@ export default class Level1{
    this.ctx = canv.getContext('2d');
   
    if (player.living==false){
-     this.respawn();
+     this.respawnmain();
    }
 
    
@@ -103,7 +103,7 @@ if(window.screen1==(true)){
   }
 }
 
-respawn(){
+respawnmain(){
   setTimeout(function(level){ level.respawn=(true); }, 3000, this);
   if(this.respawn==(true)){
   runnumber=0;
