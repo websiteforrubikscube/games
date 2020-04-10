@@ -35,7 +35,7 @@ export default class Player{
   
  
 proccessloop(ctx){
-  if (this.living==false){
+  if ((this.living==false)||(this.visable==false)){
     return;
   }
   //movement
