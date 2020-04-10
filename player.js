@@ -13,15 +13,8 @@ export default class Player{
     this.speed=0; 
     this.visable = (true);
    this.living=(true);
-    this.respawn=(false);
-     this.respawnload=(false);
-     this.respawnload2=(false);
-     this.respawnload3=(false); 
-    this.respawnload4=(false);
-    this.respawnaction=(false);
     window.color1 = ("#ffad47");
-    window.resetlevel1=(false);
-    window.resetlevel2=(false);
+
     keys = {};
     keys[37]=false;
     keys[38]=false;
@@ -137,15 +130,14 @@ proccessloop(ctx){
          if((window.visable==true)&&(window.nodamage1==(false))){
           if(window.invisabledamage==(false)){
             if(window.screenload==(false)){
-              this.respawn=(true);
-              console.log('135');
+  
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
-               setTimeout(function(player){ player.respawn=(false); }, 3034,this);
+             
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
           }
          }
@@ -159,15 +151,15 @@ proccessloop(ctx){
     if((this.position.x)<(window.enemy2X+150)){
          if((window.visable1==true)&&(window.invisabledamage1==(false))){
             if(window.screenload==(false)){
-              this.respawn=(true);
+        
            this.living=(false);
-              console.log('158');
+             
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
-               setTimeout(function(player){ player.respawn=(false); }, 3034,this);
+            
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
          }
     }
@@ -180,14 +172,14 @@ proccessloop(ctx){
     if((this.position.x)<(window.enemy2X2+150)){
          if((window.visable2==true)&&(window.invisabledamage2==(false))){
             if(window.screenload==(false)){
-              this.respawn=(true);
+        
            this.living=(false);
     window.color1=("#ffd5a1");
            keys[37]=(false);
             keys[38]=(false);
             keys[39]=(false);
             keys[40]=(false);
-                 setTimeout(function(player){ player.respawn=(false); }, 3034,this);
+           
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
          }
     }

@@ -17,6 +17,7 @@ import Screen3 from "./screen3.js";
  let screen3 = new Screen3();
  let enemyyellow = new Enemyyellow();
 
+ var respawn = (false);
 var runnumber=0;
  var runnumber2=0;
  var runnumber3=0;
@@ -103,6 +104,8 @@ if(window.screen1==(true)){
 }
 
 respawn(){
+  setTimeout(function(){ respawn=(true); }, 3000);
+  if(respawn==(true)){
   runnumber=0;
   runnumber2=0;
   runnumber3=0;
@@ -112,6 +115,8 @@ respawn(){
   window.screen2=(false);
   window.screen3=(false);
   window.color1=("#ffad47");
+respawn=(false);
+  }
 }
 
 erraseCanvas() {
