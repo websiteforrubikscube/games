@@ -35,10 +35,7 @@ export default class Level1{
    this.ctx = canv.getContext('2d');
   
    if (player.visable==false){
-    setTimeout(function(load){ load.respawn=(true); }, 1000,this);
-    if(this.respawn==(true)){
      this.respawnmain();
-    }
    }
 
    
