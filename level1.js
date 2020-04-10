@@ -17,7 +17,6 @@ import Screen3 from "./screen3.js";
  let screen3 = new Screen3();
  let enemyyellow = new Enemyyellow();
 
- var respawn = (false);
 var runnumber=0;
  var runnumber2=0;
  var runnumber3=0;
@@ -29,6 +28,7 @@ export default class Level1{
  
   constructor (){
   this.ctx=undefined;
+  this.respawn = (false);
   }
  proccess(){
   let canv = document.getElementById("Screen");
@@ -104,7 +104,7 @@ if(window.screen1==(true)){
 }
 
 respawn(){
-  setTimeout(function(){ respawn=(true); }, 3000);
+  setTimeout(function(level){ level.respawn=(true); }, 3000, this);
   if(respawn==(true)){
   runnumber=0;
   runnumber2=0;
@@ -115,7 +115,7 @@ respawn(){
   window.screen2=(false);
   window.screen3=(false);
   window.color1=("#ffad47");
-respawn=(false);
+this.respawn=(false);
   }
 }
 
