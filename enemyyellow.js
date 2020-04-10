@@ -175,8 +175,15 @@ this.position.x=this.position.x-10;
      if(window.screen1load==(true)){
    this.living=false;
        this.visable=false;
+       window.invisabledamage1=(true);
     }
     if(window.screen2load==(true)){
+      this.living=(true);
+      this.immune=(false);
+      this.hit=0;
+      this.visable=(true);
+      window.invisabledamage1=(false);
+     window.color2=("#fce700");
     this.position.x=425;
       this.position.y=300;
     }
