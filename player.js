@@ -35,7 +35,13 @@ export default class Player{
   
  
 proccessloop(ctx){
-  if ((this.living==false)||(this.visable==false)){
+  if (this.living==false){
+    return;
+  }
+
+  resetPlayer();
+
+  if (this.visable==false){
     return;
   }
   //movement
@@ -187,58 +193,63 @@ proccessloop(ctx){
   }
   }
   
-  //screen movement
-    if(window.screen1load==(true)){
-  this.position.x=0;
-   this.position.y=250;
-   }
-  if(window.screen2==(true)){
-   if(window.move == (false)){
-    if(this.living == (true)){
-  this.position.x=0;
-   this.position.y=250;
-    }
-   }
-  }
-  if(window.screen3==(true)){
-   if(window.move==(false)){
-    if(this.living==(true)){
-  this.position.x=0;
-   this.position.y=250;
-    }
-   }
-  }
-   if(window.screen4==(true)){
-   if(window.move == (false)){
-    if(this.living == (true)){
-  this.position.x=0;
-   this.position.y=250;
-    }
-   }
-  }
-  if(window.screen4load==(true)){
-    this.position.x=0;
-     this.position.y=250;
-     }
-   if(window.screen5==(true)){
-   if(window.move == (false)){
-    if(this.living == (true)){
-  this.position.x=0;
-   this.position.y=250;
-    }
-   }
-  }
-   if(window.screen6==(true)){
-   if(window.move == (false)){
-    if(this.living == (true)){
-  this.position.x=0;
-   this.position.y=250;
-    }
-   }
-  }
+ 
   
    window.PlayerX = this.position.x;
   window.PlayerY = this.position.y;
 }
+
+resetPlayer(){
+   //screen movement
+   if(window.screen1load==(true)){
+    this.position.x=0;
+     this.position.y=250;
+     }
+    if(window.screen2==(true)){
+     if(window.move == (false)){
+      if(this.living == (true)){
+    this.position.x=0;
+     this.position.y=250;
+      }
+     }
+    }
+    if(window.screen3==(true)){
+     if(window.move==(false)){
+      if(this.living==(true)){
+    this.position.x=0;
+     this.position.y=250;
+      }
+     }
+    }
+     if(window.screen4==(true)){
+     if(window.move == (false)){
+      if(this.living == (true)){
+    this.position.x=0;
+     this.position.y=250;
+      }
+     }
+    }
+    if(window.screen4load==(true)){
+      this.position.x=0;
+       this.position.y=250;
+       }
+     if(window.screen5==(true)){
+     if(window.move == (false)){
+      if(this.living == (true)){
+    this.position.x=0;
+     this.position.y=250;
+      }
+     }
+    }
+     if(window.screen6==(true)){
+     if(window.move == (false)){
+      if(this.living == (true)){
+    this.position.x=0;
+     this.position.y=250;
+      }
+     }
+    }
+}
+
 }
 
