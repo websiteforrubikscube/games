@@ -39,7 +39,7 @@ proccessloop(ctx){
     return;
   }
 
-  resetPlayer();
+  this.resetPlayer();
 
   if (this.visable==false){
     return;
