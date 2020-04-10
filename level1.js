@@ -116,7 +116,7 @@ respawnmain(){
   window.screen3=(false);
   window.color1=("#ffad47");
 this.respawn=(false);
-  }
+ // }
 }
 
 erraseCanvas() {
