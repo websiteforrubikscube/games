@@ -35,7 +35,7 @@ export default class Level1{
    this.ctx = canv.getContext('2d');
   
    if (player.living==false){
-     this.respawn();
+     respawn();
    }
 
    
