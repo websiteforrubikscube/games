@@ -104,8 +104,8 @@ if(window.screen1==(true)){
 }
 
 respawnmain(){
-  setTimeout(function(level){ level.respawn=(true); }, 3000, this);
-  if(this.respawn==(true)){
+  //setTimeout(function(level){ level.respawn=(true); }, 3000, this);
+  //if(this.respawn==(true)){
   runnumber=0;
   runnumber2=0;
   runnumber3=0;
