@@ -172,7 +172,7 @@ this.position.x=this.position.x-10;
   this.position.x=850;
   }
     //screen movement
-     if(window.screen1load==(true)){
+     if(window.screen1==(true)){
    this.living=false;
        this.visable=false;
        window.invisabledamage1=(true);
