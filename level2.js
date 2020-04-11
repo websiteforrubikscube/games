@@ -39,6 +39,7 @@ export default class Level2{
   
   if (player.visable==false){
     this.respawnmain();
+    return;
   }
 
  this.erraseCanvas();
