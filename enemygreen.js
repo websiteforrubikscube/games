@@ -50,6 +50,7 @@ this.position.x= this.position.x - 5;
    if(window.screen1load==(true)){
       this.visable=(true);
       window.nodamage1=(false);
+      window.invisabledamage=(false);
        window.color=('#90EE90');
   this.position.x=400;
     this.position.y=300;
@@ -62,6 +63,7 @@ this.position.x= this.position.x - 5;
     if(window.screen3load==(true)){
       this.visable=(true);
       window.nodamage1=(false);
+      window.invisabledamage=(false);
        window.color=('#90EE90');
   this.position.x=575;
     this.position.y=300;
