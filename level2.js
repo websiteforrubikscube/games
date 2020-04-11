@@ -30,17 +30,16 @@ export default class Level2{
  
   constructor (){
     this.ctx=undefined;
+    this.respawn = (false);
     }
 
  proccess2(){
   let canv = document.getElementById("Screen");
   this.ctx = canv.getContext('2d');
   
-if(window.resetlevel2==(true)){
- runnumber12=0;
- runnumber22=0;
- runnumber32=0;
- }
+  if (player.visable==false){
+    this.respawnmain();
+  }
 
  this.erraseCanvas();
  runnumber12++;
@@ -107,6 +106,20 @@ ground.draw(this.ctx);
  }
 }
 }
+
+respawnmain(){
+  runnumber=0;
+  runnumber2=0;
+  runnumber3=0;
+  player.living=true;
+  player.visable=true;
+  window.screen1=(true);
+  window.screen2=(false);
+  window.screen3=(false);
+  window.color1=("#ffad47");
+this.respawn=(false);
+}
+
 erraseCanvas() {
   this.ctx.clearRect(0,0,1000,500);
 }
