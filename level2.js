@@ -108,14 +108,14 @@ ground.draw(this.ctx);
 }
 
 respawnmain(){
-  runnumber=0;
-  runnumber2=0;
-  runnumber3=0;
+  runnumber12=0;
+  runnumber22=0;
+  runnumber32=0;
   player.living=true;
   player.visable=true;
-  window.screen1=(true);
-  window.screen2=(false);
-  window.screen3=(false);
+  window.screen4=(true);
+  window.screen5=(false);
+  window.screen6=(false);
   window.color1=("#ffad47");
 this.respawn=(false);
 }
