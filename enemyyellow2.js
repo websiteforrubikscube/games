@@ -186,7 +186,7 @@ this.position.x=this.position.x-10;
         window.color3=("#fce700");
       this.position.x=300;
     }
-    if(window.screen5load==(true)){
+    if(window.screen5==(true)){
     this.living=(false);
     window.invisabledamage2=(true);
       this.visable=(false);

@@ -54,6 +54,10 @@ this.position.x= this.position.x - 5;
   this.position.x=400;
     this.position.y=300;
   }
+  if(window.screen2==(true)){
+    this.visable=(false);
+    window.nodamage1=(true);
+}
   
     if(window.screen3load==(true)){
       this.visable=(true);
