@@ -54,6 +54,7 @@ if(window.screen1==(true)){
   enemygreen.draw(this.ctx);
   player.proccessloop(this.ctx);
   enemygreen.proccessloop(this.ctx);
+  enemyyellow.proccessloop(this.ctx);
  screen1.proccessloop();
  if(runnumber<2){
  window.screen1load=(true);
@@ -71,6 +72,7 @@ if(window.screen1==(true)){
  player.draw(this.ctx);
    enemyyellow.draw(this.ctx);
   player.proccessloop(this.ctx);
+  enemygreen.proccessloop(this.ctx);
    enemyyellow.proccessloop(this.ctx);
     screen2.proccessloop();
    if(runnumber2<2){
