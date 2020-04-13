@@ -44,10 +44,7 @@ proccessloop(ctx){
     return;
   }
   //movement
-    if(window.touch2==(true)){
-   this.speed=0;
-  }
-   if((this.position.y>249)||(window.touch==(true))){
+    if((window.touch2==(true))||(window.touch==(true))){
    this.speed=0;
   }
   
