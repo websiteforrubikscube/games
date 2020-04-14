@@ -28,12 +28,14 @@ this.position.x= this.position.x - 5;
   //death
   if((window.PlayerX>this.position.x-100)&&(window.PlayerX<this.position.x+200)){
     if((window.PlayerY>149)&&(window.PlayerY<159)){
+      if(window.screenload==(false)){
       window.killjump=(true);
  window.color =("#a6ffad");
       window.nodamage1 = (true);
             setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
     }else{window.killjump=(false);}
   }else{window.killjump=(false);}
+}else{window.killjump=(false);}
   
   if(this.visable==(false)){
   window.killjump=false;
