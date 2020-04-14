@@ -35,11 +35,10 @@ this.position.x= this.position.x - 5;
       window.nodamage1 = (true);
             setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
             setTimeout(function(enemy){ enemy.nodamage1load=(true); }, 1034,window);
-            setTimeout(function(enemy){ enemy.nodamage1load=(false); }, 1068,window);
     }else{window.killjump=(false);}
   }else{window.killjump=(false);}
 }else{window.killjump=(false);}
-  
+
   if(this.visable==(false)){
   window.killjump=false;
   }
@@ -55,10 +54,10 @@ this.position.x= this.position.x - 5;
    if(window.screen1load==(true)){
       this.visable=(true);
       window.nodamage1=(false);
-      window.invisabledamage=(false);
        window.color=('#90EE90');
   this.position.x=400;
     this.position.y=300;
+    window.nodamage1load=(false);
   }
   if(window.screen2==(true)){
     this.visable=(false);
@@ -68,10 +67,10 @@ this.position.x= this.position.x - 5;
     if(window.screen3load==(true)){
       this.visable=(true);
       window.nodamage1=(false);
-      window.invisabledamage=(false);
        window.color=('#90EE90');
   this.position.x=575;
     this.position.y=300;
+    window.nodamage1load=(false);
   }
   if(window.screen4load==(true)){
   this.visable=(false);
