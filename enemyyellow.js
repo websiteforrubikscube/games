@@ -7,6 +7,7 @@ this.height=100;
 this.position={x:425,y:300};
   this.visable=(true);
   window.invisabledamage1=(false);
+  window.invisabledamage1load=(false);
   window.color2=("#fce700");
   this.hit=0;
   this.immune=(false);
@@ -139,8 +140,9 @@ this.position.x=this.position.x-10;
       if(this.hit>1){
         this.living=(false);
        window.color2=("#fdff9e");
-        window.invisabledamage1=(true);
+       window.invisabledamage1=(true);
         setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
+        setTimeout(function(enemy){ enemy.invisabledamage1load=(true); }, 1000,window);
       }
         if(this.hit<2){
          this.immune = (true);
@@ -183,6 +185,7 @@ this.position.x=this.position.x-10;
       this.hit=0;
       this.visable=(true);
       window.invisabledamage1=(false);
+      window.invisabledamage1load=(false);
      window.color2=("#fce700");
     this.position.x=425;
       this.position.y=300;
@@ -193,6 +196,7 @@ this.position.x=this.position.x-10;
       this.hit=0;
       this.visable=(true);
       window.invisabledamage1=(false);
+      window.invisabledamage1load=(false);
      window.color2=("#fce700");
   this.position.x=375;
     this.position.y=300;
@@ -200,6 +204,7 @@ this.position.x=this.position.x-10;
     if(window.screen4load==(true)){
       this.living=(true);
     window.invisabledamage1=(false);
+    window.invisabledamage1load=(false);
       this.visable=(true);
       this.hit=0;
       this.immune=(false);
@@ -209,6 +214,7 @@ this.position.x=this.position.x-10;
     if(window.screen5load==(true)){
       this.living=(true);
     window.invisabledamage1=(false);
+    window.invisabledamage1load=(false);
       this.visable=(true);
       this.hit=0;
       this.immune=(false);
@@ -219,6 +225,7 @@ this.position.x=this.position.x-10;
      if(window.screen6load==(true)){
       this.living=(true);
     window.invisabledamage1=(false);
+    window.invisabledamage1load=(false);
       this.visable=(true);
       this.hit=0;
       this.immune=(false);

@@ -13,7 +13,7 @@ ctx.fillRect(this.position.x,this.position.y,this.width,this.height);
 proccessloop(){
   if(window.screen2==(true)){
 if(window.PlayerX+100>this.position.x){
-  if(window.invisabledamage1==(true)){
+  if(window.invisabledamage1load==(true)){
 window.screen2=(false);
   window.screen3=(true);
   window.move=(false);
