@@ -11,11 +11,13 @@ ctx.fillStyle=("#90EE90");
 }
   proccessloop(){
    if(window.PlayerX>850){
+    if((window.nodamage1==(true))&&(window.invisabledamage1==(true))){
 window.screen3=(false);
      window.screen4=(true);
      this.move=(false);
  setTimeout(function(){ this.move=(true); }, 34);
    }
+  }
    window.move=this.move; 
   }
 }
