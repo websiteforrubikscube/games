@@ -11,7 +11,7 @@ ctx.fillStyle=("#90EE90");
 }
   proccessloop(){
    if(window.PlayerX>850){
-    if((window.nodamage1==(true))&&(window.invisabledamage1==(true))){
+    if((window.nodamage1load==(true))&&(window.invisabledamage1==(true))){
 window.screen3=(false);
      window.screen4=(true);
      this.move=(false);

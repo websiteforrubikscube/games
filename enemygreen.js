@@ -8,6 +8,7 @@ this.width=200;
    window.color  =('#90EE90');
   this.visable=(true);
   window.nodamage1 = (false);
+  window.nodamage1load = (false);
   window.invisabledamage=(false);
   window.killjump=(false);
 }
@@ -33,6 +34,7 @@ this.position.x= this.position.x - 5;
  window.color =("#a6ffad");
       window.nodamage1 = (true);
             setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
+            setTimeout(function(enemy){ enemy.nodamage1load=(false); }, 1034,window);
     }else{window.killjump=(false);}
   }else{window.killjump=(false);}
 }else{window.killjump=(false);}
