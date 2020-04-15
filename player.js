@@ -197,7 +197,7 @@ proccessloop(ctx){
 
 resetPlayer(){
    //screen movement
-   if(screenload==(true)){
+   if(window.screenload==(true)){
    this.position.x=0;
    this.position.y=250;
    }
