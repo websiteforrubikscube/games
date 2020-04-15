@@ -5,6 +5,7 @@ constructor(){
 this.width=50;
 this.height=500;
 this.position={x:950,y:0};
+this.move=(true);
 }
 draw(ctx){
 ctx.fillStyle=("#87ceeb");
@@ -17,9 +18,10 @@ if(window.PlayerX+100>this.position.x){
 window.screen2=(false);
   window.screen3=(true);
   window.move=(false);
- setTimeout(function(w){ w.move=(true); }, 34,window);
+ setTimeout(function(load3){ load3.move=(true); }, 34,this);
 }
 }
   }
+  window.move=this.move; 
 }
 }

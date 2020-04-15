@@ -7,7 +7,7 @@ this.height=500;
 this.position={x:950, y:0};
  window.screen1=(true);
  window.screen2=(false);
- this.move=(true)
+ this.move=(true);
 }
 draw(ctx){
 ctx.fillStyle=("#87CEEB");
