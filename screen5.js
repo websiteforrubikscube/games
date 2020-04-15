@@ -17,7 +17,7 @@ ctx.fillRect(this.position.x,this.position.y, this.width, this.height);
  window.screen5=(false);
   window.screen6=(true);
   this.move=(false);
- setTimeout(function(){ this.move=(true); }, 34);
+ setTimeout(function(load){ load.move=(true); }, 34, load);
  }
   }
 }

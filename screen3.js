@@ -15,7 +15,7 @@ ctx.fillStyle=("#90EE90");
 window.screen3=(false);
      window.screen4=(true);
      this.move=(false);
- setTimeout(function(){ this.move=(true); }, 34);
+ setTimeout(function(load){ load.move=(true); }, 34 ,this);
    }
   }
    window.move=this.move; 
