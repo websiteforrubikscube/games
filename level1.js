@@ -96,6 +96,7 @@ if(window.screen1==(true)){
   player.proccessloop(this.ctx);
    enemygreen.proccessloop(this.ctx);
    enemyyellow.proccessloop(this.ctx);
+   screen2.proccessloop();
    screen3.proccessloop();
       if(runnumber3<5){
     window.screen3load=(true);
