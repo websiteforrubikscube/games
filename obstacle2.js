@@ -55,6 +55,18 @@ window.enemy2Xtouch22=(true);
 window.enemy3Xtouch22=(true);
   }else{ window.enemy3Xtouch22=(false);}
   }else{ window.enemy3Xtouch22=(false);}
+
+  if(window.screen4==true){
+    this.position.x=2100;
+     }
+
+     if(window.screen5==true){
+      this.position.x=2100;
+       }
+
+     if(window.screen6==true){
+    this.position.x=600;
+     }
   
   window.obstacle2Y=this.position.y;
   window.obstacle2X=this.position.x;

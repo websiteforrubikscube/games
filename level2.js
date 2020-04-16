@@ -56,6 +56,8 @@ ground.draw(this.ctx);
  enemyyellow.proccessloop(this.ctx);
  enemyyellow2.proccessloop(this.ctx);
  screen4.proccessloop();
+ obstacle1.proccessloop();
+   obstacle2.proccessloop();
  if(runnumber12<2){
  window.screen4load=(true);
   window.screenload=(true);
@@ -75,7 +77,8 @@ ground.draw(this.ctx);
  enemygreen.proccessloop(this.ctx);
  enemyyellow.proccessloop(this.ctx);
  enemyyellow2.proccessloop(this.ctx);
-   obstacle1.proccessloop();
+ obstacle1.proccessloop();
+ obstacle2.proccessloop();
    if(runnumber22>1){
    screen5.proccessloop();
    }

@@ -56,6 +56,11 @@ window.enemy3Xtouch2=(true);
   }else{ window.enemy3Xtouch2=(false);}
   }else{ window.enemy3Xtouch2=(false);}
   
+  if(window.screen4==true){
+    this.position.x=2000;
+     }
+
+
   if(window.screen5==true){
     this.position.x=450;
      }
