@@ -130,7 +130,6 @@ proccessloop(ctx){
   if((this.position.x+100)>(window.enemy1c2-100)){
     if((this.position.x)<(window.enemy1c2+100)){
          if((window.visable==true)&&(window.nodamage1==(false))){
-          if(window.invisabledamage==(false)){
             if(window.screenload==(false)){
   
            this.living=(false);
@@ -143,7 +142,6 @@ proccessloop(ctx){
               setTimeout(function(player){ player.visable=(false); }, 1000,this);
           
          }
-    }
   }
   }
   }
