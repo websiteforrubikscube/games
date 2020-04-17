@@ -207,6 +207,13 @@ this.position.x=this.position.x-10;
         window.color3=("#fce700");
       this.position.x=775;
     }
+     if(window.screen7==(true)){
+    this.living=(false);
+    window.invisabledamage2=(true);
+      this.visable=(false);
+      this.hit=2;
+      this.immune=(false);
+    }
     window.enemy2X2=this.position.x;
     window.enemy2Y2=this.position.y;
     window.visable2=this.visable;
