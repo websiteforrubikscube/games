@@ -1,8 +1,10 @@
 import Level1 from "./level1.js";
 import Level2 from "./level2.js";
+import Level3 from "./level3.js";
 
 let level1 = new Level1();
 let level2 = new Level2();
+let level3 = new Level3();
 
 window.start=(true);
 window.start2=(false);
