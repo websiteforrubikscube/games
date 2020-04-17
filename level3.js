@@ -52,7 +52,7 @@ export default class Level3{
       enemyyellow2.proccessloop(this.ctx);
       obstacle1.proccessloop();
    obstacle2.proccessloop();
-    if(runnumber12<2){ 
+    if(runnumber13<2){ 
     window.screen7load=(true);
     window.screenload=(true);
     setTimeout(function(load){ load.screenload=(false); }, 34,window);
