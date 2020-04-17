@@ -67,6 +67,10 @@ window.enemy3Xtouch22=(true);
      if(window.screen6==true){
     this.position.x=600;
      }
+
+     if(window.screen7==true){
+      this.position.x=2100;
+       }
   
   window.obstacle2Y=this.position.y;
   window.obstacle2X=this.position.x;

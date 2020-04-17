@@ -6,6 +6,7 @@ let level2 = new Level2();
 
 window.start=(true);
 window.start2=(false);
+window.start3=(false);
 window.killjump=(false);
 window.killjump2=(false);
 window.killjump3=(false);
@@ -38,6 +39,13 @@ level1.proccess();
     window.start=(false);
 level2.proccess2();
   }
+  if(window.screen7==(true)){
+    window.start3=true;
+    }
+    if(window.start3==true){
+      window.start2=(false);
+  level3.proccess3();
+    }
     window.setTimeout(function() {gameloop();}, 33);
   }
 }
