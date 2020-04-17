@@ -9,6 +9,7 @@ import Sky from "./sky.js";
 import Screen3 from "./screen3.js";
 import Screen4 from "./screen4.js";
 import Screen5 from "./screen5.js";
+import Screen6 from "./screen6.js";
 
  let ground = new Ground();
 let obstacle1 = new Obstacle1();
@@ -19,6 +20,7 @@ let player = new Player();
  let screen3 = new Screen3();
 let screen4 = new Screen4();
 let screen5 = new Screen5();
+let screen6 = new Screen6();
  let enemyyellow = new Enemyyellow();
 let enemyyellow2 = new Enemyyellow2();
 
@@ -80,6 +82,7 @@ ground.draw(this.ctx);
  obstacle1.proccessloop();
  obstacle2.proccessloop();
    if(runnumber22>1){
+    screen4.proccessloop();
    screen5.proccessloop();
    }
  if(runnumber22<2){
@@ -104,6 +107,10 @@ ground.draw(this.ctx);
  enemyyellow2.proccessloop(this.ctx);
    obstacle1.proccessloop();
    obstacle2.proccessloop();
+   if(runnumber32>1){
+    screen5.proccessloop();
+    screen6.proccessloop();
+    }
  if(runnumber32<2){
  window.screen6load=(true);
   window.screenload=(true);
