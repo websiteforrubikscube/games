@@ -47,7 +47,6 @@ export default class Level3{
     ground.draw(this.ctx);
       player.draw(this.ctx);
       player.proccessloop(this.ctx);
-      enemygreen.proccessloop(this.ctx);
       enemyyellow.proccessloop(this.ctx);
       enemyyellow2.proccessloop(this.ctx);
       obstacle1.proccessloop();
