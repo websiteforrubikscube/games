@@ -80,6 +80,10 @@ this.position.x= this.position.x - 5;
   this.visable=(false);
     window.nodamage1=(true);
   }
+   if(window.screen2==(true)){
+    this.visable=(false);
+    window.nodamage1=(true);
+}
   window.enemy1c = this.position.y+50;
   window.enemy1c2= this.position.x+100;
   window.visable = this.visable;
