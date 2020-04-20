@@ -5,6 +5,7 @@ import Player from "./player.js";
 import Enemygreen from "./enemygreen.js";
 import Enemyyellow from "./enemyyellow.js";
 import Enemyyellow2 from "./enemyyellow2.js";
+import Enemyred from "./enemyred.js";
 import Sky from "./sky.js";
 import Screen6 from "./screen6.js";
 

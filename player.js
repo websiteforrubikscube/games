@@ -99,7 +99,7 @@ proccessloop(ctx){
   this.speed=15;
   }
   
-   if(window.killjump3==true){
+   if((window.killjump3==true)||(window.killjump4==true)){
   if(this.speed>0){
   this.speed=this.speed*-0.75;
   }

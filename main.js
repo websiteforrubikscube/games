@@ -12,6 +12,7 @@ window.start3=(false);
 window.killjump=(false);
 window.killjump2=(false);
 window.killjump3=(false);
+window.killjump4=(false);
 window.touch=(false);
 window.touchY=(false);
 window.touchX1=(false);
