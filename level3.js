@@ -31,6 +31,8 @@ export default class Level3{
       this.ctx=undefined;
       this.respawn = (false);
       this.redenemy1=new Enemyred(725,300);
+      window.touch=false;
+      window.touch2=false;
       }
   
    proccess3(){
