@@ -43,7 +43,7 @@ export default class Level3{
     }
   
    this.erraseCanvas();
-   this.Draw();
+   this.draw();
 
    runnumber13++;
     if(window.screen7==(true)){
