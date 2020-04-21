@@ -30,7 +30,7 @@ export default class Level3{
     constructor (){
       this.ctx=undefined;
       this.respawn = (false);
-      this.redenemy1=new Redenemy(725,300);
+      this.redenemy1=new Enemyred(725,300);
       }
   
    proccess3(){
