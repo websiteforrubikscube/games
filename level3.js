@@ -43,12 +43,10 @@ export default class Level3{
     }
   
    this.erraseCanvas();
+   this.Draw();
+
    runnumber13++;
   if(window.screen7==(true)){
-    sky.draw(this.ctx);
-    ground.draw(this.ctx);
-      player.draw(this.ctx);
-      this.redenemy1.draw(this.ctx);
       player.proccessloop(this.ctx);
       enemyyellow.proccessloop(this.ctx);
       enemyyellow2.proccessloop(this.ctx);
@@ -62,8 +60,18 @@ export default class Level3{
     setTimeout(function(load){ load.screenload=(false); }, 34,window);
    setTimeout(function(load){ load.screen7load=(false); }, 34,window);
   }
+  
 }
    }
+
+draw(){
+  if(window.screen7==(true)){
+  sky.draw(this.ctx);
+  ground.draw(this.ctx);
+    player.draw(this.ctx);
+    this.redenemy1.draw(this.ctx);
+  }
+}
 
 respawnmain(){
   runnumber13=0;
