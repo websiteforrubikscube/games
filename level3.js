@@ -46,32 +46,24 @@ export default class Level3{
    this.Draw();
 
    runnumber13++;
-  if(window.screen7==(true)){
-      player.proccessloop(this.ctx);
-      enemyyellow.proccessloop(this.ctx);
-      enemyyellow2.proccessloop(this.ctx);
-      this.redenemy1.proccess(this.ctx);
-      obstacle1.proccessloop();
-   obstacle2.proccessloop();
-    if(runnumber13<2){ 
-      this.redenemy1=new Enemyred(725,300);
-    window.screen7load=(true);
-    window.screenload=(true);
-    setTimeout(function(load){ load.screenload=(false); }, 34,window);
-   setTimeout(function(load){ load.screen7load=(false); }, 34,window);
-  }
+    if(window.screen7==(true)){
+        player.proccessloop(this.ctx);
+        enemyyellow.proccessloop(this.ctx);
+        enemyyellow2.proccessloop(this.ctx);
+        this.redenemy1.proccess(this.ctx);
+        obstacle1.proccessloop();
+    obstacle2.proccessloop();
+      if(runnumber13<2){ 
+        this.redenemy1=new Enemyred(725,300);
+      window.screen7load=(true);
+      window.screenload=(true);
+      setTimeout(function(load){ load.screenload=(false); }, 34,window);
+    setTimeout(function(load){ load.screen7load=(false); }, 34,window);
+    }
   
-}
    }
+ }//prcess3
 
-draw(){
-  if(window.screen7==(true)){
-  sky.draw(this.ctx);
-  ground.draw(this.ctx);
-    player.draw(this.ctx);
-    this.redenemy1.draw(this.ctx);
-  }
-}
 
 respawnmain(){
   runnumber13=0;
@@ -84,6 +76,15 @@ respawnmain(){
   window.screen6=(false);
   window.color1=("#ffad47");
 this.respawn=(false);
+}
+
+draw(){
+  if(window.screen7==(true)){
+  sky.draw(this.ctx);
+  ground.draw(this.ctx);
+    player.draw(this.ctx);
+    this.redenemy1.draw(this.ctx);
+  }
 }
 
 erraseCanvas() {
