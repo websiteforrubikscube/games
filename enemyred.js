@@ -13,7 +13,7 @@ draw(ctx){
     ctx.fillStyle=(this.colorredenemy);
     ctx.fillRect(this.position.x,this.position.y,this.width,this.height);
 }
-proccess(){
+proccess(ctx){
 //movement
 if((window.PlayerY>249)||(window.touch=(true))){
     if(window.PlayerX+50<this.position.x+50){

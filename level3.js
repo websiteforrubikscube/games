@@ -30,6 +30,7 @@ export default class Level3{
     constructor (){
       this.ctx=undefined;
       this.respawn = (false);
+      this.redenemy1=new Redenemy(725,300);
       }
   
    proccess3(){
@@ -47,12 +48,15 @@ export default class Level3{
     sky.draw(this.ctx);
     ground.draw(this.ctx);
       player.draw(this.ctx);
+      this.redenemy1.draw(this.ctx);
       player.proccessloop(this.ctx);
       enemyyellow.proccessloop(this.ctx);
       enemyyellow2.proccessloop(this.ctx);
+      this.redenemy1.proccessloop(this.ctx);
       obstacle1.proccessloop();
    obstacle2.proccessloop();
     if(runnumber13<2){ 
+      this.redenemy1=new Redenemy(725,300);
     window.screen7load=(true);
     window.screenload=(true);
     setTimeout(function(load){ load.screenload=(false); }, 34,window);
