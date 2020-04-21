@@ -53,7 +53,10 @@ proccessloop(ctx){
   }
   
   if (keys[114]==true){
-  console.log("F3");
+  window.start=false;
+  window.start3=true;
+  window.screen1=false;
+  window.screen7=true;
   keys[114]=false;
   }
 
