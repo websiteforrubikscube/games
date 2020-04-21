@@ -52,7 +52,7 @@ export default class Level3{
       player.proccessloop(this.ctx);
       enemyyellow.proccessloop(this.ctx);
       enemyyellow2.proccessloop(this.ctx);
-      this.redenemy1.proccessloop(this.ctx);
+      this.redenemy1.proccess(this.ctx);
       obstacle1.proccessloop();
    obstacle2.proccessloop();
     if(runnumber13<2){ 
