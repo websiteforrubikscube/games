@@ -30,6 +30,7 @@ window.enemy2Xtouch22=(false);
 window.enemy3Xtouch12=(false);
 window.enemy3Xtouch22=(false);
 export default function launch(){
+
   gameloop();
   function gameloop(){
   if(window.start==(true)){

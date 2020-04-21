@@ -20,10 +20,14 @@ export default class Player{
     keys[38]=false;
     keys[39]=false;
     keys[40]=false;
+    keys[114]=false;
     window.onkeyup = function(e) { 
       keys[e.keyCode] = false;
     }
-    window.onkeydown = function(e) { keys[e.keyCode] = true; }   
+    window.onkeydown = function(e) {
+       keys[e.keyCode] = true; 
+      
+      }   
   }
   draw(ctx){
     if(this.visable == (true)){
@@ -48,6 +52,10 @@ proccessloop(ctx){
    this.speed=0;
   }
   
+  if (keys[114]==true){
+  console.log("F3");
+  }
+
     if ((keys[39]==true)&&(this.position.x<900)){
       if((this.living==true)&&(window.touchX1==false)){
         if((this.position.y>249)&&(window.touchX12==false)){
