@@ -53,6 +53,7 @@ proccessloop(ctx){
   }
   
   if (keys[114]==true){
+    keys[114]=false;
   console.log("F3");
   }
 
