@@ -56,7 +56,7 @@ export default class Level3{
       obstacle1.proccessloop();
    obstacle2.proccessloop();
     if(runnumber13<2){ 
-      this.redenemy1=new Redenemy(725,300);
+      this.redenemy1=new Enemyred(725,300);
     window.screen7load=(true);
     window.screenload=(true);
     setTimeout(function(load){ load.screenload=(false); }, 34,window);
