@@ -44,7 +44,7 @@ export default class Level3{
       return;
     }
 
-    if(this.redenemy1.killplayer(this.position.x, this.position.y)){
+    if(this.redenemy1.killplayer(player.position.x, player.position.y)){
       player.playerdeath=true;
       }else{
         player.playerdeath=false;
