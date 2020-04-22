@@ -40,7 +40,7 @@ if(window.touch2==(true)){
 //death
 if(window.PlayerX+100>this.position.x){
 if(window.PlayerX<this.position.x+100){
-if(window.PlayerY+150>this.position.y+10){
+if((window.PlayerY+150>this.position.y)||(window.PlayerY+150<this.position.y+10)){
     if(this.immune==(false)){
         this.immune=true;
 this.hit++;
