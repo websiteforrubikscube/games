@@ -38,21 +38,23 @@ if(window.touch2==(true)){
 //death
 if(window.PlayerX+100>this.position.x){
 if(window.PlayerX<this.position.x+100){
-if(window.PlayerY+150<this.position.y+10){
+if(window.PlayerY+150>this.position.y+10){
+    if(this.immune==(false)){
+        this.immune=true;
 this.hit++;
 window.killjump=true;
 if(this.hit<3){
 this.colorredenemy=('#ff8a8a');
 setTimeout(function(enemy){ enemy.colorredenemy=('#ff0000'); }, 1000,this);
+setTimeout(function(enemy){ enemy.immune=(false); }, 1000,this);
 }
 if(this.hit>2){
     this.colorredenemy=('#ff8a8a');
     setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
 }
-setTimeout(function(enemy){ enemy.killjump=(false); }, 34,window);
-}
-
-}
-}
+}else{window.killjump=false;}
+}else{window.killjump=false;}
+}else{window.killjump=false;}
+}else{window.killjump=false;}
 }
 }
