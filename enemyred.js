@@ -20,7 +20,7 @@ if((window.PlayerY>249)||(window.touch==(true))){
         this.position.x=this.position.x-15;
     }
 }
-if((window.PlayerY>249)||(window.touch2==(true))){
+if(window.touch2==(true)){
     if(window.PlayerX+50<this.position.x+50){
         this.position.x=this.position.x-15;
     }
@@ -30,7 +30,7 @@ if((window.PlayerY>249)||(window.touch==(true))){
         this.position.x=this.position.x+15;
     }
 }
-if((window.PlayerY>249)||(window.touch2==(true))){
+if(window.touch2==(true)){
     if(window.PlayerX+50>this.position.x+50){
         this.position.x=this.position.x+15;
     }
