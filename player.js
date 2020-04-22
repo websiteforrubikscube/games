@@ -14,7 +14,7 @@ export default class Player{
     this.speed=0; 
     this.visable = (true);
    this.living=(true);
-   var player5death=false;
+   this.playerdeath=false;
     window.color1 = ("#ffad47");
 
     keys = {};
@@ -207,7 +207,7 @@ proccessloop(ctx){
  
 
   if(window.start3==true){
- if(playerdeath==true){
+ if(this.playerdeath==true){
   this.living=(false);
   window.color1=("#ffd5a1");
          keys[37]=(false);
