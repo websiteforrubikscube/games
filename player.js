@@ -57,6 +57,7 @@ proccessloop(ctx){
   window.start3=true;
   window.screen1=false;
   window.screen7=true;
+  window.nodamage1=true;
   keys[114]=false;
   }
 
