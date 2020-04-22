@@ -203,8 +203,8 @@ proccessloop(ctx){
   }
   } 
   if(window.start3==true){
-    this.redenemy1=new Redenemy(725,300);
-  if(this.redenemy1.killplayer(this.position.x, this.position.y)){
+    var redenemy1=new Redenemy(725,300);
+  if(redenemy1.killplayer(this.position.x, this.position.y)){
     playerdeath=true;
     }else{playerdeath=false;}
   }
