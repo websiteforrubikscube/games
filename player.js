@@ -202,11 +202,13 @@ proccessloop(ctx){
   }
   }
   } 
+  if(window.start3==true){
   if(this.redenemy1.hit(this.position.x, this.position.y)){
     playerdeath=true;
     }else{playerdeath=false;}
+  }
 
-  if(start3==true){
+  if(window.start3==true){
  if(playerdeath==true){
   this.living=(false);
   window.color1=("#ffd5a1");
