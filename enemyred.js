@@ -72,7 +72,7 @@ if(this.hit>2){
 }else{window.killjump=false;}
 }else{window.killjump=false;}
 }
-hit(playerx, playery){
+killplayer(playerx, playery){
 if(playerx+100>this.position.x){
     if(playerx<this.position.x+100){
         if(playery>this.position.y+11){

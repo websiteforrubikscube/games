@@ -204,7 +204,7 @@ proccessloop(ctx){
   } 
   if(window.start3==true){
     this.redenemy1=new Redenemy(725,300);
-  if(this.redenemy1.hit(this.position.x, this.position.y)){
+  if(this.redenemy1.killplayer(this.position.x, this.position.y)){
     playerdeath=true;
     }else{playerdeath=false;}
   }
