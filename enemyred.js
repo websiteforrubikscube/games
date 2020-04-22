@@ -37,6 +37,17 @@ if(window.touch2==(true)){
         this.position.x=this.position.x+15;
     }
 }
+//secondary movement
+if(window.PlayerY<250){
+    if((window.touch=false)&&(window.touch2=false)){
+        if(window.PlayerX+50<this.position.x+50){
+            this.position.x=this.position.x-10;
+        }
+        if(window.PlayerX+50>this.position.x+50){
+            this.position.x=this.position.x+10;
+        }
+    }
+}
 //death
 if(window.PlayerX+100>this.position.x){
 if(window.PlayerX<this.position.x+100){
