@@ -77,6 +77,10 @@ if(this.hit>2){
 }else{window.killjump=false;}
 }else{window.killjump=false;}
 }else{window.killjump=false;}
+//screen loading
+if(window.screen7load==true){
+    this.hit=0;
+}
 }
 
 killplayer(playerx, playery){
