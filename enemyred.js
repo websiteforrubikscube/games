@@ -72,6 +72,7 @@ if(this.hit>2){
 }else{window.killjump=false;}
 }else{window.killjump=false;}
 }
+
 killplayer(playerx, playery){
 if(playerx+100>this.position.x){
     if(playerx<this.position.x+100){
@@ -83,4 +84,5 @@ if(playerx+100>this.position.x){
     }else{return false;}
 }else{return false;}
 }
+
 }

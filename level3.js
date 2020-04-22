@@ -43,7 +43,14 @@ export default class Level3{
       this.respawnmain();
       return;
     }
-  
+
+    if(this.redenemy1.killplayer(this.position.x, this.position.y)){
+      playerdeath=true;
+      }else{
+        playerdeath=false;
+      }
+    
+
    this.erraseCanvas();
    this.draw();
 
