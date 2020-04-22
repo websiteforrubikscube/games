@@ -1,6 +1,7 @@
 import Enemyyellow from "./enemyyellow.js"; 
 import Enemygreen from "./enemygreen.js";
 import Screen1 from "./screen1.js";
+import Level3 from "/level3.js";
 
 var keys={};
 
