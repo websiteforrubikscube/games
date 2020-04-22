@@ -1,7 +1,6 @@
 import Enemyyellow from "./enemyyellow.js"; 
 import Enemygreen from "./enemygreen.js";
 import Screen1 from "./screen1.js";
-import Level3 from "/level3.js";
 
 var keys={};
 
@@ -201,6 +200,7 @@ proccessloop(ctx){
   }
   }
   } 
+  if(start3==true){
  if(playerdeath==true){
   this.living=(false);
   window.color1=("#ffd5a1");
@@ -211,6 +211,7 @@ proccessloop(ctx){
          
             setTimeout(function(player){ player.visable=(false); }, 1000,this);
  }
+}
   
    window.PlayerX = this.position.x;
   window.PlayerY = this.position.y;
