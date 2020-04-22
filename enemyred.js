@@ -7,6 +7,7 @@ this.hit=0;
 this.living=(true);
 this.visable=(true);
 this.colorredenemy=('#ff0000');
+this.immune=false;
 }
 draw(ctx){
     if(this.visable==(true))
