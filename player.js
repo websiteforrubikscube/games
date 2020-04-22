@@ -14,7 +14,6 @@ export default class Player{
     this.speed=0; 
     this.visable = (true);
    this.living=(true);
-   this.redenemy1=new Redenemy(725,300);
    var playerdeath = false;
     window.color1 = ("#ffad47");
 
@@ -204,6 +203,7 @@ proccessloop(ctx){
   }
   } 
   if(window.start3==true){
+    this.redenemy1=new Redenemy(725,300);
   if(this.redenemy1.hit(this.position.x, this.position.y)){
     playerdeath=true;
     }else{playerdeath=false;}
