@@ -10,9 +10,10 @@ this.colorredenemy=('#ff0000');
 this.immune=false;
 }
 draw(ctx){
-    if(this.visable==(true))
+    if(this.visable==(true)){
     ctx.fillStyle=(this.colorredenemy);
     ctx.fillRect(this.position.x,this.position.y,this.width,this.height);
+}
 }
 proccess(ctx){
 //movement
