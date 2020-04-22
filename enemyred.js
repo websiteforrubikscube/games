@@ -39,7 +39,7 @@ if(window.touch2==(true)){
 }
 //secondary movement
 if(window.PlayerY<250){
-    if((window.touch=false)&&(window.touch2=false)){
+    if((window.touch==false)&&(window.touch2==false)){
         if(window.PlayerX+50<this.position.x+50){
             this.position.x=this.position.x-10;
         }
