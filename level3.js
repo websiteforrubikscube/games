@@ -48,10 +48,6 @@ export default class Level3{
    this.erraseCanvas();
    this.draw();
 
-if(this.redenemy1.hit(window.PlayerX,window.PlayerY)=true){
-playerdeath=true;
-}else{playerdeath=false;}
-
    runnumber13++;
     if(window.screen7==(true)){
         player.proccessloop(this.ctx);

@@ -1,7 +1,7 @@
 import Enemyyellow from "./enemyyellow.js"; 
 import Enemygreen from "./enemygreen.js";
 import Screen1 from "./screen1.js";
-import Level3 from "/level3.js";
+import Enemyred from "./enemyred.js";
 
 var keys={};
 
@@ -14,6 +14,7 @@ export default class Player{
     this.speed=0; 
     this.visable = (true);
    this.living=(true);
+   var playerdeath = false;
     window.color1 = ("#ffad47");
 
     keys = {};
@@ -201,6 +202,10 @@ proccessloop(ctx){
   }
   }
   } 
+  if(this.redenemy1.hit(this.position.x, this.position.y)){
+    playerdeath=true;
+    }else{playerdeath=false;}
+
   if(start3==true){
  if(playerdeath==true){
   this.living=(false);

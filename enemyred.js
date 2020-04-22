@@ -1,3 +1,5 @@
+import Player from "./player.js";
+
 export default class Redenemy{
 constructor(x,y){
 this.height=100;
