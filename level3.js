@@ -5,7 +5,7 @@ import Player from "./player.js";
 import Enemygreen from "./enemygreen.js";
 import Enemyyellow from "./enemyyellow.js";
 import Enemyyellow2 from "./enemyyellow2.js";
-import Enemyred from "./enemyred.js";
+import Redenemy from "./enemyred.js";
 import Sky from "./sky.js";
 import Screen6 from "./screen6.js";
 
@@ -30,7 +30,7 @@ export default class Level3{
     constructor (){
       this.ctx=undefined;
       this.respawn = (false);
-      this.redenemy1=new Enemyred(725,300);
+      this.redenemy1=new Redenemy(725,300);
       window.touch=false;
       window.touch2=false;
       }
@@ -56,7 +56,7 @@ export default class Level3{
         obstacle1.proccessloop();
     obstacle2.proccessloop();
       if(runnumber13<2){ 
-        this.redenemy1=new Enemyred(725,300);
+        this.redenemy1=new Redenemy(725,300);
       window.screen7load=(true);
       window.screenload=(true);
       setTimeout(function(load){ load.screenload=(false); }, 34,window);
