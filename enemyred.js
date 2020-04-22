@@ -41,10 +41,10 @@ if(window.touch2==(true)){
 if(window.PlayerY<250){
     if((window.touch==false)&&(window.touch2==false)){
         if(window.PlayerX+50<this.position.x+50){
-            this.position.x=this.position.x-10;
+            this.position.x=this.position.x+10;
         }
         if(window.PlayerX+50>this.position.x+50){
-            this.position.x=this.position.x+10;
+            this.position.x=this.position.x-10;
         }
     }
 }
@@ -69,5 +69,16 @@ if(this.hit>2){
 }else{window.killjump=false;}
 }else{window.killjump=false;}
 }else{window.killjump=false;}
+}
+hit(playerx, playery){
+if(playerx+100>this.position.x){
+    if(playerx<this.position.x+100){
+        if(playery>this.position.y+11){
+            if(this.immune==false){
+                return true;
+            }else{return false;}
+        }else{return false;}
+    }else{return false;}
+}else{return false;}
 }
 }

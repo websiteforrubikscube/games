@@ -24,6 +24,7 @@ let enemyyellow2 = new Enemyyellow2();
 var runnumber13=0;
 var runnumber23=0;
 var runnumber33=0;
+var playerdeath=false;
 
 export default class Level3{
  
@@ -46,6 +47,10 @@ export default class Level3{
   
    this.erraseCanvas();
    this.draw();
+
+if(this.redenemy1.hit(window.PlayerX,window.PlayerY)=true){
+playerdeath=true;
+}else{playerdeath=false;}
 
    runnumber13++;
     if(window.screen7==(true)){
