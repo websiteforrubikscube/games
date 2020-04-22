@@ -24,7 +24,6 @@ let enemyyellow2 = new Enemyyellow2();
 var runnumber13=0;
 var runnumber23=0;
 var runnumber33=0;
-var playerdeath=false;
 
 export default class Level3{
  
