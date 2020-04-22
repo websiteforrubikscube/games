@@ -82,7 +82,7 @@ if(this.hit>2){
 killplayer(playerx, playery){
 if(playerx+100>this.position.x){
     if(playerx<this.position.x+100){
-        if(playery>this.position.y+11){
+        if(playery+150>this.position.y+17){
             if(this.immune==false){
                 return true;
             }else{return false;}
