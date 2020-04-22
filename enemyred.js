@@ -10,6 +10,9 @@ this.living=(true);
 this.visable=(true);
 this.colorredenemy=('#ff0000');
 this.immune=false;
+this.lefthitdetect=false;
+this.righthitdetect=false;
+
 }
 draw(ctx){
     if(this.visable==(true)){
@@ -55,6 +58,13 @@ if(this.position.x<0){
 }
 if(this.position.x>900){
     this.position.x=900;
+}
+//obstacle hit detection
+if((this.position.x<window.obstacle1X+100)&&(this.position.x+50>window.obstacle1X+50)){
+    this.lefthitdetect=true;
+}
+if((this.position.x+100>window.obstacle1X)&&(this.position.x+50<window.obstacle1X+50)){
+    this.righthitdetect=true;
 }
 //death
 if(window.PlayerX+100>this.position.x){
