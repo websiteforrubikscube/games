@@ -110,6 +110,12 @@ if(window.screen7load==true){
     this.hit=0;
 }
 }
+//functions
+death(){
+    if(this.visable==true){
+        return false;
+    }else{return true;}
+}
 
 killplayer(playerx, playery){
 if(playerx+100>this.position.x){

@@ -8,6 +8,7 @@ import Enemyyellow2 from "./enemyyellow2.js";
 import Redenemy from "./enemyred.js";
 import Sky from "./sky.js";
 import Screen6 from "./screen6.js";
+import Screen7 from "./screen7.js";
 
 
 let ground = new Ground();
@@ -17,6 +18,7 @@ let obstacle2 = new Obstacle2();
 let player = new Player();
  let sky = new Sky();
 let screen6 = new Screen6();
+let screen7 = new Screen7();
  let enemyyellow = new Enemyyellow();
 let enemyyellow2 = new Enemyyellow2();
 
@@ -49,6 +51,9 @@ export default class Level3{
       }else{
         player.playerdeath=false;
       }
+      if(this.redenemy1.death()==true){
+        nextscreenredenemy1=true;
+      }
     
 
    this.erraseCanvas();
@@ -56,6 +61,7 @@ export default class Level3{
 
    runnumber13++;
     if(window.screen7==(true)){
+      screen7.proccessloop();
         player.proccessloop(this.ctx);
         enemyyellow.proccessloop(this.ctx);
         enemyyellow2.proccessloop(this.ctx);
@@ -89,6 +95,7 @@ this.respawn=(false);
 
 draw(){
   if(window.screen7==(true)){
+    screen7.draw(this.ctx);
   sky.draw(this.ctx);
   ground.draw(this.ctx);
   obstacle1.draw(this.ctx);
