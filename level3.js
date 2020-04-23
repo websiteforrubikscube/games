@@ -52,8 +52,8 @@ export default class Level3{
         player.playerdeath=false;
       }
       if(this.redenemy1.death()==true){
-        nextscreenredenemy1=true;
-      }
+        screen7.redenemy1dead=true;
+      }else{screen7.redenemy1dead=false;}
     
 
    this.erraseCanvas();

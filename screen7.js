@@ -5,7 +5,7 @@ export default class Screen7{
     this.position={x:950, y:0};
      window.screen8=(false);
      this.move=(true);
-     var nextscreenredenemy1=false;
+     this.redenemy1dead=false;
     }
     draw(ctx){
     ctx.fillStyle=("#87CEEB");
@@ -14,7 +14,7 @@ export default class Screen7{
      proccessloop(){
       if(window.screen7==(true)){
      if((window.PlayerX+100)>this.position.x){
-        if(nextscreenredenemy1==true){
+        if(this.redenemy1dead==true){
      window.screen7=(false);
       window.screen8=(true);
       this.move=(false);
