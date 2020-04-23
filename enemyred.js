@@ -23,34 +23,46 @@ draw(ctx){
 proccess(ctx){
 //movement
 if((window.PlayerY>249)||(window.touch==(true))){
+    if((this.lefthitdetect==false)&&(this.lefthitdetect2==false)){
     if(window.PlayerX+50<this.position.x+50){
         this.position.x=this.position.x-15;
+    }
     }
 }
 if(window.touch2==(true)){
     if(window.PlayerX+50<this.position.x+50){
+        if((this.lefthitdetect==false)&&(this.lefthitdetect2==false)){
         this.position.x=this.position.x-15;
+        }
     }
 }
 if((window.PlayerY>249)||(window.touch==(true))){
+    if((this.righthitdetect==false)&&(this.righthitdetect2==false)){
     if(window.PlayerX+50>this.position.x+50){
         this.position.x=this.position.x+15;
     }
+    }
 }
 if(window.touch2==(true)){
+    if((this.righthitdetect==false)&&(this.righthitdetect2==false)){
     if(window.PlayerX+50>this.position.x+50){
         this.position.x=this.position.x+15;
+    }
     }
 }
 //secondary movement
 if(window.PlayerY<250){
     if((window.touch==false)&&(window.touch2==false)){
+        if((this.righthitdetect==false)&&(this.righthitdetect2==false)){
         if(window.PlayerX+50<this.position.x+50){
             this.position.x=this.position.x+10;
         }
+    }
         if(window.PlayerX+50>this.position.x+50){
+            if((this.lefthitdetect==false)&&(this.lefthitdetect2==false)){
             this.position.x=this.position.x-10;
         }
+    }
     }
 }
 if(this.position.x<0){
@@ -62,10 +74,16 @@ if(this.position.x>900){
 //obstacle hit detection
 if((this.position.x<window.obstacle1X+100)&&(this.position.x+50>window.obstacle1X+50)){
     this.lefthitdetect=true;
-}
+}else{this.lefthitdetect=false;}
 if((this.position.x+100>window.obstacle1X)&&(this.position.x+50<window.obstacle1X+50)){
     this.righthitdetect=true;
-}
+}else{this.righthitdetect=false;}
+if((this.position.x<window.obstacle2X+100)&&(this.position.x+50>window.obstacle2X+50)){
+    this.lefthitdetect2=true;
+}else{this.lefthitdetect2=false;}
+if((this.position.x+100>window.obstacle2X)&&(this.position.x+50<window.obstacle2X+50)){
+    this.righthitdetect2=true;
+}else{this.righthitdetect2=false;}
 //death
 if(window.PlayerX+100>this.position.x){
 if(window.PlayerX<this.position.x+100){
