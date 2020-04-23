@@ -91,6 +91,7 @@ draw(){
   if(window.screen7==(true)){
   sky.draw(this.ctx);
   ground.draw(this.ctx);
+  obstacle1.draw();
     player.draw(this.ctx);
     this.redenemy1.draw(this.ctx);
   }
