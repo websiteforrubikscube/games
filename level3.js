@@ -33,6 +33,7 @@ export default class Level3{
       this.ctx=undefined;
       this.respawn = (false);
       this.redenemy1=new Redenemy(725,300);
+      this.redenemy2=new Redenemy(725,300);
       window.touch=false;
       window.touch2=false;
       }
@@ -51,9 +52,7 @@ export default class Level3{
       }else{
         player.playerdeath=false;
       }
-      if(this.redenemy1.death()==true){
-        screen7.redenemy1dead=true;
-      }else{screen7.redenemy1dead=false;}
+    
     
 
    this.erraseCanvas();
@@ -61,6 +60,9 @@ export default class Level3{
 
    runnumber13++;
     if(window.screen7==(true)){
+        if(this.redenemy1.death()==true){
+        screen7.redenemy1dead=true;
+      }else{screen7.redenemy1dead=false;}
       screen7.proccessloop();
         player.proccessloop(this.ctx);
         enemyyellow.proccessloop(this.ctx);
@@ -77,6 +79,29 @@ export default class Level3{
     }
   
    }
+   if(window.screen8==(true)){
+    runnumber23++;
+    if(this.redenemy2.killplayer(player.position.x, player.position.y)){
+      player.playerdeath=true;
+      }else{
+        player.playerdeath=false;
+      }
+      player.proccessloop(this.ctx);
+      enemyyellow.proccessloop(this.ctx);
+      enemyyellow2.proccessloop(this.ctx);
+      this.redenemy1.proccess(this.ctx);
+      obstacle1.proccessloop();
+  obstacle2.proccessloop();
+    if(runnumber23<2){ 
+      this.redenemy1=new Redenemy(175,300);
+      this.redenemy2=new Redenemy(725,300);
+    window.screen8load=(true);
+    window.screenload=(true);
+    setTimeout(function(load){ load.screenload=(false); }, 34,window);
+  setTimeout(function(load){ load.screen7load=(false); }, 34,window);
+  }
+
+ }
  }//prcess3
 
 
@@ -101,6 +126,14 @@ draw(){
   obstacle1.draw(this.ctx);
     player.draw(this.ctx);
     this.redenemy1.draw(this.ctx);
+  }
+  if(window.screen8==(true)){
+  sky.draw(this.ctx);
+  ground.draw(this.ctx);
+  obstacle1.draw(this.ctx);
+    player.draw(this.ctx);
+    this.redenemy1.draw(this.ctx);
+    this.redenemy2.draw(this.ctx);
   }
 }
 
