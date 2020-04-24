@@ -46,12 +46,6 @@ export default class Level3{
       this.respawnmain();
       return;
     }
-
-    if(this.redenemy1.killplayer(player.position.x, player.position.y)){
-      player.playerdeath=true;
-      }else{
-        player.playerdeath=false;
-      }
     
     
 
@@ -63,6 +57,11 @@ export default class Level3{
         if(this.redenemy1.death()==true){
         screen7.redenemy1dead=true;
       }else{screen7.redenemy1dead=false;}
+      if(this.redenemy1.killplayer(player.position.x, player.position.y)){
+        player.playerdeath=true;
+        }else{
+          player.playerdeath=false;
+        }
       screen7.proccessloop();
         player.proccessloop(this.ctx);
         enemyyellow.proccessloop(this.ctx);
@@ -86,10 +85,16 @@ export default class Level3{
       }else{
         player.playerdeath=false;
       }
+      if(this.redenemy1.killplayer(player.position.x, player.position.y)){
+        player.playerdeath=true;
+        }else{
+          player.playerdeath=false;
+        }
       player.proccessloop(this.ctx);
       enemyyellow.proccessloop(this.ctx);
       enemyyellow2.proccessloop(this.ctx);
       this.redenemy1.proccess(this.ctx);
+      this.redenemy2.proccess(this.ctx);
       obstacle1.proccessloop();
   obstacle2.proccessloop();
     if(runnumber23<2){ 
