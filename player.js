@@ -15,6 +15,7 @@ export default class Player{
     this.visable = (true);
    this.living=(true);
    this.playerdeath=false;
+   this.playerdeath2=false;
     window.color1 = ("#ffad47");
 
     keys = {};
@@ -207,7 +208,7 @@ proccessloop(ctx){
  
 
   if(window.start3==true){
- if(this.playerdeath==true){
+ if((this.playerdeath==true)||(this.playerdeath2==true)){
   this.living=(false);
   window.color1=("#ffd5a1");
          keys[37]=(false);

@@ -81,9 +81,9 @@ export default class Level3{
    if(window.screen8==(true)){
     runnumber23++;
     if(this.redenemy2.killplayer(player.position.x, player.position.y)){
-      player.playerdeath=true;
+      player.playerdeath2=true;
       }else{
-        player.playerdeath=false;
+        player.playerdeath2=false;
       }
       if(this.redenemy1.killplayer(player.position.x, player.position.y)){
         player.playerdeath=true;
