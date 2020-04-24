@@ -35,9 +35,9 @@ this.position.x= this.position.x - 5;
       window.nodamage1 = (true);
             setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
             setTimeout(function(enemy){ enemy.nodamage1load=(true); }, 1100,window);
-    }else{window.killjump=(false);}
-  }else{window.killjump=(false);}
-}else{window.killjump=(false);}
+    }
+  }
+}
 
   if(this.visable==(false)){
   window.killjump=false;

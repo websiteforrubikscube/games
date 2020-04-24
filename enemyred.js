@@ -101,10 +101,10 @@ if(this.hit>2){
     this.colorredenemy=('#ff8a8a');
     setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
 }
-}else{window.killjump=false;}
-}else{window.killjump=false;}
-}else{window.killjump=false;}
-}else{window.killjump=false;}
+}
+}
+}
+}
 //screen loading
 if(window.screen7load==true){
     this.hit=0;

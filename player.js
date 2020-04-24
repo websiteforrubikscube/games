@@ -115,20 +115,9 @@ proccessloop(ctx){
   this.speed=15;
   }
   
-   if((window.killjump3==true)||(window.killjump4==true)){
-  if(this.speed>0){
-  this.speed=this.speed*-0.75;
-  }
-     if((window.touchY==(true))||(window.touchY2==(true))){
-     this.speed=-10;
-       this.position.y=this.position.y-6;
-     }
-    if(this.speed<0){
-    this.speed=this.speed*1.5
-    }
-  }
   
-  if((window.killjump==true)||(window.killjump2==true)){
+  
+  if(window.killjump==true){
   if(this.speed>0){
   this.speed=this.speed*-0.75;
   }
@@ -139,6 +128,7 @@ proccessloop(ctx){
     if(this.speed<0){
     this.speed=this.speed*1.5
     }
+    window.killjump=false;
   }
  
   //death
@@ -231,6 +221,7 @@ resetPlayer(){
    this.position.y=250;
    }
 }
+
 
 }
 
