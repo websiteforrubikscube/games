@@ -235,6 +235,7 @@ this.position.x=this.position.x-10;
     if(window.screen7==(true)){
       this.living=false;
           this.visable=false;
+          this.immune=true;
           window.invisabledamage1=(true);
        }
     window.enemy2X=this.position.x;
