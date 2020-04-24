@@ -195,7 +195,7 @@ this.position.x=this.position.x-10;
     window.invisabledamage2=(true);
       this.visable=(false);
       this.hit=2;
-      this.immune=(false);
+      this.immune=(true);
     }
       if(window.screen6load==(true)){
     this.living=(true);
@@ -212,7 +212,7 @@ this.position.x=this.position.x-10;
     window.invisabledamage2=(true);
       this.visable=(false);
       this.hit=2;
-      this.immune=(false);
+      this.immune=(true);
     }
     window.enemy2X2=this.position.x;
     window.enemy2Y2=this.position.y;

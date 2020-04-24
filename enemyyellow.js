@@ -177,6 +177,7 @@ this.position.x=this.position.x-10;
      if(window.screen1==(true)){
    this.living=false;
        this.visable=false;
+       this.immune=true;
        window.invisabledamage1=(true);
     }
     if(window.screen2load==(true)){
