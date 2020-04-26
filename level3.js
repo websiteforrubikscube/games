@@ -9,6 +9,7 @@ import Redenemy from "./enemyred.js";
 import Sky from "./sky.js";
 import Screen6 from "./screen6.js";
 import Screen7 from "./screen7.js";
+import Screen8 from "./screen8.js";
 
 
 let ground = new Ground();
@@ -19,6 +20,7 @@ let player = new Player();
  let sky = new Sky();
 let screen6 = new Screen6();
 let screen7 = new Screen7();
+let screen8 = new Screen8();
  let enemyyellow = new Enemyyellow();
 let enemyyellow2 = new Enemyyellow2();
 
@@ -80,6 +82,12 @@ export default class Level3{
    }
    if(window.screen8==(true)){
     runnumber23++;
+    if(this.redenemy1.death()==true){
+      screen8.redenemy1dead=true;
+    }else{screen8.redenemy1dead=false;}
+    if(this.redenemy2.death()==true){
+      screen8.redenemy2dead=true;
+    }else{screen8.redenemy1dead=false;}
     if(this.redenemy2.killplayer(player.position.x, player.position.y)){
       player.playerdeath2=true;
       }else{
@@ -97,6 +105,7 @@ export default class Level3{
       this.redenemy2.proccess(this.ctx);
       obstacle1.proccessloop();
   obstacle2.proccessloop();
+   screen8.proccessloop();
     if(runnumber23<2){ 
       this.redenemy1=new Redenemy(175,300);
       this.redenemy2=new Redenemy(725,300);
@@ -107,6 +116,36 @@ export default class Level3{
   }
 
  }
+ if(window.screen9==(true)){
+  runnumber23++;
+  if(this.redenemy2.killplayer(player.position.x, player.position.y)){
+    player.playerdeath2=true;
+    }else{
+      player.playerdeath2=false;
+    }
+    if(this.redenemy1.killplayer(player.position.x, player.position.y)){
+      player.playerdeath=true;
+      }else{
+        player.playerdeath=false;
+      }
+    player.proccessloop(this.ctx);
+    enemyyellow.proccessloop(this.ctx);
+    enemyyellow2.proccessloop(this.ctx);
+    this.redenemy1.proccess(this.ctx);
+    this.redenemy2.proccess(this.ctx);
+    obstacle1.proccessloop();
+obstacle2.proccessloop();
+ screen8.proccessloop();
+  if(runnumber23<2){ 
+    this.redenemy1=new Redenemy(450,300);
+    this.redenemy2=new Redenemy(900,300);
+  window.screen8load=(true);
+  window.screenload=(true);
+  setTimeout(function(load){ load.screenload=(false); }, 34,window);
+setTimeout(function(load){ load.screen7load=(false); }, 34,window);
+}
+
+}
  }//prcess3
 
 
@@ -133,9 +172,17 @@ draw(){
     this.redenemy1.draw(this.ctx);
   }
   if(window.screen8==(true)){
+    screen8.draw(this.ctx);
   sky.draw(this.ctx);
   ground.draw(this.ctx);
   obstacle1.draw(this.ctx);
+    player.draw(this.ctx);
+    this.redenemy1.draw(this.ctx);
+    this.redenemy2.draw(this.ctx);
+  }
+  if(window.screen9==(true)){
+  sky.draw(this.ctx);
+  ground.draw(this.ctx);
     player.draw(this.ctx);
     this.redenemy1.draw(this.ctx);
     this.redenemy2.draw(this.ctx);
