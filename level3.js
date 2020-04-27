@@ -117,7 +117,7 @@ export default class Level3{
 
  }
  if(window.screen9==(true)){
-  runnumber23++;
+  runnumber33++;
   if(this.redenemy2.killplayer(player.position.x, player.position.y)){
     player.playerdeath2=true;
     }else{
@@ -127,7 +127,7 @@ export default class Level3{
       player.playerdeath=true;
       }else{
         player.playerdeath=false;
-      }
+      } 
     player.proccessloop(this.ctx);
     enemyyellow.proccessloop(this.ctx);
     enemyyellow2.proccessloop(this.ctx);
@@ -136,13 +136,13 @@ export default class Level3{
     obstacle1.proccessloop();
 obstacle2.proccessloop();
  screen8.proccessloop();
-  if(runnumber23<2){ 
+  if(runnumber33<2){ 
     this.redenemy1=new Redenemy(450,300);
     this.redenemy2=new Redenemy(900,300);
-  window.screen8load=(true);
+  window.screen9load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
-setTimeout(function(load){ load.screen7load=(false); }, 34,window);
+setTimeout(function(load){ load.screen9load=(false); }, 34,window);
 }
 
 }
