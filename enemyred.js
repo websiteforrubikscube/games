@@ -88,7 +88,7 @@ if((this.position.x+100>window.obstacle2X)&&(this.position.x+50<window.obstacle2
 if(window.PlayerX+100>this.position.x){
 if(window.PlayerX<this.position.x+100){
 if((window.PlayerY+150>this.position.y)&&(window.PlayerY+150<this.position.y+16)){
-    if((this.immune==(false))||(window.screenload==false)){
+    if((this.immune==(false))&&(window.screenload==false)){
         this.immune=true;
 this.hit++;
 window.killjump=true;
