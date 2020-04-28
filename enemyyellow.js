@@ -139,6 +139,7 @@ this.position.x=this.position.x-10;
          setTimeout(function(enemy){ enemy.killjump2=(false); }, 1000,window);
       if(this.hit>1){
         this.living=(false);
+        this.immune=true;
        window.color2=("#fdff9e");
        window.invisabledamage1=(true);
         setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
