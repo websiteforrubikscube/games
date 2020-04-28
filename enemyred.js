@@ -88,7 +88,7 @@ if((this.position.x+100>window.obstacle2X)&&(this.position.x+50<window.obstacle2
 if(window.PlayerX+100>this.position.x){
 if(window.PlayerX<this.position.x+100){
 if((window.PlayerY+150>this.position.y)&&(window.PlayerY+150<this.position.y+16)){
-    if(this.immune==(false)){
+    if((this.immune==(false))||(window.screenload==false)){
         this.immune=true;
 this.hit++;
 window.killjump=true;
@@ -106,9 +106,10 @@ if(this.hit>2){
 }
 }
 //screen loading
-if(window.screen7load==true){
+if(window.screenload==true){
     this.hit=0;
 }
+
 }
 //functions
 death(){
@@ -116,7 +117,6 @@ death(){
         return false;
     }else{return true;}
 }
-
 killplayer(playerx, playery){
 if(playerx+100>this.position.x){
     if(playerx<this.position.x+100){

@@ -239,6 +239,18 @@ this.position.x=this.position.x-10;
           this.immune=true;
           window.invisabledamage1=(true);
        }
+       if(window.screen8==(true)){
+        this.living=false;
+            this.visable=false;
+            this.immune=true;
+            window.invisabledamage1=(true);
+         }
+          if(window.screen9==(true)){
+        this.living=false;
+            this.visable=false;
+            this.immune=true;
+            window.invisabledamage1=(true);
+         }
     window.enemy2X=this.position.x;
     window.enemy2Y=this.position.y;
     window.visable1=this.visable;

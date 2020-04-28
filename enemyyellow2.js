@@ -214,6 +214,20 @@ this.position.x=this.position.x-10;
       this.hit=2;
       this.immune=(true);
     }
+    if(window.screen8==(true)){
+      this.living=(false);
+      window.invisabledamage2=(true);
+        this.visable=(false);
+        this.hit=2;
+        this.immune=(true);
+      }
+      if(window.screen9==(true)){
+        this.living=(false);
+        window.invisabledamage2=(true);
+          this.visable=(false);
+          this.hit=2;
+          this.immune=(true);
+        }
     window.enemy2X2=this.position.x;
     window.enemy2Y2=this.position.y;
     window.visable2=this.visable;

@@ -73,6 +73,10 @@ export default class Level3{
     obstacle2.proccessloop();
       if(runnumber13<2){ 
         this.redenemy1=new Redenemy(725,300);
+        this.redenemy1.immune=false;
+        this.redenemy1.visable=true;
+        this.redenemy2.immune=true;
+        this.redenemy2.visable=false;
       window.screen7load=(true);
       window.screenload=(true);
       setTimeout(function(load){ load.screenload=(false); }, 34,window);
@@ -109,6 +113,10 @@ export default class Level3{
     if(runnumber23<2){ 
       this.redenemy1=new Redenemy(175,300);
       this.redenemy2=new Redenemy(725,300);
+      this.redenemy1.immune=false;
+        this.redenemy1.visable=true;
+        this.redenemy2.immune=false;
+        this.redenemy2.visable=true;
     window.screen8load=(true);
     window.screenload=(true);
     setTimeout(function(load){ load.screenload=(false); }, 34,window);
@@ -139,6 +147,10 @@ obstacle2.proccessloop();
   if(runnumber33<2){ 
     this.redenemy1=new Redenemy(450,300);
     this.redenemy2=new Redenemy(900,300);
+    this.redenemy1.immune=false;
+    this.redenemy1.visable=true;
+    this.redenemy2.immune=false;
+    this.redenemy2.visable=true;
   window.screen9load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
