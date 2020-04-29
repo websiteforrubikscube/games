@@ -117,6 +117,8 @@ export default class Level3{
         this.redenemy1.visable=true;
         this.redenemy2.immune=false;
         this.redenemy2.visable=true;
+        this.redenemy1dead = false;
+        this.redenemy2dead = false;
     window.screen8load=(true);
     window.screenload=(true);
     setTimeout(function(load){ load.screenload=(false); }, 34,window);
@@ -151,6 +153,8 @@ obstacle2.proccessloop();
     this.redenemy1.visable=true;
     this.redenemy2.immune=false;
     this.redenemy2.visable=true;
+    this.redenemy1dead = false;
+        this.redenemy2dead = false;
   window.screen9load=(true);
   window.screenload=(true);
   setTimeout(function(load){ load.screenload=(false); }, 34,window);
