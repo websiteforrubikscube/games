@@ -117,7 +117,7 @@ export default class Player {
     }
 
 
-
+//why the **** is this not working
     if (window.killjump == true) {
       if (this.speed > 0) {
         if(this.killjumpifskip==false){
