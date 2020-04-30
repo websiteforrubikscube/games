@@ -141,8 +141,7 @@ export default class Player {
         this.killjumpifskip=true;
       }
     }
-      this.killjumpifskip=false;
-    }
+    }else{this.killjumpifskip=false;}
 
     //death
     if ((this.position.y + 150) > (window.enemy1c - 33)) {
