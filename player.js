@@ -120,15 +120,17 @@ export default class Player {
     if (window.killjump == true) {
       if (this.speed > 0) {
         this.speed = this.speed * -0.75;
+        window.killjump = false;
       }
       if ((window.touchY == (true)) || (window.touchY2 == (true))) {
         this.speed = -10;
         this.position.y = this.position.y - 6;
+        window.killjump = false;
       }
       if (this.speed < 0) {
         this.speed = this.speed * 1.5
+        window.killjump = false;
       }
-      window.killjump = false;
     }
 
     //death
