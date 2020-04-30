@@ -16,6 +16,7 @@ export default class Player {
     this.living = (true);
     this.playerdeath = false;
     this.playerdeath2 = false;
+    this.killjumpifskip=false;
     window.color1 = ("#ffad47");
 
     keys = {};
@@ -119,18 +120,28 @@ export default class Player {
 
     if (window.killjump == true) {
       if (this.speed > 0) {
+        if(this.killjumpifskip==false){
         this.speed = this.speed * -0.75;
         window.killjump = false;
+        this.killjumpifskip=true;
       }
+    }
       if ((window.touchY == (true)) || (window.touchY2 == (true))) {
+         if(this.killjumpifskip==false){
         this.speed = -10;
         this.position.y = this.position.y - 6;
         window.killjump = false;
+        this.killjumpifskip=true;
       }
+    }
       if (this.speed < 0) {
+        if(this.killjumpifskip==false){
         this.speed = this.speed * 1.5
         window.killjump = false;
+        this.killjumpifskip=true;
       }
+    }
+      this.killjumpifskip=false;
     }
 
     //death
