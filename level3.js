@@ -109,7 +109,7 @@ export default class Level3{
       this.redenemy2.proccess(this.ctx);
       obstacle1.proccessloop();
   obstacle2.proccessloop();
-  if(runnumber33>2){ 
+  if(runnumber32>2){ 
     screen8.proccessloop();
     }
     if(runnumber23<2){ 
