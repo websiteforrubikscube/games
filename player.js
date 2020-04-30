@@ -141,7 +141,7 @@ export default class Player {
         this.killjumpifskip=true;
       }
     }
-    }else{this.killjumpifskip=false;}
+    }else{ setTimeout(function (player) { player.killjumpifskip = (false); }, 500, this);}
 
     //death
     if ((this.position.y + 150) > (window.enemy1c - 33)) {
