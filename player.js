@@ -142,7 +142,7 @@ export default class Player {
       }
     }
     }else{ setTimeout(function (player) { player.killjumpifskip = (false); }, 500, this);}
-
+//I'm in pain HELP me!
     //death
     if ((this.position.y + 150) > (window.enemy1c - 33)) {
       if ((this.position.x + 100) > (window.enemy1c2 - 100)) {
