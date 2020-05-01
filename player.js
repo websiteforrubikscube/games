@@ -117,7 +117,7 @@ export default class Player {
 
 
     if (window.killjump == true) {
-     this.speed=-10;
+     this.speed=-15;
      this.position.y=this.position.y-10;
      window.killjump=false;
     }
