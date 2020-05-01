@@ -17,7 +17,6 @@ export default class Player {
     this.playerdeath = false;
     this.playerdeath2 = false;
     this.killjumpifskip=false;
-    console.log("constr");
     window.color1 = ("#ffad47");
 
     keys = {};
@@ -143,15 +142,10 @@ export default class Player {
       }
     }
     }
-    else{
-       if(this.killjumpifskip==true){
-         setTimeout(
-           function (player) { 
-             player.killjumpifskip = (false);
-             console.log("here");
-             }, 10000, this);
-            }
-        }
+   if((window.killjump==false)||(this.killjumpifskip==true)){
+     this.killjumpifskip=false;
+   }
+      
 
     //death
     if ((this.position.y + 150) > (window.enemy1c - 33)) {
