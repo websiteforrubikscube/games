@@ -116,7 +116,12 @@ export default class Player {
       this.speed = 15;
     }
 
-
+    if((window.killjump==true)||(this.killjumpifskip==true)){
+      window.killjump=false;
+    }
+    if((window.killjump==false)||(this.killjumpifskip==true)){
+      this.killjumpifskip=false;
+    }
 
     if (window.killjump == true) {
       if (this.speed > 0) {
@@ -142,9 +147,6 @@ export default class Player {
       }
     }
     }
-   if((window.killjump==false)||(this.killjumpifskip==true)){
-     this.killjumpifskip=false;
-   }
       
 
     //death
