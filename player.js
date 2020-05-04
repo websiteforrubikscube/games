@@ -17,6 +17,8 @@ export default class Player {
     this.playerdeath = false;
     this.playerdeath2 = false;
     window.color1 = ("#ffad47");
+    var d = new Date();
+    this.unique=d.getTime();
 
     keys = {};
     keys[37] = false;
@@ -117,7 +119,7 @@ export default class Player {
 
 
     if (window.killjump == true) {
-     this.speed=-20; 
+     this.speed=-20;  
      this.position.y=this.position.y-10;
      window.killjump=false;
     }
