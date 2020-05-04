@@ -172,9 +172,9 @@ respawnmain(){
   runnumber33=0;
   player.living=true;
   player.visable=true;
-  window.screen4=(true);
-  window.screen5=(false);
-  window.screen6=(false);
+  window.screen7=(true);
+  window.screen8=(false);
+  window.screen9=(false);
   window.color1=("#ffad47");
 this.respawn=(false);
 }
