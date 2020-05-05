@@ -192,7 +192,7 @@ alert(this.unique);
 
     if (window.start3 == true) {
       if ((this.playerdeath == true) || (this.playerdeath2 == true)) {
-        if(window.screenload=false){
+        if(window.screenload==false){
         this.living = (false);
         window.color1 = ("#ffd5a1");
         keys[37] = (false);
