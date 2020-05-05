@@ -10,6 +10,7 @@ import Sky from "./sky.js";
 import Screen6 from "./screen6.js";
 import Screen7 from "./screen7.js";
 import Screen8 from "./screen8.js";
+import Screen9 from "./screen9.js";
 
 
 let ground = new Ground();
@@ -21,6 +22,7 @@ let player = new Player();
 let screen6 = new Screen6();
 let screen7 = new Screen7();
 let screen8 = new Screen8();
+let screen9 = new Screen9();
  let enemyyellow = new Enemyyellow();
 let enemyyellow2 = new Enemyyellow2();
 
@@ -147,6 +149,7 @@ export default class Level3{
     this.redenemy2.proccess(this.ctx);
     obstacle1.proccessloop();
 obstacle2.proccessloop();
+screen9.proccessloop();
   if(runnumber33<2){ 
     this.redenemy1=new Redenemy(450,300);
     this.redenemy2=new Redenemy(900,300);
@@ -198,6 +201,7 @@ draw(){
     this.redenemy2.draw(this.ctx);
   }
   if(window.screen9==(true)){
+   screen9.draw(this.ctx);
   sky.draw(this.ctx);
   ground.draw(this.ctx);
     player.draw(this.ctx);
