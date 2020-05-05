@@ -192,6 +192,7 @@ alert(this.unique);
 
     if (window.start3 == true) {
       if ((this.playerdeath == true) || (this.playerdeath2 == true)) {
+        if(window.screenload=false){
         this.living = (false);
         window.color1 = ("#ffd5a1");
         keys[37] = (false);
@@ -201,6 +202,7 @@ alert(this.unique);
 
         setTimeout(function (player) { player.visable = (false); }, 1000, this);
       }
+    }
     }
 
     window.PlayerX = this.position.x;
