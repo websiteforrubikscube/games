@@ -50,13 +50,13 @@ level2.proccess2();
       window.start2=(false);
   level3.proccess3();
     }
-   /* if(window.screen10==true){
+    if(window.screen10==true){
       window.start4=true;
       window.start3=false;
     }
-    if(window.start4=true){
+    if(window.start4==true){
 level4.proccess4();
-    }*/
+    }
     window.setTimeout(function() {gameloop();}, 33);
   }
 }

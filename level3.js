@@ -66,6 +66,7 @@ export default class Level3{
         }else{
           player.playerdeath=false;
         }
+        player.playerdeath2=false;
       screen7.proccessloop();
         player.proccessloop(this.ctx);
         enemyyellow.proccessloop(this.ctx);
@@ -202,11 +203,11 @@ draw(){
   }
   if(window.screen9==(true)){
   sky.draw(this.ctx);
+  screen9.draw(this.ctx);
   ground.draw(this.ctx);
     player.draw(this.ctx);
     this.redenemy1.draw(this.ctx);
     this.redenemy2.draw(this.ctx);
-    screen9.draw(this.ctx);
   }
 }
 
