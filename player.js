@@ -17,9 +17,6 @@ export default class Player {
     this.playerdeath = false;
     this.playerdeath2 = false;
     window.color1 = ("#ffad47");
-    var d = new Date();
-    this.unique=d.getTime();
-alert(this.unique);
     keys = {};
     keys[37] = false;
     keys[38] = false;

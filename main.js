@@ -1,10 +1,12 @@
 import Level1 from "./level1.js";
 import Level2 from "./level2.js";
 import Level3 from "./level3.js";
+import Level4 from "./level4.js";
 
 let level1 = new Level1();
 let level2 = new Level2();
 let level3 = new Level3();
+let level4 = new Level4();
 
 window.start=(true);
 window.start2=(false);
@@ -53,7 +55,7 @@ level2.proccess2();
       window.start3=false;
     }
     if(window.start4=true){
-
+level4.proccess4();
     }
     window.setTimeout(function() {gameloop();}, 33);
   }
