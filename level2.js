@@ -107,6 +107,7 @@ ground.draw(this.ctx);
  enemyyellow2.proccessloop(this.ctx);
    obstacle1.proccessloop();
    obstacle2.proccessloop();
+   screen6.draw(this.ctx);
    if(runnumber32>1){
     screen5.proccessloop();
     screen6.proccessloop();

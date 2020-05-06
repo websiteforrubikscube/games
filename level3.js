@@ -201,12 +201,12 @@ draw(){
     this.redenemy2.draw(this.ctx);
   }
   if(window.screen9==(true)){
-   screen9.draw(this.ctx);
   sky.draw(this.ctx);
   ground.draw(this.ctx);
     player.draw(this.ctx);
     this.redenemy1.draw(this.ctx);
     this.redenemy2.draw(this.ctx);
+    screen9.draw(this.ctx);
   }
 }
 
