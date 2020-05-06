@@ -34,7 +34,6 @@ export default class Level4{
  
     runnumber14++;
     if(window.screen10==true){
-        ground.proccessloop(this.ctx);
      player.proccessloop(this.ctx);
      if(runnumber14<2){
          window.screenload=true;

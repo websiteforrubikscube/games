@@ -156,7 +156,9 @@ export default class Level3{
     this.redenemy2.proccess(this.ctx);
     obstacle1.proccessloop();
 obstacle2.proccessloop();
+if(runnumber33>2){
 screen9.proccessloop();
+}
   if(runnumber33<2){ 
     this.redenemy1=new Redenemy(450,300);
     this.redenemy2=new Redenemy(900,300);
