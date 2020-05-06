@@ -133,6 +133,12 @@ export default class Level3{
  }
  if(window.screen9==(true)){
   runnumber33++;
+  if(this.redenemy1.death()==true){
+    screen9.redenemy1dead=true;
+  }else{screen9.redenemy1dead=false;}
+  if(this.redenemy2.death()==true){
+    screen9.redenemy2dead=true;
+  }else{screen9.redenemy1dead=false;}
   if(this.redenemy2.killplayer(player.position.x, player.position.y)){
     player.playerdeath2=true;
     }else{

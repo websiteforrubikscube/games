@@ -6,6 +6,7 @@ export default class Screen9 {
         window.screen10 = (false);
         this.move = (true);
         this.redenemy1dead = false;
+        this.redenemy2dead = false;
     }
     draw(ctx) {
         ctx.fillStyle = ("#90EE90");
