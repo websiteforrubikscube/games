@@ -9,10 +9,8 @@ let level3 = new Level3();
 window.start=(true);
 window.start2=(false);
 window.start3=(false);
+window.start4=(false);
 window.killjump=(false);
-window.killjump2=(false);
-window.killjump3=(false);
-window.killjump4=(false);
 window.touch=(false);
 window.touchY=(false);
 window.touchX1=(false);
@@ -49,6 +47,13 @@ level2.proccess2();
     if(window.start3==true){
       window.start2=(false);
   level3.proccess3();
+    }
+    if(window.screen10==true){
+      window.start4=true;
+      window.start3=false;
+    }
+    if(window.start4=true){
+
     }
     window.setTimeout(function() {gameloop();}, 33);
   }
