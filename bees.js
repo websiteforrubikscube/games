@@ -3,8 +3,8 @@ constructor(){
     this.beesx=[];
     this.beesy=[]
     for(let i =0; i<21;i++){
-this.beesx[i]=(Math.round(Math.random*1000));
-this.beesy[i]=(Math.round(Math.random*100));
+this.beesx[i]=(Math.round(Math.random()*1000));
+this.beesy[i]=(Math.round(Math.random()*100));
     }
 }
 draw(ctx){
