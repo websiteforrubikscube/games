@@ -25,7 +25,7 @@ proccess(){
         this.beesy[i]=this.beesy[i]+Math.round(Math.random()*5);
         }
         if(this.beesy[i]>50){
-        this.beesy[i]=this.beesy[i]-Math.round(Math.random()*3);
+        this.beesy[i]=this.beesy[i]-Math.round(Math.random()*5);
         }
 }
 }
