@@ -1,12 +1,13 @@
 import Ground from "./ground.js";
 import Player from "./player.js";
 import Sky from "./sky.js";
+import Bees from "./bees.js";
 
 
 let ground = new Ground();
 let player = new Player();
  let sky = new Sky();
-
+let bees = new Bees();
 
 var runnumber14=0;
 var runnumber24=0;
@@ -35,6 +36,8 @@ export default class Level4{
     runnumber14++;
     if(window.screen10==true){
      player.proccessloop(this.ctx);
+     bees.proccess();
+     bees.iskillplayer();
      if(runnumber14<2){
          window.screenload=true;
          window.screen10load=true;
@@ -61,6 +64,7 @@ draw(){
  sky.draw(this.ctx);
  ground.draw(this.ctx);
    player.draw(this.ctx);
+   bees.draw(this.ctx);
 }
 }
 
