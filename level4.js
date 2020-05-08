@@ -37,7 +37,10 @@ export default class Level4{
     if(window.screen10==true){
      player.proccessloop(this.ctx);
      bees.proccess();
-     bees.iskillplayer();
+     if(bees.iskillplayer()==true){
+player.playerdeath3=true;
+     }else{player.playerdeath3=false;}
+     
      if(runnumber14<2){
          window.screenload=true;
          window.screen10load=true;

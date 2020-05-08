@@ -16,6 +16,7 @@ export default class Player {
     this.living = (true);
     this.playerdeath = false;
     this.playerdeath2 = false;
+    this.playerdeath3 = false;
     window.color1 = ("#ffad47");
     keys = {};
     keys[37] = false;
@@ -189,6 +190,20 @@ export default class Player {
 
     if (window.start3 == true) {
       if ((this.playerdeath == true) || (this.playerdeath2 == true)) {
+        if(window.screenload==false){
+        this.living = (false);
+        window.color1 = ("#ffd5a1");
+        keys[37] = (false);
+        keys[38] = (false);
+        keys[39] = (false);
+        keys[40] = (false);
+
+        setTimeout(function (player) { player.visable = (false); }, 1000, this);
+      }
+    }
+    }
+    if (window.start4 == true) {
+      if (this.playerdeath3 == true) {
         if(window.screenload==false){
         this.living = (false);
         window.color1 = ("#ffd5a1");
