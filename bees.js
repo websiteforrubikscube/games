@@ -16,16 +16,16 @@ draw(ctx){
 proccess(){
     for(let i=0;i<21;i++){
         if(this.beesx[i]<950){
-        this.beesx[i]=this.beesx[i]+Math.round(Math.random*5);
+        this.beesx[i]=this.beesx[i]+Math.round(Math.random()*5);
         }
         if(this.beesx[i]>50){
-        this.beesx[i]=this.beesx[i]-Math.round(Math.random*5);
+        this.beesx[i]=this.beesx[i]-Math.round(Math.random()*5);
         }
         if(this.beesy[i]<350){
-        this.beesy[i]=this.beesy[i]+Math.round(Math.random*5);
+        this.beesy[i]=this.beesy[i]+Math.round(Math.random()*5);
         }
         if(this.beesy[i]>50){
-        this.beesy[i]=this.beesy[i]-Math.round(Math.random*3);
+        this.beesy[i]=this.beesy[i]-Math.round(Math.random()*3);
         }
 }
 }
