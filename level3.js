@@ -149,8 +149,8 @@ export default class Level3{
       }else{
         player.playerdeath=false;
       } 
-      if(this.redenemy1.this.position.x+100>this.redenemy2.position.x){
-        this.redenemy1.this.position.x= this.redenemy2.this.position.x-150
+      if(this.redenemy1.position.x+100>this.redenemy2.position.x){
+        this.redenemy1.position.x= this.redenemy2.position.x-150
       }
     player.proccessloop(this.ctx);
     enemyyellow.proccessloop(this.ctx);
