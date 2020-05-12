@@ -24,6 +24,7 @@ export default class Player {
     keys[39] = false;
     keys[40] = false;
     keys[114] = false;
+    keys[115] = false;
     window.onkeyup = function (e) {
       keys[e.keyCode] = false;
     }
@@ -62,6 +63,14 @@ export default class Player {
       window.screen7 = true;
       window.nodamage1 = true;
       keys[114] = false;
+    }
+    if (keys[115] == true) {
+      window.start = false;
+      window.start4 = true;
+      window.screen1 = false;
+      window.screen10 = true;
+      window.nodamage1 = true;
+      keys[115] = false;
     }
 
     if ((keys[39] == true) && (this.position.x < 900)) {
