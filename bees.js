@@ -27,7 +27,7 @@ proccess(){
         }
         if(this.beesy[y]<350){
             if(this.beesy[y]<100){
-        this.beesy[y]=this.beesy[y]+Math.round(Math.random()*5);
+        this.beesy[y]=this.beesy[y]+Math.round(Math.random()*7);
             }
             if(this.beesy[y]>100){
                 this.beesy[y]=this.beesy[y]+Math.round(Math.random()*3);
