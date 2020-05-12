@@ -26,11 +26,11 @@ proccess(){
         this.beesx[y]=this.beesx[y]-Math.round(Math.random()*5);
         }
         if(this.beesy[y]<350){
-            if(this.beesy[y]<800){
-        this.beesy[y]=this.beesy[y]+Math.round(Math.random()*7);
+            if(this.beesy[y]<300){
+        this.beesy[y]=this.beesy[y]+Math.round(Math.random()*6.5);
             }
-            if(this.beesy[y]>800){
-                this.beesy[y]=this.beesy[y]+Math.round(Math.random()*4);
+            if(this.beesy[y]>300){
+                this.beesy[y]=this.beesy[y]+Math.round(Math.random()*2.5);
                     }
         }
         if(this.beesy[y]>50){
