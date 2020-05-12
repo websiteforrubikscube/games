@@ -26,10 +26,10 @@ proccess(){
         this.beesx[y]=this.beesx[y]-Math.round(Math.random()*5);
         }
         if(this.beesy[y]<350){
-            if(this.beesy[y]<100){
+            if(this.beesy[y]<900){
         this.beesy[y]=this.beesy[y]+Math.round(Math.random()*10);
             }
-            if(this.beesy[y]>100){
+            if(this.beesy[y]>900){
                 this.beesy[y]=this.beesy[y]+Math.round(Math.random()*3);
                     }
         }
