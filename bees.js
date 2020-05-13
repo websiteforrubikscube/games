@@ -1,4 +1,4 @@
-
+const TotalBees=19;
 
 export default class Bees{
     
@@ -8,18 +8,15 @@ constructor(){
     this.beesy=[]
 }
 load(){
-    if(window.screen10==true){
-    var TotalBees=19; 
-    }
-    if(window.screen11==true){
-        var TotalBees=9; 
-        }
     for(let i =0; i<TotalBees;i++){
         this.beesx[i]=(Math.round(Math.random()*1000));
         this.beesy[i]=(Math.round(Math.random()*100));
             }
 }
 draw(ctx){
+    if(window.screen11load==true){
+        TotalBees=9;
+    }
     for(let x=0;x<TotalBees;x++){
         ctx.fillStyle=("#000");
         ctx.fillRect(this.beesx[x],this.beesy[x],3,3)

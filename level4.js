@@ -70,7 +70,7 @@ player.playerdeath3=true;
           window.screenload=true;
           window.screen11load=true;
           setTimeout(function(load){ load.screenload=(false); }, 34,window);
-          setTimeout(function(load){ load.screen10load=(false); }, 34,window);
+          setTimeout(function(load){ load.screen11load=(false); }, 34,window);
       }
      }
 }
