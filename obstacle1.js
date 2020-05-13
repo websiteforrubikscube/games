@@ -78,6 +78,12 @@ window.enemy3Xtouch2=(true);
      if(window.screen9==true){
       this.position.x=2000;
        }
+       if(window.screen10==true){
+        this.position.x=2000;
+         }
+         if(window.screen11==true){
+          this.position.x=450;
+           }
   window.obstacle1Y=this.position.y;
   window.obstacle1X=this.position.x;
 }
