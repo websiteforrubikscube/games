@@ -1,4 +1,4 @@
-const TotalBees=19;
+
 
 export default class Bees{
     
@@ -14,8 +14,11 @@ load(){
             }
 }
 draw(ctx){
+    if(window.screen10load==true){
+        var TotalBees=19;
+    }
     if(window.screen11load==true){
-        TotalBees=9;
+        var TotalBees=9;
     }
     for(let x=0;x<TotalBees;x++){
         ctx.fillStyle=("#000");
