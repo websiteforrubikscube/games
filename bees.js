@@ -6,10 +6,12 @@ constructor(){
 
     this.beesx=[];
     this.beesy=[]
+}
+load(){
     for(let i =0; i<TotalBees;i++){
-this.beesx[i]=(Math.round(Math.random()*1000));
-this.beesy[i]=(Math.round(Math.random()*100));
-    }
+        this.beesx[i]=(Math.round(Math.random()*1000));
+        this.beesy[i]=(Math.round(Math.random()*100));
+            }
 }
 draw(ctx){
     for(let x=0;x<TotalBees;x++){
