@@ -42,6 +42,7 @@ player.playerdeath3=true;
      }else{player.playerdeath3=false;}
      
      if(runnumber14<2){
+       bees.load();
          window.screenload=true;
          window.screen10load=true;
          setTimeout(function(load){ load.screenload=(false); }, 34,window);
