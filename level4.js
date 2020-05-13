@@ -77,6 +77,8 @@ player.playerdeath3=true;
 
 
 respawnmain(){
+  window.screen10=(true);
+  window.screen11=(false);
  runnumber14=0;
  runnumber24=0;
  runnumber34=0;
@@ -97,6 +99,7 @@ draw(){
 if(window.screen11==(true)){
   sky.draw(this.ctx);
   ground.draw(this.ctx);
+  obstacle1.draw(this.ctx);
     player.draw(this.ctx);
     bees.draw(this.ctx);
  }
