@@ -105,6 +105,7 @@ player.playerdeath3=true;
 respawnmain(){
   window.screen10=(true);
   window.screen11=(false);
+  window.screen12=(false);
  runnumber14=0;
  runnumber24=0;
  runnumber34=0;
