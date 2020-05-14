@@ -3,7 +3,9 @@ import Player from "./player.js";
 import Sky from "./sky.js";
 import Bees from "./bees.js";
 import Obstacle1 from "./obstacle1.js";
+import Obstacle2 from "./obstacle2.js";
 import Screen10 from "./screen10.js";
+import Screen11 from "./screen11.js"
 
 
 let ground = new Ground();
@@ -11,7 +13,9 @@ let player = new Player();
  let sky = new Sky();
 let bees = new Bees();
 let obstacle1 = new Obstacle1();
+let obstacle2 = new Obstacle2();
 let screen10 = new Screen10();
+let screen11 = new Screen11();
 
 var runnumber14=0;
 var runnumber24=0;
@@ -49,7 +53,7 @@ player.playerdeath3=true;
      }else{player.playerdeath3=false;}
      
      if(runnumber14<2){
-      bees.TotalBees=19;
+      bees.TotalBees=20;
        bees.load();
          window.screenload=true;
          window.screen10load=true;
@@ -65,14 +69,34 @@ player.playerdeath3=true;
       if(bees.iskillplayer()==true){
  player.playerdeath3=true;
       }else{player.playerdeath3=false;}
-      
+      if(runnumber24>2){
+        screen11.proccessloop();
+      }
       if(runnumber24<2){
-        bees.TotalBees=4;
+        bees.TotalBees=5;
         bees.load();
           window.screenload=true;
           window.screen11load=true;
           setTimeout(function(load){ load.screenload=(false); }, 34,window);
           setTimeout(function(load){ load.screen11load=(false); }, 34,window);
+      }
+     }
+     if(window.screen12==true){
+      runnumber34++;
+      player.proccessloop(this.ctx);
+      obstacle1.proccessloop();
+      obstacle2.proccessloop();
+      bees.proccess();
+      if(bees.iskillplayer()==true){
+        player.playerdeath3=true;
+             }else{player.playerdeath3=false;}
+      if(runnumber34<2){
+        bees.TotalBees=5;
+        bees.load();
+          window.screenload=true;
+          window.screen12load=true;
+          setTimeout(function(load){ load.screenload=(false); }, 34,window);
+          setTimeout(function(load){ load.screen12load=(false); }, 34,window);
       }
      }
 }
@@ -102,6 +126,14 @@ if(window.screen11==(true)){
   sky.draw(this.ctx);
   ground.draw(this.ctx);
   obstacle1.draw(this.ctx);
+    player.draw(this.ctx);
+    bees.draw(this.ctx);
+ }
+ if(window.screen12==(true)){
+  sky.draw(this.ctx);
+  ground.draw(this.ctx);
+  obstacle1.draw(this.ctx);
+  obstacle2.draw(this.ctx);
     player.draw(this.ctx);
     bees.draw(this.ctx);
  }
