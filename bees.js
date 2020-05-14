@@ -1,9 +1,9 @@
-var TotalBees = 19;
+
 
 export default class Bees{
     
 constructor(){
-
+var TotalBees = 19;
     this.beesx=[];
     this.beesy=[]
 }
