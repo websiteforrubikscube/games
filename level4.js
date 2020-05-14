@@ -66,7 +66,7 @@ player.playerdeath3=true;
       }else{player.playerdeath3=false;}
       
       if(runnumber24<2){
-        bees.TotalBees=4;
+        bees.this.TotalBees=4;
         bees.load();
           window.screenload=true;
           window.screen11load=true;
