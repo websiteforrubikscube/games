@@ -29,7 +29,7 @@ export default class Level4{
       window.touch=false;
       window.touch2=false;
       this.img = new Image;
-      img.src = URL.createObjectURL('bossspritespikes.png');
+      this.img.src = URL.createObjectURL('bossspritespikes.png');
       }
   
    proccess4(){
