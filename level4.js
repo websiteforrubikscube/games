@@ -119,7 +119,8 @@ this.respawn=(false);
 draw(){
  if(window.screen10==(true)){
 
-  this.ctx.drawImage(document.getElementById("bossnospikes"), 20,20);
+  let pic=document.getElementById("bossnospikes");
+  this.ctx.drawImage(pic, 20,20);
 
  sky.draw(this.ctx);
  ground.draw(this.ctx);
