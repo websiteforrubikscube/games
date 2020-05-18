@@ -23,11 +23,13 @@ var runnumber34=0;
 
 export default class Level4{
  
-    constructor (){
+    constructor (){ 
       this.ctx=undefined;
       this.respawn = (false);
       window.touch=false;
       window.touch2=false;
+      this.img = new Image;
+      img.src = URL.createObjectURL('bossspritespikes.png');
       }
   
    proccess4(){
@@ -118,6 +120,9 @@ this.respawn=(false);
 
 draw(){
  if(window.screen10==(true)){
+
+  this.ctx.drawImage(this.img, 20,20);
+
  sky.draw(this.ctx);
  ground.draw(this.ctx);
    player.draw(this.ctx);
