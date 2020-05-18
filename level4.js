@@ -5,7 +5,8 @@ import Bees from "./bees.js";
 import Obstacle1 from "./obstacle1.js";
 import Obstacle2 from "./obstacle2.js";
 import Screen10 from "./screen10.js";
-import Screen11 from "./screen11.js"
+import Screen11 from "./screen11.js";
+import Screen12 from "./screen12.js";
 
 
 let ground = new Ground();
@@ -16,6 +17,7 @@ let obstacle1 = new Obstacle1();
 let obstacle2 = new Obstacle2();
 let screen10 = new Screen10();
 let screen11 = new Screen11();
+let screen12 = new Screen12();
 
 var runnumber14=0;
 var runnumber24=0;
@@ -90,6 +92,9 @@ player.playerdeath3=true;
       if(bees.iskillplayer()==true){
         player.playerdeath3=true;
              }else{player.playerdeath3=false;}
+             if(runnumber34>2){
+               screen12.proccessloop();
+             }
       if(runnumber34<2){
         bees.TotalBees=5;
         bees.load();
@@ -119,9 +124,6 @@ this.respawn=(false);
 draw(){
  if(window.screen10==(true)){
 
-  let pic=document.getElementById("bossnospikes");
-  this.ctx.drawImage(pic, 20,20);
-
  sky.draw(this.ctx);
  ground.draw(this.ctx);
    player.draw(this.ctx);
@@ -137,6 +139,7 @@ if(window.screen11==(true)){
  if(window.screen12==(true)){
   sky.draw(this.ctx);
   ground.draw(this.ctx);
+  screen12.draw(this.ctx);
   obstacle1.draw(this.ctx);
   obstacle2.draw(this.ctx);
     player.draw(this.ctx);
