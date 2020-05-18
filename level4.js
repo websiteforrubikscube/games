@@ -138,8 +138,8 @@ if(window.screen11==(true)){
  }
  if(window.screen12==(true)){
   sky.draw(this.ctx);
-  ground.draw(this.ctx);
   screen12.draw(this.ctx);
+  ground.draw(this.ctx);
   obstacle1.draw(this.ctx);
   obstacle2.draw(this.ctx);
     player.draw(this.ctx);
