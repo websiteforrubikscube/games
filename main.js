@@ -2,16 +2,19 @@ import Level1 from "./level1.js";
 import Level2 from "./level2.js";
 import Level3 from "./level3.js";
 import Level4 from "./level4.js";
+import Level5 from "./level5.js";
 
 let level1 = new Level1();
 let level2 = new Level2();
 let level3 = new Level3();
 let level4 = new Level4();
+let level5 = new Level5();
 
 window.start=(true);
 window.start2=(false);
 window.start3=(false);
 window.start4=(false);
+window.start5=(false);
 window.killjump=(false);
 window.touch=(false);
 window.touchY=(false);
@@ -56,6 +59,13 @@ level2.proccess2();
     }
     if(window.start4==true){
 level4.proccess4();
+    }
+    if(window.screen13==true){
+      window.start4=false;
+      window.start5=true;
+    }
+    if(window.start5==true){
+      level5.proccess5();
     }
     window.setTimeout(function() {gameloop();}, 33);
   }
