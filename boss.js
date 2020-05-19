@@ -44,6 +44,7 @@ if(this.spikes==false){
 
 }
 iskillplayer(){
+    if(this.visable==true){
     if(this.spikes==false){
     if(window.PlayerY+150>this.position.y+20){
      if(window.PlayerX+100>this.position.x){
@@ -63,5 +64,6 @@ if(this.spikes==true){
     }
 }
     return false;
+}
 }
 }
