@@ -34,6 +34,7 @@ proccessloop(){
 if(this.spikes==false){
     if((window.PlayerY+150>this.position.y)&&(window.PlayerY<this.position.y+20)){
         if((window.PlayerX+100>this.position.x)&&(window.PlayerX<this.position.x+300)){
+            if(this.visable==true){
             this.hit++;
             window.killjump=true;
        if(this.hit>9){
@@ -43,6 +44,7 @@ if(this.spikes==false){
         setTimeout(function (boss) { boss.spikes = (true); }, 500, this);
         setTimeout(function (boss) { boss.spikes = (false); }, 3000, this);
        }
+    }
         }
     }
 }
