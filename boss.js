@@ -61,7 +61,7 @@ iskillplayer(){
     if(this.spikes==true){
     if(window.PlayerY+150>this.position.y+20){
      if(window.PlayerX+100>this.position.x){
-         if(window.PlayerX<this.position.x+400){
+         if(window.PlayerX<this.position.x+500){
              return true;
          }
      }
