@@ -220,7 +220,7 @@ export default class Player {
       }
     }
     }
-    if (window.start4 == true) {
+    if ((window.start4 == true)||(window.start5==true)) {
       if (this.playerdeath3 == true) {
         if(window.screenload==false){
         this.living = (false);
