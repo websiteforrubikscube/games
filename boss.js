@@ -46,6 +46,7 @@ if(this.spikes==false){
 if(window.screen13load==true){
     this.position.x=600;
     this.hit=0;
+    this.visable=true;
 }
 
 }
