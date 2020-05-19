@@ -12,7 +12,7 @@ draw(ctx){
     ctx.drawImage(document.getElementById("bossnospikes"), this.position.x, this.position.y);
     }
     if(this.spikes==true){
-        ctx.drawImage(document.getElementById("bossspikes"), this.position.x, this.position.y-100);
+        ctx.drawImage(document.getElementById("bossspikes"), this.position.x-50, this.position.y-100);
         }
 }
 }
@@ -20,12 +20,16 @@ proccessloop(){
     //movement
     if(this.spikes==false){
     if(window.PlayerX+50>this.position.x+150){
+        if(this.position.x+300<900){
         this.position.x=this.position.x+10;
+        }
     }
     if(window.PlayerX+50<this.position.x+150){
+        if(this.position.x>100){
         this.position.x=this.position.x-10;
     }
     }
+}
     //death
 if(this.spikes==false){
     if((window.PlayerY+150>this.position.y)&&(window.PlayerY<this.position.y+20)){
@@ -48,7 +52,7 @@ if(window.screen13load==true){
     this.hit=0;
     this.visable=true;
 }
-
+    
 }
 iskillplayer(){
     if(this.visable==true){
