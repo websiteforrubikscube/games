@@ -1,8 +1,10 @@
 import Player from "./player.js";
 import Ground from "./ground.js";
+import Sky from "./sky.js";
 
 let player = new Player();
 let ground = new Ground();
+let sky = new Sky();
 
 var runnumber15=0;
 
@@ -51,6 +53,7 @@ draw(){
  if(window.screen13==(true)){
     player.draw(this.ctx);
     ground.draw(this.ctx);
+    sky.draw(this.ctx);
  }
 }
 
