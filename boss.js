@@ -56,7 +56,7 @@ if(window.screen13load==true){
 }
 iskillplayer(){
     if(this.visable==true){
-    if(this.spikes==false){
+    if(this.spikes==true){
     if(window.PlayerY+150>this.position.y+20){
      if(window.PlayerX+100>this.position.x){
          if(window.PlayerX<this.position.x+400){
@@ -65,7 +65,7 @@ iskillplayer(){
      }
     }
 }
-if(this.spikes==true){
+if(this.spikes==false){
     if(window.PlayerY+150>this.position.y+20){
      if(window.PlayerX+100>this.position.x){
          if(window.PlayerX<this.position.x+300){
