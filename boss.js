@@ -31,6 +31,7 @@ if(this.spikes==false){
     if((window.PlayerY+150>this.position.y)&&(window.PlayerY<this.position.y+20)){
         if((window.PlayerX+100>this.position.x)&&(window.PlayerX<this.position.x+300)){
             this.hit++;
+            window.killjump=true;
        if(this.hit>9){
            this.visable=false;
        }         
@@ -40,6 +41,11 @@ if(this.spikes==false){
        }
         }
     }
+}
+//respawning
+if(window.screen13load==true){
+    this.position.x=600;
+    this.hit=0;
 }
 
 }
