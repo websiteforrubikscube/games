@@ -12,7 +12,7 @@ draw(ctx){
     ctx.drawImage(document.getElementById("bossnospikes"), this.position.x, this.position.y);
     }
     if(this.spikes==true){
-        ctx.drawImage(document.getElementById("bossspikes"), this.position.x, this.position.y);
+        ctx.drawImage(document.getElementById("bossspikes"), this.position.x, this.position.y-100);
         }
 }
 }
