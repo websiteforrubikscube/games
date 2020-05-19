@@ -59,6 +59,7 @@ this.respawn=(false);
 draw(){
  if(window.screen13==(true)){
     sky.draw(this.ctx);
+    boss.draw(this.ctx);
     player.draw(this.ctx);
     ground.draw(this.ctx);
  }
