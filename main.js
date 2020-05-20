@@ -108,3 +108,4 @@ level4.proccess4();
 }
 window.launch=launch;
 window.buttonpress=buttonpress;
+window.buttonunpress=buttonunpress;
