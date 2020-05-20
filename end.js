@@ -5,6 +5,7 @@ export default class End {
         this.position = { x: 950, y: 0 };
         window.screen13 = (false);
         this.move = (true);
+        this.end=false;
     }
     draw(ctx) {
         ctx.fillStyle = ("#90EE90");
@@ -14,8 +15,11 @@ export default class End {
         if (window.screen13 == (true)) {
             if(window.bossdeath==true){
                     if (window.screenload == false) {
+                     setTimeout(function(end){end.end=true;},1000,this)
+                     if(this.end==true){
                         window.screen13 = (false);
                         window.endgame=(true);
+                     }
                 }
             }
         }
