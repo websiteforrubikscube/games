@@ -50,6 +50,23 @@ export  function buttonpress(whichbutton){
     level5.buttonpress(whichbutton);
   }
 }
+export  function buttonunpress(whichbutton){
+  if(window.start==(true)){
+    level1.buttonunpress(whichbutton);
+  }
+  if(window.start2==(true)){
+    level2.buttonunpress(whichbutton);
+  }
+  if(window.start3==(true)){
+    level3.buttonunpress(whichbutton);
+  }
+  if(window.start4==(true)){
+    level4.buttonunpress(whichbutton);
+  }
+  if(window.start5==(true)){
+    level5.buttonunpress(whichbutton);
+  }
+}
 
 export default function launch(){
 

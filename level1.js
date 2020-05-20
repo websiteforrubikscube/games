@@ -43,6 +43,14 @@ export default class Level1{
       player.leftbuttonpress=true;
     }
   }
+  buttonunpress(whichbutton){
+    if (whichbutton==2){
+      player.rightbuttonpress=false;
+    }
+    if (whichbutton==3){
+      player.leftbuttonpress=false;
+    }
+  }
 
  proccess(){
   let canv = document.getElementById("Screen");

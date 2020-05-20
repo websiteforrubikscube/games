@@ -31,7 +31,14 @@ export default class Level5{
           player.leftbuttonpress=true;
         }
       }
-
+      buttonunpress(whichbutton){
+        if (whichbutton==2){
+          player.rightbuttonpress=false;
+        }
+        if (whichbutton==3){
+          player.leftbuttonpress=false;
+        }
+      }
    proccess5(){
     let canv = document.getElementById("Screen");
     this.ctx = canv.getContext('2d');
