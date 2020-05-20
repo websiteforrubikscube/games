@@ -5,6 +5,7 @@ constructor(){
     this.timer=false;
     this.hit=0;
     this.visable=true;
+    window.bossdeath=false;
 }
 draw(ctx){
     if(this.visable==true){
@@ -37,10 +38,11 @@ if(this.spikes==false){
             if(this.visable==true){
             this.hit++;
             window.killjump=true;
-       if(this.hit>9){
+       if(this.hit>4){
            this.visable=false;
+           window.bossdeath=true;
        }         
-       if(this.hit<10){
+       if(this.hit<5){
         setTimeout(function (boss) { boss.spikes = (true); }, 500, this);
         setTimeout(function (boss) { boss.spikes = (false); }, 3000, this);
        }

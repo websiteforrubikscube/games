@@ -43,7 +43,15 @@ export default class Level5{
          setTimeout(function(load){ load.screen13load=(false); }, 34,window);
      }
     }
+    if(window.endgame==true){
+        this.ctx.fillStyle=("#000");
+        this.ctx.fillRect(0,0,1000, 500);
+        this.ctx.fillStyle=("#ffffff");
+        this.ctx.font="50 px";
+        this.ctx.fillText("The End",100,100);
+    }
 }
+
     
 
 
