@@ -42,6 +42,19 @@ export default class Level3{
       window.touch2=false;
       }
   
+      buttonpress(whichbutton){
+        if (whichbutton==1){
+          player.jumpbuttonpress=true;
+          player.jumpbuttonpress2=true;
+        }
+        if (whichbutton==2){
+          player.rightbuttonpress=true;
+        }
+        if (whichbutton==3){
+          player.leftbuttonpress=true;
+        }
+      }
+
    proccess3(){
     let canv = document.getElementById("Screen");
     this.ctx = canv.getContext('2d');

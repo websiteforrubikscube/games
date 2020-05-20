@@ -37,6 +37,18 @@ export  function buttonpress(whichbutton){
   if(window.start==(true)){
     level1.buttonpress(whichbutton);
   }
+  if(window.start2==(true)){
+    level2.buttonpress(whichbutton);
+  }
+  if(window.start3==(true)){
+    level3.buttonpress(whichbutton);
+  }
+  if(window.start4==(true)){
+    level4.buttonpress(whichbutton);
+  }
+  if(window.start5==(true)){
+    level5.buttonpress(whichbutton);
+  }
 }
 
 export default function launch(){

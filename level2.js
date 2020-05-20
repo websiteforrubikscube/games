@@ -34,11 +34,23 @@ export default class Level2{
     this.ctx=undefined;
     this.respawn = (false);
     }
-
+    buttonpress(whichbutton){
+      if (whichbutton==1){
+        player.jumpbuttonpress=true;
+        player.jumpbuttonpress2=true;
+      }
+      if (whichbutton==2){
+        player.rightbuttonpress=true;
+      }
+      if (whichbutton==3){
+        player.leftbuttonpress=true;
+      }
+    }
+  
  proccess2(){
   let canv = document.getElementById("Screen");
   this.ctx = canv.getContext('2d');
-  
+
   if (player.visable==false){
     this.respawnmain();
     return;

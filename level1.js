@@ -36,6 +36,12 @@ export default class Level1{
       player.jumpbuttonpress=true;
       player.jumpbuttonpress2=true;
     }
+    if (whichbutton==2){
+      player.rightbuttonpress=true;
+    }
+    if (whichbutton==3){
+      player.leftbuttonpress=true;
+    }
   }
 
  proccess(){
