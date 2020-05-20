@@ -125,27 +125,24 @@ export default class Player {
       if ((this.living == true) && (window.touchX1 == false)) {
         if ((this.position.y > 249) && (window.touchX12 == false)) {
           this.position.x = this.position.x + 10;
-          this.rightbuttonpress=false;
-        }else{this.rightbuttonpress=false;}
+          
+        }
         if ((this.position.y < 250) && (window.touchX12 == false)) {
           this.position.x = this.position.x + 15;
-          this.rightbuttonpress=false;
-        }else{this.rightbuttonpress=false;}
-      }else{this.rightbuttonpress=false;}
-    }else{this.rightbuttonpress=false;}
+        }
+      }
+    }
 
     if ((this.leftbuttonpress == true) && (this.position.x > 0)) {
       if ((this.living == (true)) && (window.touchX2 == (false))) {
         if ((this.position.y > 249) && (window.touchX22 == (false))) {
           this.position.x = this.position.x - 10;
-          this.leftbuttonpress=false;
-        }else{this.leftbuttonpress=false;}
+        }
         if ((this.position.y < 250) && (window.touchX22 == (false))) {
           this.position.x = this.position.x - 15;
-          this.leftbuttonpress=false;
-        }else{this.leftbuttonpress=false;}
-      }else{this.leftbuttonpress=false;}
-    }else{this.leftbuttonpress=false;}
+        }
+      }
+    }
 
     if ((this.jumpbuttonpress == true) && (this.living == true)) {
       if ((this.position.y > 249) || (window.touch == true)) {
