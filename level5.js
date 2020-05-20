@@ -50,7 +50,7 @@ end.proccessloop(this.ctx);
         this.ctx.fillStyle=("#000");
         this.ctx.fillRect(0,0,1000, 500);
         this.ctx.fillStyle=("#ffffff");
-        this.ctx.font="100 px Arial";
+        this.ctx.font="100px Arial";
         this.ctx.fillText("The End",500,250);
     }
 }
