@@ -30,6 +30,14 @@ export default class Level1{
   this.ctx=undefined;
   this.respawn = (false);
   }
+
+  buttonpress(whichbutton){
+    if (whichbutton==1){
+      player.jumpbuttonpress=true;
+      player.jumpbuttonpress2=true;
+    }
+  }
+
  proccess(){
   let canv = document.getElementById("Screen");
    this.ctx = canv.getContext('2d');

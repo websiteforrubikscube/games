@@ -5,16 +5,15 @@
     </style>
   <script type="module" >
   import launch from './main.js';
-  import Player from "./player.js";
-  let player = new Player();
+  import buttonpress from './main.js';
   </script>
   </head>
     <body onload="launch()">
       <img id="bossnospikes" src="bossspritenospikes.png" style="display:none;"></img>
       <img id="bossspikes" src="bossspritespikes.png" style="display:none;"></img>
-<img src="upbutton.png" onclick="player.jumpbuttonpress=true" onclick="player.jumpbuttonpress2=true" style="position:absolute; top:55%; left:70%;"></img>
-<img src="rightbutton.png" onclick="player.rightbuttonpress=true" style="position:absolute; top:75%; left:80%;"></img>
-<img src="leftbutton.png" onclick="player.leftbuttonpress=true" style="position:absolute; top:75%; left:60%;"></img>
+<img src="upbutton.png" onclick="buttonpress(1)"  style="position:absolute; top:55%; left:70%;"></img>
+<img src="rightbutton.png" onclick="buttonpress(2)" style="position:absolute; top:75%; left:80%;"></img>
+<img src="leftbutton.png" onclick="buttonpress(3)" style="position:absolute; top:75%; left:60%;"></img>
       <div class="helpme">
       <canvas id="Screen" height="500" width="1000"></canvas>
       </div>

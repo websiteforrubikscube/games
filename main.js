@@ -32,6 +32,13 @@ window.enemy2Xtouch12=(false);
 window.enemy2Xtouch22=(false);
 window.enemy3Xtouch12=(false);
 window.enemy3Xtouch22=(false);
+
+export  function buttonpress(whichbutton){
+  if(window.start==(true)){
+    level1.buttonpress(whichbutton);
+  }
+}
+
 export default function launch(){
 
   gameloop();
@@ -71,3 +78,4 @@ level4.proccess4();
   }
 }
 window.launch=launch;
+window.buttonpress=buttonpress;
