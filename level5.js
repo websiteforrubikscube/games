@@ -2,11 +2,13 @@ import Player from "./player.js";
 import Ground from "./ground.js";
 import Sky from "./sky.js";
 import Boss from "./boss.js";
+import End from "./end.js";
 
 let player = new Player();
 let ground = new Ground();
 let sky = new Sky();
 let boss = new Boss();
+let end = new End();
 
 var runnumber15=0;
 
@@ -32,6 +34,7 @@ export default class Level5{
     if(window.screen13==true){
         player.proccessloop(this.ctx);
         boss.proccessloop(this.ctx);
+end.proccessloop(this.ctx);
         if(boss.iskillplayer()==true){
             player.playerdeath3=true;
             setTimeout(function(playerdeath){ playerdeath.playerdeath3=(false); }, 34,player);
