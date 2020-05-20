@@ -17,6 +17,10 @@ export default class Player {
     this.playerdeath = false;
     this.playerdeath2 = false;
     this.playerdeath3 = false;
+    this.rightbuttonpress=false;
+    this.leftbuttonpress=false;
+    this.jumpbuttonpress=false;
+    this.jumpbuttonpress2=false;
     window.color1 = ("#ffad47");
     keys = {};
     keys[37] = false;
@@ -81,7 +85,7 @@ export default class Player {
       window.nodamage1 = true;
       keys[118] = false;
     }
-
+//computer controls
     if ((keys[39] == true) && (this.position.x < 900)) {
       if ((this.living == true) && (window.touchX1 == false)) {
         if ((this.position.y > 249) && (window.touchX12 == false)) {
@@ -116,6 +120,48 @@ export default class Player {
 
       }
     }
+    //mobile controls
+    if ((this.rightbuttonpress== true) && (this.position.x < 900)) {
+      if ((this.living == true) && (window.touchX1 == false)) {
+        if ((this.position.y > 249) && (window.touchX12 == false)) {
+          this.position.x = this.position.x + 10;
+          this.rightbuttonpress=false;
+        }else{this.rightbuttonpress=false;}
+        if ((this.position.y < 250) && (window.touchX12 == false)) {
+          this.position.x = this.position.x + 15;
+          this.rightbuttonpress=false;
+        }else{this.rightbuttonpress=false;}
+      }else{this.rightbuttonpress=false;}
+    }else{this.rightbuttonpress=false;}
+
+    if ((this.leftbuttonpress == true) && (this.position.x > 0)) {
+      if ((this.living == (true)) && (window.touchX2 == (false))) {
+        if ((this.position.y > 249) && (window.touchX22 == (false))) {
+          this.position.x = this.position.x - 10;
+          this.leftbuttonpress=false;
+        }else{this.leftbuttonpress=false;}
+        if ((this.position.y < 250) && (window.touchX22 == (false))) {
+          this.position.x = this.position.x - 15;
+          this.leftbuttonpress=false;
+        }else{this.leftbuttonpress=false;}
+      }else{this.leftbuttonpress=false;}
+    }else{this.leftbuttonpress=false;}
+
+    if ((this.jumpbuttonpress == true) && (this.living == true)) {
+      if ((this.position.y > 249) || (window.touch == true)) {
+        this.position.y = this.position.y - 10;
+        this.speed = -20;
+this.jumpbuttonpress=false;
+      }
+    }else{this.jumpbuttonpress=false;}
+    if ((this.jumpbuttonpress2 == true) && (this.living == true)) {
+      if (window.touch2 == (true)) {
+        this.position.y = this.position.y - 10;
+        this.speed = -20;
+        this.jumpbuttonpress2=false;
+      }else{this.jumpbuttonpress2=false;}
+    }else{this.jumpbuttonpress2=false;}
+
     if (this.position.y < 250) {
       this.speed = this.speed + 1;
       this.position.y = this.position.y + this.speed;
