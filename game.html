@@ -18,14 +18,33 @@
   import launch from './main.js';
   import buttonpress from './main.js';
   import buttonunpress from "./main.js"
+
+  function touchpress(event,v){
+    buttonpress(v);
+    var e = event || window.event;
+      e.preventDefault && e.preventDefault();
+      e.stopPropagation && e.stopPropagation();
+      e.cancelBubble = true;
+      e.returnValue = false;
+  }
+
+  function touchunpress(event,v){
+    buttonunpress(v);
+    var e = event || window.event;
+      e.preventDefault && e.preventDefault();
+      e.stopPropagation && e.stopPropagation();
+      e.cancelBubble = true;
+      e.returnValue = false;
+  }
+
   </script>
   </head>
-    <body onload="launch()" onload="document.addEventListener('contextmenu', event => event.preventDefault());">
+    <body onload="launch()" >
       <img id="bossnospikes" src="bossspritenospikes.png" style="display:none;"></img>
       <img id="bossspikes" src="bossspritespikes.png" style="display:none;"></img>
 <img class="div-only-mobile"  src="upbutton.png" onclick="buttonpress(1)"  style="position:absolute; top:55%; left:70%;"></img>
-<img class="div-only-mobile" src="rightbutton.png" ontouchstart="buttonpress(2)" ontouchend="buttonunpress(2)" style="position:absolute; top:75%; left:80%;"></img>
-<img class="div-only-mobile" src="leftbutton.png" ontouchstart="buttonpress(3)" ontouchend="buttonunpress(3)"  style="position:absolute; top:75%; left:60%;"></img>
+<img class="div-only-mobile" src="rightbutton.png" ontouchstart="touchpress(event,2)" ontouchend="touchunpress(e,2)" style="position:absolute; top:75%; left:80%;"></img>
+<img class="div-only-mobile" src="leftbutton.png" ontouchstart="touchpress(event,3)" ontouchend="touchunpress(e,3)"  style="position:absolute; top:75%; left:60%;"></img>
       <div class="helpme">
       <canvas id="Screen" height="500" width="1000"></canvas>
       </div>
