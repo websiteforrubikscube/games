@@ -34,7 +34,6 @@ window.enemy3Xtouch12=(false);
 window.enemy3Xtouch22=(false);
 
 export  function buttonpress(whichbutton){
-  console.log("press");
   if(window.start==(true)){
     level1.buttonpress(whichbutton);
   }
@@ -52,7 +51,6 @@ export  function buttonpress(whichbutton){
   }
 }
 export  function buttonunpress(whichbutton){
-  console.log("unpress");
   if(window.start==(true)){
     level1.buttonunpress(whichbutton);
   }
