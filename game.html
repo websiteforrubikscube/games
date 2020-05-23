@@ -20,7 +20,7 @@
   import buttonunpress from "./main.js"
 
 
-   function touchpress(ev,v){
+   function mytouchpress(ev,v){
   buttonpress(v);
   var e = ev|| window.event;
     e.preventDefault && e.preventDefault();
@@ -29,7 +29,7 @@
     e.returnValue = false;
 }
 
- function touchunpress(ev,v){
+ function mytouchunpress(ev,v){
   buttonunpress(v);
   var e = ev || window.event;
     e.preventDefault && e.preventDefault();
@@ -48,9 +48,9 @@
 <img class="div-only-mobile"  src="upbutton.png" onclick="buttonpress(1)" 
  style="position:absolute; top:55%; left:70%;"></img>
  <img class="div-only-mobile" src="rightbutton.png" 
- ontouchstart="touchpress(event,2)" ontouchend="touchunpress(event,2)" 
+ ontouchstart="mytouchpress(event,2)" ontouchend="mytouchunpress(event,2)" 
  style="position:absolute; top:75%; left:80%;"></img>
-<img class="div-only-mobile" src="leftbutton.png" ontouchstart="touchpress(event,3)" ontouchend="touchunpress(event,3)"  style="position:absolute; top:75%; left:60%;"></img>
+<img class="div-only-mobile" src="leftbutton.png" ontouchstart="mytouchpress(event,3)" ontouchend="mytouchunpress(event,3)"  style="position:absolute; top:75%; left:60%;"></img>
       <div class="helpme">
       <canvas id="Screen" height="500" width="1000"></canvas>
       </div>
