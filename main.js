@@ -33,18 +33,18 @@ window.enemy2Xtouch22=(false);
 window.enemy3Xtouch12=(false);
 window.enemy3Xtouch22=(false);
 
-export function touchpress(event,v){
+export function touchpress(ev,v){
   buttonpress(v);
-  var e = event || window.event;
+  var e = ev|| window.event;
     e.preventDefault && e.preventDefault();
     e.stopPropagation && e.stopPropagation();
     e.cancelBubble = true;
     e.returnValue = false;
 }
 
-export function touchunpress(event,v){
+export function touchunpress(ev,v){
   buttonunpress(v);
-  var e = event || window.event;
+  var e = ev || window.event;
     e.preventDefault && e.preventDefault();
     e.stopPropagation && e.stopPropagation();
     e.cancelBubble = true;
