@@ -18,24 +18,9 @@
   import launch from './main.js';
   import buttonpress from './main.js';
   import buttonunpress from "./main.js"
+  import touchpress from './main.js';
+  import touchunpress from './main.js';
 
-  function touchpress(event,v){
-    buttonpress(v);
-    var e = event || window.event;
-      e.preventDefault && e.preventDefault();
-      e.stopPropagation && e.stopPropagation();
-      e.cancelBubble = true;
-      e.returnValue = false;
-  }
-
-  function touchunpress(event,v){
-    buttonunpress(v);
-    var e = event || window.event;
-      e.preventDefault && e.preventDefault();
-      e.stopPropagation && e.stopPropagation();
-      e.cancelBubble = true;
-      e.returnValue = false;
-  }
 
   </script>
   </head>
