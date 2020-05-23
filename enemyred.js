@@ -25,28 +25,28 @@ proccess(ctx){
 if((window.PlayerY>249)||(window.touch==(true))){
     if((this.lefthitdetect==false)&&(this.lefthitdetect2==false)){
     if(window.PlayerX+50<this.position.x+50){
-        this.position.x=this.position.x-15;
+        this.position.x=this.position.x-9;
     }
     }
 }
 if(window.touch2==(true)){
     if(window.PlayerX+50<this.position.x+50){
         if((this.lefthitdetect==false)&&(this.lefthitdetect2==false)){
-        this.position.x=this.position.x-15;
+        this.position.x=this.position.x-9;
         }
     }
 }
 if((window.PlayerY>249)||(window.touch==(true))){
     if((this.righthitdetect==false)&&(this.righthitdetect2==false)){
     if(window.PlayerX+50>this.position.x+50){
-        this.position.x=this.position.x+15;
+        this.position.x=this.position.x+9;
     }
     }
 }
 if(window.touch2==(true)){
     if((this.righthitdetect==false)&&(this.righthitdetect2==false)){
     if(window.PlayerX+50>this.position.x+50){
-        this.position.x=this.position.x+15;
+        this.position.x=this.position.x+9;
     }
     }
 }
@@ -55,12 +55,12 @@ if(window.PlayerY<250){
     if((window.touch==false)&&(window.touch2==false)){
         if((this.righthitdetect==false)&&(this.righthitdetect2==false)){
         if(window.PlayerX+50<this.position.x+50){
-            this.position.x=this.position.x+10;
+            this.position.x=this.position.x+5;
         }
     }
         if(window.PlayerX+50>this.position.x+50){
             if((this.lefthitdetect==false)&&(this.lefthitdetect2==false)){
-            this.position.x=this.position.x-10;
+            this.position.x=this.position.x-5;
         }
     }
     }

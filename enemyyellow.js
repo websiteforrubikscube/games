@@ -30,7 +30,7 @@ ctx.fillRect(this.position.x, this.position.y,this.width,this.height);
 if((window.PlayerX>this.position.x+25)){
     if((window.touch==true)||(window.PlayerY>249)){
     if((window.enemy2Xtouch1==(false))&&(window.enemy2Xtouch12==(false))){
-this.position.x=this.position.x+10;
+this.position.x=this.position.x+7;
       this.active1=(true);
     }else{this.active1=(false);}
 }else{this.active1=(false);}
@@ -43,7 +43,7 @@ this.position.x=this.position.x+10;
     if((window.PlayerX>this.position.x+25)){
     if((window.touch2==true)||(window.PlayerY>249)){
     if((window.enemy2Xtouch1==(false))&&(window.enemy2Xtouch12==(false))){
-this.position.x=this.position.x+10;
+this.position.x=this.position.x+7;
        this.active1=(true);
     }else{this.active1=(false);}
 }else{this.active1=(false);}
@@ -56,7 +56,7 @@ this.position.x=this.position.x+10;
     if(window.PlayerX<this.position.x+25){
       if((window.touch==true)||(window.PlayerY>249)){
    if((window.enemy2Xtouch2==(false))&&(window.enemy2Xtouch22==(false))){
-this.position.x=this.position.x-10;
+this.position.x=this.position.x-7;
      this.active2=(true);
    }else{this.active2=(false);}
 }else{this.active2=(false);}
@@ -69,7 +69,7 @@ this.position.x=this.position.x-10;
      if(window.PlayerX<this.position.x+25){
       if((window.touch2==true)||(window.PlayerY>249)){
    if((window.enemy2Xtouch2==(false))&&(window.enemy2Xtouch22==(false))){
-this.position.x=this.position.x-10;
+this.position.x=this.position.x-7;
      this.active2=(true);
   }else{this.active2=(false);}
 }else{this.active2=(false);}
