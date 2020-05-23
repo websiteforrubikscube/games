@@ -142,6 +142,7 @@ this.position.x=this.position.x-7;
         this.immune=true;
        window.color2=("#fdff9e");
        window.invisabledamage1=(true);
+       new Audio('/kill.mp3').play()
         setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
         setTimeout(function(enemy){ enemy.invisabledamage1load=(true); }, 1000,window);
       }

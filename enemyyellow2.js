@@ -138,6 +138,7 @@ this.position.x=this.position.x-7;
       if(this.hit>1){
         this.living=(false);
         this.immune=true;
+        new Audio('/kill.mp3').play()
        window.color3=("#fdff9e");
         window.invisabledamage2=(true);
         window.invisabledamage2load=(true);
