@@ -112,14 +112,6 @@ export default class Level3{
     if(this.redenemy1.death()==true){
       screen8.redenemy1dead=true;
     }else{screen8.redenemy1dead=false;}
-    if(this.redenemy2.death()==true){
-      screen8.redenemy2dead=true;
-    }else{screen8.redenemy1dead=false;}
-    if(this.redenemy2.killplayer(player.position.x, player.position.y)){
-      player.playerdeath2=true;
-      }else{
-        player.playerdeath2=false;
-      }
       if(this.redenemy1.killplayer(player.position.x, player.position.y)){
         player.playerdeath=true;
         }else{
@@ -130,18 +122,16 @@ export default class Level3{
       enemyyellow2.proccessloop(this.ctx);
       this.redenemy1.proccess(this.ctx);
       this.redenemy2.proccess(this.ctx);
-      obstacle1.proccessloop();
   obstacle2.proccessloop();
   if(runnumber23>2){ 
     screen8.proccessloop();
     }
     if(runnumber23<2){ 
-      this.redenemy1=new Redenemy(175,300);
-      this.redenemy2=new Redenemy(725,300);
+      this.redenemy1=new Redenemy(700,300);
       this.redenemy1.immune=false;
         this.redenemy1.visable=true;
         this.redenemy2.immune=false;
-        this.redenemy2.visable=true;
+        this.redenemy2.visable=false;
         this.redenemy1dead = false;
         this.redenemy2dead = false;
     window.screen8load=(true);
@@ -227,10 +217,8 @@ draw(){
     screen8.draw(this.ctx);
   sky.draw(this.ctx);
   ground.draw(this.ctx);
-  obstacle1.draw(this.ctx);
     player.draw(this.ctx);
     this.redenemy1.draw(this.ctx);
-    this.redenemy2.draw(this.ctx);
   }
   if(window.screen9==(true)){
   sky.draw(this.ctx);
