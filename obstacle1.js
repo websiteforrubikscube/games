@@ -73,7 +73,7 @@ window.enemy3Xtouch2=(true);
     this.position.x=450;
      }
      if(window.screen8 ==true){
-      this.position.x=450;
+      this.position.x=2000;
        }
      if(window.screen9==true){
       this.position.x=2000;
