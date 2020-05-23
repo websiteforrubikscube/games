@@ -1,6 +1,10 @@
 <html>
   <head>
     <style>
+      .disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
+
      @media  (hover: hover) {
   .div-only-mobile{
   visibility:hidden;
@@ -49,12 +53,12 @@
       <img id="bossspikes" src="bossspritespikes.png" style="display:none;"></img>
 
 
-<img class="div-only-mobile"  src="upbutton.png" onclick="buttonpress(1)" 
+<img class="div-only-mobile disable-dbl-tap-zoom"  src="upbutton.png" onclick="buttonpress(1)" 
  style="position:absolute; top:55%; left:70%;"></img>
- <img class="div-only-mobile" src="rightbutton.png" 
+ <img class="div-only-mobile disable-dbl-tap-zoom" src="rightbutton.png" 
  ontouchstart="mytouchpress(event,2)" ontouchend="mytouchunpress(event,2)" 
  style="position:absolute; top:75%; left:80%;"></img>
-<img class="div-only-mobile" src="leftbutton.png" ontouchstart="mytouchpress(event,3)" ontouchend="mytouchunpress(event,3)"  style="position:absolute; top:75%; left:60%;"></img>
+<img class="div-only-mobile disable-dbl-tap-zoom" src="leftbutton.png" ontouchstart="mytouchpress(event,3)" ontouchend="mytouchunpress(event,3)"  style="position:absolute; top:75%; left:60%;"></img>
       <div class="helpme">
       <canvas id="Screen" height="500" width="1000"></canvas>
       </div>
