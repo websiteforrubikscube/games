@@ -99,8 +99,7 @@ setTimeout(function(enemy){ enemy.immune=(false); }, 1000,this);
 }
 if(this.hit>2){
     this.colorredenemy=('#ff8a8a');
-    new Audio('/kill.mp3').play()
-    setTimeout(function(enemy){ enemy.visable=(false); }, 1000,this);
+    setTimeout(function(enemy){ enemy.visable=(false);  new Audio('/kill.mp3').play() }, 1000,this);
 }
 }
 }
