@@ -14,7 +14,7 @@ export default class Screen8 {
     proccessloop() {
         if (window.screen8 == (true)) {
             if ((window.PlayerX + 100) > this.position.x) {
-                if ((this.redenemy1dead == true) && (this.redenemy2dead == true)) {
+                if ((this.redenemy1dead == true)) {
                     if (window.screenload == false) {
                         window.screen8 = (false);
                         window.screen9 = (true);
