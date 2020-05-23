@@ -15,7 +15,7 @@ export default class Screen6{
      if((window.PlayerX+100)>this.position.x){
         if((window.invisabledamage2load==(true))&&(window.invisabledamage1load==(true))){
      window.screen6=(false);
-      window.screen7=(true);
+      window.screen10=(true);
       this.move=(false);
      setTimeout(function(load3){ load3.move=(true); }, 34, this);
      }
