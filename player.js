@@ -183,7 +183,7 @@ this.jumpbuttonpress=false;
     if (window.killjump == true) {
      this.speed=-20;  
      this.position.y=this.position.y-15;
-     new Audio('/jumpofenemy.mp3').play()
+     new Audio('/jumpoffenemy.mp3').play()
      window.killjump=false;
     }
 
