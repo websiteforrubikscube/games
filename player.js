@@ -110,6 +110,7 @@ export default class Player {
       if ((this.position.y > 249) || (window.touch == true)) {
         this.position.y = this.position.y - 10;
         this.speed = -20;
+        new Audio('/jump.mp3').play()
 
       }
     }
@@ -117,7 +118,7 @@ export default class Player {
       if (window.touch2 == (true)) {
         this.position.y = this.position.y - 10;
         this.speed = -20;
-
+        new Audio('/jump.mp3').play()
       }
     }
     //mobile controls
@@ -148,6 +149,7 @@ export default class Player {
       if ((this.position.y > 249) || (window.touch == true)) {
         this.position.y = this.position.y - 10;
         this.speed = -20;
+        new Audio('/jump.mp3').play()
 this.jumpbuttonpress=false;
       }
     }else{this.jumpbuttonpress=false;}
@@ -155,6 +157,7 @@ this.jumpbuttonpress=false;
       if (window.touch2 == (true)) {
         this.position.y = this.position.y - 10;
         this.speed = -20;
+        new Audio('/jump.mp3').play()
         this.jumpbuttonpress2=false;
       }else{this.jumpbuttonpress2=false;}
     }else{this.jumpbuttonpress2=false;}
