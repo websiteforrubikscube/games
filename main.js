@@ -96,6 +96,12 @@ level2.proccess2();
       window.start3=false;
     }
     if(window.start4==true){
+      setInterval(function()
+      {
+        let myAudio = new Audio("bee.mp3");
+        myAudio.currentTime = 0;
+        myAudio.play();
+      }, 3000);
 level4.proccess4();
     }
     if(window.screen13==true){
