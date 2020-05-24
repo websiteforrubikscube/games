@@ -24,10 +24,10 @@ sfx(){
             myAudio.stop;
             playsound=false;
         }
-          if(window.start4==true){
         playsound=true;
-          }
+        if(window.start4==true){
         myAudio.play();
+        }
       }, 3000);
     }
 }
