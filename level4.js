@@ -30,6 +30,13 @@ export default class Level4{
       this.respawn = (false);
       window.touch=false;
       window.touch2=false;
+      setInterval(function()
+      {
+        let myAudio = new Audio("bee.mp3");
+        myAudio.currentTime = 0;
+        myAudio.play();
+      }, 3000);
+
       }
   
       buttonpress(whichbutton){

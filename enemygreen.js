@@ -34,7 +34,6 @@ this.position.x= this.position.x - 5;
  window.color =("#a6ffad");
       window.nodamage1 = (true);
             setTimeout(function(enemy){ enemy.visable=(false);}, 1000,this);
-            setTimeout(function(){new Audio('/kill.mp3').play() }, 1000);
             setTimeout(function(enemy){ enemy.nodamage1load=(true); }, 1100,window);
     }
   }

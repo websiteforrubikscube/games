@@ -142,7 +142,6 @@ this.position.x=this.position.x-7;
         window.invisabledamage2=(true);
         window.invisabledamage2load=(true);
         setTimeout(function(enemy){ enemy.visable=(false);}, 1000,this);
-        setTimeout(function(){new Audio('/kill.mp3').play() }, 1000);
         setTimeout(function(enemy){ enemy.invisabledamage2load=(true); }, 1000,window);
       }
         if(this.hit<2){
