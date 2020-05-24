@@ -1,4 +1,5 @@
-
+var playsound=false;
+var myAudio=null;
 
 export default class Bees{
     
@@ -7,18 +8,18 @@ this.TotalBees = 19;
     this.beesx=[];
     this.beesy=[];
 
-this.playsound=false;
+
 }
 sfx(){
 
-        if (!this.playsound){
+        if (!playsound){
+            myAudio = new Audio("bee.mp3");
+            myAudio.currentTime = 0;
         setInterval(function()
       {
-        this.playsound=true;
-        let myAudio = new Audio("bee.mp3");
-        myAudio.currentTime = 0;
+        playsound=true;
         myAudio.play();
-      }, 4000);
+      }, 5000);
     }
 }
 
