@@ -30,7 +30,6 @@ export default class Level4{
       this.respawn = (false);
       window.touch=false;
       window.touch2=false;
-
       }
   
       buttonpress(whichbutton){
