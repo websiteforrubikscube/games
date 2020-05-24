@@ -11,10 +11,6 @@ this.TotalBees = 19;
 
 }
 sfx(){
-if(window.start5==true){
-    myAudio.stop;
-    playsound=false;
-}
         if (!playsound){
             let firstime=(myAudio==null);
             myAudio = new Audio("bee.mp3");
@@ -24,6 +20,10 @@ if(window.start5==true){
             }
         setInterval(function()
       {
+        if(window.start5==true){
+            myAudio.stop;
+            playsound=false;
+        }
           if(window.start4==true){
         playsound=true;
           }
