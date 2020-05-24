@@ -15,11 +15,12 @@ sfx(){
         if (!playsound){
             myAudio = new Audio("bee.mp3");
             myAudio.currentTime = 0;
+            myAudio.play();
         setInterval(function()
       {
         playsound=true;
         myAudio.play();
-      }, 5000);
+      }, 3000);
     }
 }
 
