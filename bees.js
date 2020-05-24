@@ -6,12 +6,19 @@ constructor(){
 this.TotalBees = 19;
     this.beesx=[];
     this.beesy=[];
+this.hit=0;
+}
+sfx(){
+    this.hit++;
+    if(this.hit==0){
     setInterval(function()
       {
         let myAudio = new Audio("bee.mp3");
         myAudio.currentTime = 0;
         myAudio.play();
       }, 3000);
+
+}
 }
 load(){
     for(let i =0; i<this.TotalBees;i++){
