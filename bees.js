@@ -13,11 +13,12 @@ this.TotalBees = 19;
 sfx(){
 
         if (!playsound){
-            let firstime=myAudio==null;
+            let firstime=(myAudio==null);
             myAudio = new Audio("bee.mp3");
             myAudio.currentTime = 0;
-            if (firstime)
+            if (firstime){
                 myAudio.play();
+            }
         setInterval(function()
       {
         playsound=true;
