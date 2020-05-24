@@ -68,6 +68,7 @@ export default class Level4{
     if(window.screen10==true){
      player.proccessloop(this.ctx);
      bees.proccess();
+     bees.sfx();
      if(runnumber14>2){
      screen10.proccessloop();
      }
@@ -89,6 +90,7 @@ player.playerdeath3=true;
       player.proccessloop(this.ctx);
       bees.proccess();
       obstacle1.proccessloop();
+      bees.sfx();
       if(bees.iskillplayer()==true){
  player.playerdeath3=true;
       }else{player.playerdeath3=false;}
@@ -110,6 +112,7 @@ player.playerdeath3=true;
       obstacle1.proccessloop();
       obstacle2.proccessloop();
       bees.proccess();
+      bees.sfx();
       if(bees.iskillplayer()==true){
         player.playerdeath3=true;
              }else{player.playerdeath3=false;}
