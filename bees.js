@@ -6,20 +6,22 @@ constructor(){
 this.TotalBees = 19;
     this.beesx=[];
     this.beesy=[];
-this.hit=0;
+
+this.playsound=false;
 }
 sfx(){
-    this.hit++;
-    if(this.hit==0){
-    setInterval(function()
+
+        if (!this.playsound){
+        setInterval(function()
       {
+        this.playsound=true;
         let myAudio = new Audio("bee.mp3");
         myAudio.currentTime = 0;
         myAudio.play();
       }, 3000);
+    }
+}
 
-}
-}
 load(){
     for(let i =0; i<this.TotalBees;i++){
         this.beesx[i]=(Math.round(Math.random()*1000));
