@@ -18,7 +18,7 @@ sfx(){
         let myAudio = new Audio("bee.mp3");
         myAudio.currentTime = 0;
         myAudio.play();
-      }, 3000);
+      }, 4000);
     }
 }
 
