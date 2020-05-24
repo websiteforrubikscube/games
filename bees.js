@@ -13,6 +13,7 @@ this.TotalBees = 19;
 sfx(){
 if(window.start5==true){
     myAudio.stop;
+    playsound=false;
 }
         if (!playsound){
             let firstime=(myAudio==null);
