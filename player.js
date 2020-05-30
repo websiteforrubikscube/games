@@ -112,6 +112,7 @@ export default class Player {
         this.speed = -20;
         new Audio('/jump.mp3').play()
 
+        
       }
     }
     if ((keys[38] == true) && (this.living == true)) {
