@@ -32,7 +32,7 @@ proccessloop(){
     }
 }
     //death
-if(this.spikes==false){
+if((this.spikes==false)&&(window.living=true)){
     if((window.PlayerY+150>this.position.y)&&(window.PlayerY<this.position.y+20)){
         if((window.PlayerX+100>this.position.x)&&(window.PlayerX<this.position.x+300)){
             if(this.visable==true){

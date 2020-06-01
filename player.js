@@ -21,15 +21,13 @@ export default class Player {
     this.leftbuttonpress=false;
     this.jumpbuttonpress=false;
     this.jumpbuttonpress2=false;
+    window.living=true;
     window.color1 = ("#ffad47");
     keys = {};
     keys[37] = false;
     keys[38] = false;
     keys[39] = false;
     keys[40] = false;
-    keys[114] = false;
-    keys[115] = false;
-    keys[118] = false;
     window.onkeyup = function (e) {
       keys[e.keyCode] = false;
     }
@@ -59,31 +57,6 @@ export default class Player {
     //movement
     if ((window.touch2 == (true)) || (window.touch == (true))) {
       this.speed = 0;
-    }
-
-    if (keys[114] == true) {
-      window.start = false;
-      window.start3 = true;
-      window.screen1 = false;
-      window.screen7 = true;
-      window.nodamage1 = true;
-      keys[114] = false;
-    }
-    if (keys[115] == true) {
-      window.start = false;
-      window.start4 = true;
-      window.screen1 = false;
-      window.screen10 = true;
-      window.nodamage1 = true;
-      keys[115] = false;
-    }
-    if (keys[118] == true) {
-      window.start = false;
-      window.start5 = true;
-      window.screen1 = false;
-      window.screen13 = true;
-      window.nodamage1 = true;
-      keys[118] = false;
     }
 //computer controls
     if ((keys[39] == true) && (this.position.x < 900)) {
@@ -285,6 +258,7 @@ this.jumpbuttonpress=false;
 
     window.PlayerX = this.position.x;
     window.PlayerY = this.position.y;
+    window.living=this.living;
   }
 
   resetPlayer() {
